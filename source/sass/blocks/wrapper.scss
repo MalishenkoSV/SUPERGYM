@@ -1,17 +1,14 @@
 .wrapper {
-  padding: 2% 7.5%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 30px 7.2%;
+  margin: 0 auto;
   justify-content: space-between;
-}
 
-@media (max-width: $tablet-width) {
-  .wrapper {
-    margin: 0 auto;
+  @media (max-width: $tablet-width) {
+    padding: 40px 6%;
   }
-}
+
   @media (max-width: $mobile-width) {
-    .wrapper {
-      margin: 0 auto;
-    }
+      padding: 20px 4%;
+  }
+
 }

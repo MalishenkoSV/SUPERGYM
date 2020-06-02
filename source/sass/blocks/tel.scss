@@ -2,4 +2,13 @@
     @include font-Bebas-tel;
     text-decoration: none;
     color: $white;
+
+    @media (max-width: $tablet-width) {
+      @include tablet-Bebas-tel;
+    }
+
+    @media (max-width: $mobile-width) {
+      @include mobile-Bebas-tel;
+      line-height: 16px;
+    }
   }

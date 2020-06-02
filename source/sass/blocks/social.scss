@@ -1,19 +1,25 @@
 .social {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   padding-left: 14%;
   align-self: flex-end;
-  padding-bottom: 45px;
-  @include list-reset;
+  margin-bottom: 45px;
+
   @media (max-width: $tablet-width) {
-
-  }
-  @media (max-width: $mobile-width) {
-
+    display: none;
   }
 }
 
+.social__link {
+  @include font-social;
+  color: $white;
+  text-decoration: none;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
 
 .social__item {
-
+  padding-top: 7px;
+  padding-right: 5px;
 }
