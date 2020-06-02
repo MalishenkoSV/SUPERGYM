@@ -1,0 +1,22 @@
+.footer {
+  background-color: $white-grey;
+}
+
+.footer__title {
+  @include font-condensed-title;
+  text-transform: uppercase;
+  align-items: center;
+  color: $bg-black;
+  margin-bottom: 29px;
+}
+
+.footer__logo::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 205px;
+  height: 30px;
+  background-image: url("../img/icon-service.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}

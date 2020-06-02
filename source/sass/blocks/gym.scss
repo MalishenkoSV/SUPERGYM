@@ -1,0 +1,27 @@
+.gym__title {
+  @include font-Bebas-title;
+  @include mp-reset;
+  margin-bottom: 80px;
+  max-width: 298px;
+}
+
+.gym {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+.gym__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gym__city {
+  @include font-Bebas-city;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.gym__list {
+  @include list-reset;
+}

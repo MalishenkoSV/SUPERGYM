@@ -1,0 +1,23 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin mp-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin pseudo($width, $height, $position: absolute, $content: "") {
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
+}

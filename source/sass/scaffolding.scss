@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-style: inherit;
+}
+
+body {
+  @include font-basic;
+  box-sizing: border-box;
+  font-style: normal;
+  color: $bg-grey;
+  background-color: $white;
+  // outline-color: $white;
+}

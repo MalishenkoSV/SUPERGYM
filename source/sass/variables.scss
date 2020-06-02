@@ -1,0 +1,214 @@
+$bg-grey: rgba(184, 184, 184, 1);
+$white: rgba(255, 255, 255, 1);
+$blue-font: rgba(16, 38, 84, 1);
+// $middlegrey: #666666;
+// $superlightgrey: #ebebeb;
+// $darkgrey: #203c42;
+// $white-grey: #fafafa;
+$mobile-width: 767px;
+$tablet-width: 1023px;
+// $transition-duration: 0.3s;
+// $transition-type: ease;
+// $opacity-hover: 0.6;
+// $opacity-active: 0.3;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+@mixin font-Bebas-title {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-Bebas-tel {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-Bebas-city {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 300;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-Bebas-form {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-cost {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+}
+
+@mixin font-basic {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin basic-light {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin super-adv {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+@mixin super-bold {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150px;
+}
+
+@mixin super-year {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+}
+
+@mixin font-btn {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+@mixin font-social {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
+@mixin font-min {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+@mixin font-superbas {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@mixin super-name {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@mixin font-super {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 156%;
+}
+
+@mixin font-link {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin link-min {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+// @mixin font-condensed-btn {
+
+// }
+
+// @mixin font-condensed-title {
+
+// }
+
+// @mixin font-condensed-popup {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 28px;
+//   line-height: 140%;
+// }
+
+// @mixin font-condensed-min {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 32px;
+//   line-height: 140%;
+// }
+
+// @mixin font-condensed-medium {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 36px;
+//   line-height: 51px;
+// }
+
+// @mixin font-condensed-bold {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 40px;
+//   line-height: 47px;
+//   letter-spacing: 0.07em;
+//   text-transform: uppercase;
+// }
+
+// @mixin font-condensed-medium-big {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 60px;
+//   line-height: 70px;
+//   letter-spacing: 0.07em;
+//   text-transform: uppercase;
+// }
+
+// @mixin font-condensed-max {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 80px;
+//   line-height: 94px;
+//   letter-spacing: 0.07em;
+//   text-transform: uppercase;
+// }
+
+// @mixin font-condensed-supermax {
+//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
+//   font-size: 120px;
+//   font-weight: 700;
+//   line-height: 1.15;
+// }

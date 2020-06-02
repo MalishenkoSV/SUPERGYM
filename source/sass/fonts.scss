@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed Light"),
+    local("RobotoCondensed-Light"),
+    url("../fonts/robotocondensed-light.woff2") format("woff2"),
+    url("../fonts/robotocondensed-light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"),
+    local("RobotoCondensed-Regular"),
+    url("../fonts/robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed Bold"),
+    local("RobotoCondensed-Bold"),
+    url("../fonts/robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular"),
+    local("BebasNeue-Regular"),
+    url("bebasneue-regular-webfont.woff2") format("woff2"),
+    url("bebasneue-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Bold"),
+    local("BebasNeue-Bold"),
+    url("bebasneue-bold-webfont.woff2") format("woff2"),
+    url("bebasneue-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
