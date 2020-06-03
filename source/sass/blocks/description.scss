@@ -1,0 +1,27 @@
+.description {
+  padding-left: 60px;
+  width: 39%;
+}
+
+.description__title {
+  @include font-Bebas-city;
+  margin: 59px 0 19px;
+  color: $blue-font;
+}
+
+.description__losung {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.description__text {
+  @include basic-light;
+  margin-top: 40px;
+}
+
+.description__text--desktop {
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

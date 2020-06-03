@@ -1,0 +1,27 @@
+.hall {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.hall__photo {
+  width: 56.9%;
+}
+
+.hall__video-container {
+  position: relative;
+  display: none;
+}
+
+.hall__description {
+  width: 47%;
+}
+
+// .hall__wrapper {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }

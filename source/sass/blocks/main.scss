@@ -1,0 +1,5 @@
+.main {
+  @include font-basic;
+  background-color: $white;
+  color: $blue-font;
+}

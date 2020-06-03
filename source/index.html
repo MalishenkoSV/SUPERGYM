@@ -59,6 +59,40 @@
             </div>
         </header>
         <main class="main">
+          <section class="main__hall hall wrapper">
+              <article class="hall__description description">
+                  <h3 class="description__title">Тренажерный зал</h3>
+                  <b class="description__losung">Просторный зал площадью 900 кв/м</b>
+                  <p class="description__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                  <p class="description__text description__text--desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </article>
+
+              <picture class="hall__photo">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/hall_mobile_x1.webp 1x, img/hall_mobile_x2.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/hall_tablet_x1.webp 1x, img/hall_tablet_x2.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/hall_desktop_x1.webp 1x, img/hall_desktop_x2.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/hall_mobile_x1.png 1x, img/hall_mobile_x1.png 2x">
+                  <source media="(min-width: 1199px)" srcset="img/hall_tablet_x2.png 1x, img/hall_tablet_x2.png 2x">
+                  <img src="img/hall_desktop_x1.png" srcset="img/hall_desktop_x2.png 2x" width="660" height="401" alt="Оборудование в белом просторном зале">
+              </picture>
+
+              <div class="hall__video-container video">
+                  <picture class="video__poster">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/video_poster_mobile_x1.webp 1x, img/video_poster_mobile_x2.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/video_poster_tablet_x1.webp 1x, imgvideo_poster_tablet_x2.webp 2x">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/video_poster_desktop_x1.webp 1x, img/video_poster_desktop_x2.webp 2x">
+                      <source media="(max-width: 767px)"
+                              srcset="img/video_poster_mobile_x1.png 1x,
+                                      img/video_poster_mobile_x2.png 2x">
+                      <source media="(min-width: 1199px)" srcset="img/video_poster_tablet_x2.png 1x, img/video_poster_tablet_x2.png 2x">
+                      <img src="img/video_poster_desktop_x1.png" srcset="img/video_poster_desktop_x2.png 2x" width="368" height="228" alt="Обычная тренировка в нашем белом просторном зале">
+                  </picture>
+                  <div class="video__button-wrapper">
+                      <button class="video__button">Воспроизвести</button>
+                  </div>
+              </div>
+          </section>
+
         </main>
 
             <footer></footer>
