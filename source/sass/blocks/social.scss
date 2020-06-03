@@ -2,8 +2,9 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  padding-left: 14%;
   align-self: flex-end;
+  align-content: flex-end;
+  margin-left: auto;
   margin-bottom: 45px;
 
   @media (max-width: $tablet-width) {

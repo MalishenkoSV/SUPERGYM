@@ -1,8 +1,6 @@
 .main-screen {
   display: flex;
-  justify-content: stretch;
-  margin-bottom: 71px;
-  padding-right: 19px;
+  margin-bottom: 20px;
   color: $white;
 
   @media (max-width: $tablet-width) {
