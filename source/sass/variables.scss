@@ -2,10 +2,12 @@ $bg-grey: rgba(184, 184, 184, 1);
 $white: rgba(255, 255, 255, 1);
 $blue-font: rgba(16, 38, 84, 1);
 $blue: rgba(0, 61, 133, 1);
+$white-grey:rgba(120, 120, 120, 0.2);
+$red: rgb(209, 10, 66, 1);
+
 // $middlegrey: #666666;
 // $superlightgrey: #ebebeb;
 // $darkgrey: #203c42;
-// $white-grey: #fafafa;
 $mobile-width: 767px;
 $tablet-width: 1199px;
 // $transition-duration: 0.3s;
@@ -58,6 +60,14 @@ $retina-dppx: 1.5dppx;
   font-size: 49px;
   letter-spacing: 0.03em;
 }
+
+@mixin adv-Bebas-bold {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  letter-spacing: 0.03em;
+}
+
 
 @mixin tablet-Bebas-city {
   font-size: 34px;

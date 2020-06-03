@@ -1,0 +1,29 @@
+.abonement__title {
+  @include adv-Bebas-bold;
+}
+
+.abonement__range {
+  position: absolute;
+  bottom: 74px;
+  left: 23px;
+  width: 20%;
+  height: 45px;
+  background-color: $red;
+}
+
+.abonement__range-bar {
+  width: 73%;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.abonement__range-bar::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $white-grey;
+  opacity: 0.2;
+  display: inline-block;
+  z-index: 55;
+}
