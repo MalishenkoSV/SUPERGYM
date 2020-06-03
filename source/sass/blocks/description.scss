@@ -1,12 +1,31 @@
 .description {
   padding-left: 60px;
-  width: 39%;
+
+  @media (max-width: 1199px) {
+    text-align: center;
+    padding: 0;
+    width: 70%;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 15px;
+    text-align: left;
+  }
 }
 
 .description__title {
-  @include font-Bebas-city;
+  @include font-Bebas-form;
   margin: 59px 0 19px;
   color: $blue-font;
+
+  @media (max-width: 1199px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
 }
 
 .description__losung {
@@ -25,3 +44,5 @@
     display: none;
   }
 }
+
+

@@ -7,6 +7,7 @@
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-title;
+    margin: 0 auto;
     margin-bottom: 35px;
   }
 
@@ -30,9 +31,9 @@
     margin-right: 30px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     @include mobile-Bebas-title;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
   }
 }
@@ -40,6 +41,14 @@
 .gym__info {
   display: flex;
   justify-content: space-between;
+  @media (max-width: $tablet-width) {
+    width: 77%;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include mobile-Bebas-title;
+    width: 91%;
+  }
 }
 
 .gym__city {
@@ -52,6 +61,7 @@
     @include tablet-Bebas-city;
     margin-bottom: 7px;
   }
+
   @media (max-width: $mobile-width) {
     @include mobile-Bebas-city;
   }

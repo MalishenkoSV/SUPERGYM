@@ -1,3 +1,27 @@
 .adventure {
+  @include list-reset;
+  position: relative;
+  width: 341px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+  border-bottom: 2px solid $dark-grey;
+}
 
+.adventure::before {
+  position: absolute;
+  top: 43px;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: $red;
+  display: inline-block;
+  z-index: 55;
+}
+
+.adventure__item {
+  margin-bottom: 20px;
 }

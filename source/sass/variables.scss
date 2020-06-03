@@ -2,9 +2,12 @@ $bg-grey: rgba(184, 184, 184, 1);
 $white: rgba(255, 255, 255, 1);
 $blue-font: rgba(16, 38, 84, 1);
 $blue: rgba(0, 61, 133, 1);
-$white-grey:rgba(120, 120, 120, 0.2);
-$red: rgb(209, 10, 66, 1);
-
+$dark-blue: rgba(16, 38, 84, 1);
+$dark-grey:rgba(120, 120, 120, 0.2);
+$font-blue: rgba(16, 58, 174, 1);
+$red: rgba(209, 10, 66, 1);
+$whitegrey: rgba(248, 249, 252, 1);
+$grey: rgba(232, 232, 232, 1);
 // $middlegrey: #666666;
 // $superlightgrey: #ebebeb;
 // $darkgrey: #203c42;
@@ -86,6 +89,14 @@ $retina-dppx: 1.5dppx;
   letter-spacing: 0.03em;
 }
 
+
+@mixin super-abonem {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+}
+
 @mixin font-cost {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: bold;
@@ -111,7 +122,6 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 22px;
-  line-height: 150%;
 }
 
 @mixin super-bold {
