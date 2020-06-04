@@ -64,11 +64,22 @@
   text-decoration:  none;
   border: 2px solid $dark-blue;
   margin-bottom: 68px;
+  cursor: pointer;
 }
 
 .abonement__item--activ {
-  border: 5px solid  red;
-  box-shadow: 0 2px 2px #a83829;
+  border: 5px solid  $red;
+
+}
+
+.abonement__item a:hover,
+.abonement__item a:hover {
+  box-shadow: 0 0 0 2px $dark-blue;
+  color: $focus-blue;
+}
+
+.abonement__item a:active {
+  opacity: 0.4;
 }
 
 .abonement__btn--active {

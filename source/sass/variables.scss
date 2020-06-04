@@ -3,6 +3,7 @@ $white: rgba(255, 255, 255, 1);
 $blue-font: rgba(16, 38, 84, 1);
 $blue: rgba(0, 61, 133, 1);
 $dark-blue: rgba(16, 38, 84, 1);
+$focus-blue: rgba(16, 38, 84, 0.3);
 $dark-grey:rgba(120, 120, 120, 0.2);
 $font-blue: rgba(16, 58, 174, 1);
 $red: rgba(209, 10, 66, 1);
@@ -13,6 +14,7 @@ $grey: rgba(232, 232, 232, 1);
 // $darkgrey: #203c42;
 $mobile-width: 767px;
 $tablet-width: 1199px;
+$super-width: 1366px;
 // $transition-duration: 0.3s;
 // $transition-type: ease;
 // $opacity-hover: 0.6;
@@ -85,7 +87,6 @@ $retina-dppx: 1.5dppx;
 @mixin font-Bebas-form {
   font-family: "Bebas Neue", "Arial Narrow", sans-serif;
   font-size: 49px;
-  line-height: 64px;
   letter-spacing: 0.03em;
 }
 

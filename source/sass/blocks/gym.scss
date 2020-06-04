@@ -41,6 +41,7 @@
 .gym__info {
   display: flex;
   justify-content: space-between;
+  width: 460px;
   @media (max-width: $tablet-width) {
     width: 77%;
   }
