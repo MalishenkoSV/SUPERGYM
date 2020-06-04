@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   width: 1200px;
   padding: 0 20px;
+  margin: 0 auto;
 
   @media (max-width: 1199px) {
     flex-direction: column;
@@ -19,11 +20,13 @@
 }
 
 .hall picture {
+  @media (max-width: 1199px) {
   width: 100%;
+  }
 }
 
 .hall__photo {
-  width: 56.9%;
+  width: auto;
 
   @media (max-width: 1199px) {
     width: 100%;
