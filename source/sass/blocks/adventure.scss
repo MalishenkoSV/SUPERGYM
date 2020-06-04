@@ -13,7 +13,7 @@
 
 .adventure::before {
   position: absolute;
-  top: 43px;
+  top: 40px;
   content: "";
   width: 20%;
   height: 2px;
@@ -23,5 +23,6 @@
 }
 
 .adventure__item {
-  margin-bottom: 20px;
+  @include month-abonem;
+  margin-bottom: 10px;
 }

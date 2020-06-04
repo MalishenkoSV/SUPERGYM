@@ -1,16 +1,15 @@
 .hall {
+  position: relative;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
+  margin-bottom: 100px;
 
   @media (max-width: 1199px) {
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    margin: 0;
     padding: 0 45px;
   }
 
@@ -35,8 +34,4 @@
 
 .hall__video-container {
   position: relative;
-}
-
-.hall__description {
-  width: 33%;
 }

@@ -2,6 +2,12 @@
   background-color: #ed0233;
   background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   margin-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 40px;
+    margin-bottom: 47px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
   }
@@ -19,23 +25,16 @@
   background-repeat: no-repeat;
   bottom: 0;
   right: 0;
-
-  @media (max-width: $tablet-width) {
-    height: 17px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 68px;
-    height: 15px;
-  }
 }
 
 .header__img {
   @media (max-width: $tablet-width) {
-    width: 67px;
+    width: 82px;
+    height: 17px;
   }
 
   @media (max-width: $mobile-width) {
     width: 67px;
+    height: 15px;
   }
 }

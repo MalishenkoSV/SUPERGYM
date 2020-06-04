@@ -37,8 +37,8 @@ $retina-dppx: 1.5dppx;
 
 
 @mixin mobile-Bebas-title {
-  font-size: 78px;
-  line-height: 78px;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 @mixin font-Bebas-tel {
@@ -79,6 +79,16 @@ $retina-dppx: 1.5dppx;
   line-height: 34px;
 }
 
+@mixin tablet-Bebas-hall {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+@mixin mobile-Bebas-hall {
+  font-size: 32px;
+  line-height: 32px;
+}
+
 @mixin mobile-Bebas-city {
   font-size: 28px;
   line-height: 44px;
@@ -95,6 +105,19 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 100px;
+  line-height: 150%;
+}
+
+@mixin desk-abonem {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+@mixin month-abonem {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 150%;
 }
 
@@ -117,6 +140,13 @@ $retina-dppx: 1.5dppx;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+}
+
+@mixin basic-light-150 {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 @mixin super-adv {
@@ -144,7 +174,6 @@ $retina-dppx: 1.5dppx;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.04em;
 }
 
 @mixin font-social {
@@ -167,6 +196,13 @@ $retina-dppx: 1.5dppx;
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
+}
+
+@mixin font-superbas-150 {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 @mixin super-name {
@@ -196,71 +232,3 @@ $retina-dppx: 1.5dppx;
   font-size: 12px;
   line-height: 14px;
 }
-// @mixin font-condensed-btn {
-
-// }
-
-// @mixin font-condensed-title {
-
-// }
-
-// @mixin font-condensed-popup {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 28px;
-//   line-height: 140%;
-// }
-
-// @mixin font-condensed-min {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 32px;
-//   line-height: 140%;
-// }
-
-// @mixin font-condensed-medium {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 36px;
-//   line-height: 51px;
-// }
-
-// @mixin font-condensed-bold {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 40px;
-//   line-height: 47px;
-//   letter-spacing: 0.07em;
-//   text-transform: uppercase;
-// }
-
-// @mixin font-condensed-medium-big {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 60px;
-//   line-height: 70px;
-//   letter-spacing: 0.07em;
-//   text-transform: uppercase;
-// }
-
-// @mixin font-condensed-max {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 80px;
-//   line-height: 94px;
-//   letter-spacing: 0.07em;
-//   text-transform: uppercase;
-// }
-
-// @mixin font-condensed-supermax {
-//   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-//   font-size: 120px;
-//   font-weight: 700;
-//   line-height: 1.15;
-// }

@@ -4,12 +4,30 @@
   max-width: 85%;
 
   @media (max-width: $tablet-width) {
+    padding: 0;
     margin: 0 45px;
     max-width: 88%;
   }
 
   @media (max-width: $mobile-width) {
+    padding: 20px 0;
     margin: 0 auto;
     max-width: 91%;
   }
 }
+
+ .wrapper__hall {
+    margin: 0 103px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    margin: 0 45px;
+    max-width: 88%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 91%;
+  }
+ }

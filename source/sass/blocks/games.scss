@@ -1,0 +1,49 @@
+@mixin games-title {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 90px;
+  line-height: 90px;
+}
+
+.games {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
+  color: $white;
+}
+
+.games__description {
+  padding: 87px 78px;
+  background-color: #ed0033;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.games__text-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.games__title {
+  @include games-title;
+  width: 201px;
+  margin: 0;
+}
+
+.games__table {
+  width: 150px;
+}
+
+.table {
+}
+
+.btn {
+}
+
+.games__process {
+  background-color: #102654;
+  width: 660px;
+}

@@ -1,21 +1,23 @@
 .video {
-  margin: -150px auto 100px;
+  left: 37.5%;
+  margin-top: -115px;
 
   @media (max-width: 1199px) {
-    width: 43%;
-    margin-top: -14%;
+    margin-top: -84px;
+    left: calc(50% - 133px);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
+    margin-top: 40px;
+    left: 0;
     width: 100%;
-    margin-top: 50px;
   }
 }
 
 .video__poster {
   position: relative;
 
-  @media (max-width: 1199px) {
+  @media (max-width: $tablet-width) {
     width: 100%;
     height: auto;
   }
