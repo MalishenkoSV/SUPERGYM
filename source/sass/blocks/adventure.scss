@@ -9,9 +9,46 @@
   margin-right: auto;
   margin-bottom: 39px;
   border-bottom: 2px solid $dark-grey;
+
+  @media (max-width: $tablet-width) {
+    // width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
-.adventure::before {
+.adventure__link {
+  @include month-abonem;
+  display: inline-block;
+  text-decoration: none;
+  color: $adv-blue;
+  padding-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    // width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include adv-Bebas-title;
+  }
+}
+
+.adventure__link--one {
+  cursor: default;
+}
+
+.adventure__link:hover {
+  border-bottom: 2px solid $red-opacity;
+}
+
+.adventure__link:target {
+  background-color: $red;
+  z-index: 55;
+}
+
+[id^="adventure-1"]:target::before ~ .adventure__link {
   position: absolute;
   top: 40px;
   content: "";
@@ -23,6 +60,18 @@
 }
 
 .adventure__item {
-  @include month-abonem;
   margin-bottom: 10px;
+  border: $red;
+}
+
+.adventure__item button {
+  border: none;
+  border-bottom: 2px solid $dark-grey;
+  background-color: $whitegrey;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.adventure__button:active {
+  color: $red;
 }

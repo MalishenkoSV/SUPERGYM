@@ -3,15 +3,14 @@ $white: rgba(255, 255, 255, 1);
 $blue-font: rgba(16, 38, 84, 1);
 $blue: rgba(0, 61, 133, 1);
 $dark-blue: rgba(16, 38, 84, 1);
+$adv-blue: rgba(16, 38, 84, 0.5);
 $focus-blue: rgba(16, 38, 84, 0.3);
 $dark-grey:rgba(120, 120, 120, 0.2);
 $font-blue: rgba(16, 58, 174, 1);
 $red: rgba(209, 10, 66, 1);
+$red-opacity: rgba(209, 10, 66, 0.2);
 $whitegrey: rgba(248, 249, 252, 1);
 $grey: rgba(232, 232, 232, 1);
-// $middlegrey: #666666;
-// $superlightgrey: #ebebeb;
-// $darkgrey: #203c42;
 $mobile-width: 767px;
 $tablet-width: 1199px;
 $super-width: 1366px;
@@ -92,6 +91,13 @@ $retina-dppx: 1.5dppx;
 @mixin mobile-Bebas-city {
   font-size: 28px;
   line-height: 44px;
+}
+
+@mixin adv-Bebas-title {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 @mixin font-Bebas-form {

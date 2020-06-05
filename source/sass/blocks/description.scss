@@ -8,9 +8,7 @@
     text-align: center;
     padding: 0;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: column;
-    }
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -43,6 +41,7 @@
 .description__losung {
   @include font-superbas-150;
   text-align: start;
+
   @media (max-width: $tablet-width) {
     margin: 0 auto 90px;
   }
@@ -75,6 +74,7 @@
 
 .description__text--desktop {
   @include mp-reset;
+
   @media (max-width: $tablet-width) {
     display: none;
   }

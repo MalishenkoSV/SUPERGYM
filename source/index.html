@@ -96,77 +96,247 @@
               </div>
         </section>
         <section class="main__abonement abonement">
-              <div class="abonement__wrapper wrapper">
-                  <h3 class="abonement__title">Абонементы</h3>
-                  <ul class="abonement__adventure adventure">
-                    <li class="adventure__item">1 месяц</li>
-                    <li class="adventure__item">6 месяцев</li>
-                    <li class="adventure__item">12 месяцев</li>
-                  </ul>
-                  <ul class="abonement__list">
-                      <li class="abonement__item">
-                          <h4>С тренером</h4>
-                          <p>12 занятий</p>
-                          <span>5000</span>
-                          <b>5000₽</b>
-                          <a href="#">Купить абонемент</a>
-                      </li>
-                      <li class="abonement__item abonement__item--activ">
-                          <h4>Дневной</h4>
-                          <p>с 8:00 до 17:00</p>
-                          <span>1700</span>
-                          <b>1700₽</b>
-                          <a href="#">Купить абонемент</a>
-                      </li>
-                      <li class="abonement__item">
-                          <h4>Полный день</h4>
-                          <p>с 8:00 до 22:00</p>
-                          <span>2700</span>
-                          <b>2700₽</b>
-                          <a class="abonement__btn" href="#">Купить абонемент</a>
-                      </li>
-                  </ul>
-              </div>
+            <div class="abonement__wrapper wrapper">
+                <h3 class="abonement__title">Абонементы</h3>
+                <ul class="abonement__adventure adventure">
+                  <!-- <li class="adventure__item">
+                      <a href="http://www.example.com/index.html#adventure-2"  target="self" id="#adventure-1" class="adventure__link adventure__link--one">1 месяц</a>
+                  </li>
+                  <li class="adventure__item">
+                      <a  href="http://www.example.com/index.html#adventure-3" id="#adventure-2" target="self" class="adventure__link adventure__link--two">6 месяцев</a>
+                  </li>
+                  <li class="adventure__item ">
+                      <a href="http://www.example.com/index.html#adventure-1" id="#adventure-3" target="self" class="adventure__link adventure__link--three">12 месяцев</a>
+                  </li> -->
+
+                  <li class="adventure__tem season-tickets__tabs-item--active">
+                    <button type="button"><span>1 месяц</span></button>
+                  </li>
+                  <li class="adventure__item">
+                    <button type="button"><span>6 месяцев</span></button>
+                  </li>
+                  <li class="season-tickets__item">
+                    <button type="button"><span>12 месяцев</span></button>
+                  </li>
+                </ul>
+                <ul class="abonement__list">
+                    <li class="abonement__item">
+                        <h4>С тренером</h4>
+                        <p>12 занятий</p>
+                        <span>5000</span>
+                        <b>5000₽</b>
+                        <a href="#">Купить абонемент</a>
+                    </li>
+                    <li class="abonement__item">
+                        <h4>Дневной</h4>
+                        <p>с 8:00 до 17:00</p>
+                        <span>1700</span>
+                        <b>1700₽</b>
+                        <a class="abonement__link" href="#">Купить абонемент</a>
+                    </li>
+                    <li class="abonement__item abonement__item--full">
+                        <h4>Полный день</h4>
+                        <p>с 8:00 до 22:00</p>
+                        <span>2700</span>
+                        <b>2700₽</b>
+                        <a class="abonement__btn" href="#">Купить абонемент</a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="main__games games">
-            <article class="games__description">
-              <div class="games__text-wrapper">
-                <h3 class="games__title">SUPER GAMES</h3>
-                <table class="games__table table">
-                  <tr>
-                    <th>Дата</th>
-                    <td>
-                      7
-                      <div>
-                        <span>Марта</span>
-                        <span>2019</span>
-                      </div>
-                  </td>
-                </tr>
+          <article class="games__description">
+            <div class="games__text-wrapper">
+              <h3 class="games__title">SUPER GAMES</h3>
+              <table class="games__table table">
                 <tr>
-                  <th>Время</th>
-                  <td>12:00</td>
-                </tr>
-              </table>
-            </div>
-            <p class="games__description">Ежегодные соревнования по CrossFit</p>
-            <a class="btn" href="#">заполнить заявку</a>
-          </article>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.webp 1x,
-                                                                          img/supergames_prewiev_mobile_x2.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.webp 1x,
-                                                                          img/supergames_prewiev_tablet_x2.webp 2x">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames_prewiev_desktop_x1.webp 1x,
-                                                                          img/supergames_prewiev_desktop_x2.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.png 1x,
-                                                        img/supergames_prewiev_mobile_x2.png 2x">
-            <source media="(min-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.png 1x,
-                                                        img/supergames_prewiev_tablet_x2.png 2x">
-            <img class="games__process" width="368" height="228" src="img/supergames_prewiev_desktop_x1.png"
-                                                                srcset="img/supergames_prewiev_desktop_x2.png 2x"
-                                                                alt="Активные игры на растяжку с спецеффектами">
-          </picture>
+                  <th>Дата</th>
+                  <td>
+                    7
+                    <div>
+                      <span>Марта</span>
+                      <span>2019</span>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th>Время</th>
+                <td>12:00</td>
+              </tr>
+            </table>
+          </div>
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <a class="games__btn btn" href="#">заполнить заявку</a>
+        </article>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.webp 1x,
+                                                                        img/supergames_prewiev_mobile_x2.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.webp 1x,
+                                                                        img/supergames_prewiev_tablet_x2.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames_prewiev_desktop_x1.webp 1x,
+                                                                        img/supergames_prewiev_desktop_x2.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.png 1x,
+                                                      img/supergames_prewiev_mobile_x2.png 2x">
+          <source media="(min-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.png 1x,
+                                                      img/supergames_prewiev_tablet_x2.png 2x">
+          <img class="games__process" width="368" height="228" src="img/supergames_prewiev_desktop_x1.png"
+                                                              srcset="img/supergames_prewiev_desktop_x2.png 2x"
+                                                              alt="Активные игры на растяжку с спецеффектами">
+        </picture>
+        </section>
+        <section class="main__slider slider">
+            <ul class="slider__list slider__list--one">
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                      img/trainer_01_mobile_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                      img/trainer_01_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                                                                                      img/trainer_01_desktop_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                    img/trainer_01_mobile_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                    img/trainer_01_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_01_desktop_x1.png"
+                                                                          srcset="img/trainer_01_desktop_x2.png 2x"
+                                                                          alt="Активные игры на растяжку">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_02_desktop_x1.webp 1x,
+                                                                                      img/trainer_02_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                      img/trainer_02_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_mobile_x1.webp 1x,
+                                                                                      img/trainer_02_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_02desktop_x1.png 1x,
+                                                                    img/trainer_02_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                    img/trainer_02_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_02_mobile_x1.png"
+                                                                          srcset="img/trainer_02_mobile_x2.png 2x"
+                                                                          alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                      img/trainer_03_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                      img/trainer_01_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                      img/trainer_01_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
+                                                                    img/trainer_04_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                    img/trainer_01_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
+                                                                          srcset="img/trainer_01_mobile_x2.png 2x"
+                                                                          alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                      img/trainer_04_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                    img/trainer_01_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                        img/trainer_01_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
+                                                                    img/trainer_04_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                    img/trainer_01_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
+                                                                            srcset="img/trainer_01_mobile_x2.png 2x"
+                                                            alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+            </ul>
+            <ul class="slider__list slider__list--two">
+                <li class="slider__item">
+                  <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
+                  </a>
+                </li>
+                <li class="slider__item">
+                    <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
+                    </a>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                    img/trainer_01_mobile_x2.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                    img/trainer_01_tablet_x2.webp 2x">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                                                                                    img/trainer_01_desktop_x2.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                  img/trainer_01_mobile_x2.png 2x">
+                      <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                  img/trainer_01_tablet_x2.png 2x">
+                      <img class="games__process" width="274" height="226" src="img/trainer_01_desktop_x1.png"
+                                                                        srcset="img/trainer_01_desktop_x2.png 2x"
+                                                                        alt="Активные игры на растяжку">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_02_desktop_x1.webp 1x,
+                                                                                      img/trainer_02_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                      img/trainer_02_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_mobile_x1.webp 1x,
+                                                                                      img/trainer_02_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_02desktop_x1.png 1x,
+                                                                    img/trainer_02_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                    img/trainer_02_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_02_mobile_x1.png"
+                                                                          srcset="img/trainer_02_mobile_x2.png 2x"
+                                                                          alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                      img/trainer_03_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                      img/trainer_01_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                      img/trainer_01_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
+                                                                    img/trainer_04_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                    img/trainer_01_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
+                                                                          srcset="img/trainer_01_mobile_x2.png 2x"
+                                                                          alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                      img/trainer_04_desktop_x2.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                    img/trainer_01_tablet_x2.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                        img/trainer_01_mobile_x2.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
+                                                                    img/trainer_04_desktop_x2.png 2x">
+                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                    img/trainer_01_tablet_x2.png 2x">
+                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
+                                                                            srcset="img/trainer_01_mobile_x2.png 2x"
+                                                            alt="Активные игры на растяжку с спецеффектами">
+                    </picture>
+                </li>
+                <li>
+                    <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
+                    </a>
+                </li>
+              </ul>
         </section>
         </main>
 

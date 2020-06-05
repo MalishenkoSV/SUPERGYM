@@ -2,12 +2,26 @@
   position: relative;
   background-color: $whitegrey;
   padding-bottom: 120px;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
     padding-top: 100px;
+    margin: 0 auto;
   }
 }
 
+.abonement__wrapper {
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 108px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    margin: 0 15px;
+  }
+}
 
 .abonement__title {
   @include adv-Bebas-bold;
@@ -17,6 +31,7 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
+    margin-top: 0;
     line-height: 44px;
     font-size: 42px;
     letter-spacing: 0.03em;
@@ -28,10 +43,10 @@
 }
 
 .abonement__list {
-  width: 100%;
   @include list-reset;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
@@ -46,34 +61,39 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 31%;
   min-height: 448px;
-  margin-right: 3.5%;
+  margin-right: 40px;
   background-color: $white;
   text-align: center;
   padding-top: 30px;
 
   @media (max-width: $tablet-width) {
-    width: 442px;
-    margin-right: auto;
+    width: 65%;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     padding: 0;
+  }
+}
+
+.abonement__item--full {
+  margin-right: 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
   }
 }
 
 .abonement__item h4 {
   @include desk-abonem;
-  @media (max-width: $tablet-width) {
-
-  }
 
   @media (max-width: $mobile-width) {
     padding: 0;
   }
-
 }
 
 .abonement__item p {
@@ -81,10 +101,10 @@
 }
 
 .abonement__item span {
+  @include super-abonem;
   position: absolute;
   top: 130px;
   left: 70px;
-  @include super-abonem;
   opacity: 0.48;
   color: $grey;
 
@@ -94,6 +114,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    top: 28%;
+    left: 15%;
     padding: 0;
   }
 }
@@ -110,9 +132,9 @@
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 57%;
+  width: 71%;
   height: 14%;
-  text-decoration:  none;
+  text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
   padding: 22px 20px;
@@ -123,19 +145,19 @@
 
 .abonement__item--activ {
   border: 5px solid  $red;
-
 }
 
-.abonement__item a:hover,
-.abonement__item a:hover {
-  box-shadow: 0 0 0 2px $dark-blue;
-  color: $focus-blue;
+.abonement__item:focus,
+.abonement__item:hover {
+  border: 5px solid  $red;
+}
+
+.abonement__item:hover a,
+.abonement__item:focus a {
+  background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: $white;
 }
 
 .abonement__item a:active {
   opacity: 0.4;
-}
-
-.abonement__item--activ a {
-  background-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
 }
