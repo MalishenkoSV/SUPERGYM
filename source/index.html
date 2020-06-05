@@ -186,163 +186,169 @@
         </section>
         <section class="main__slider slider">
             <ul class="slider__list slider__list--one">
+                <li class="slider__item slider__item--start ">
+                <a href="#" class="pagination-forward" aria-label="Листаем вначало слайдера">
+                </a>
+                </li>
                 <li class="slider__item">
                     <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                      img/trainer_01_mobile_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                      img/trainer_01_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                       img/trainer_01_desktop_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                      img/trainer_01_tablet_x2.webp 2x">
+                        <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                      img/trainer_01_tablet_x2.png 2x">
+                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                     img/trainer_01_mobile_x2.webp 2x">
+                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                     img/trainer_01_mobile_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                    img/trainer_01_tablet_x2.png 2x">
                         <img class="games__process" width="274" height="226" src="img/trainer_01_desktop_x1.png"
                                                                           srcset="img/trainer_01_desktop_x2.png 2x"
-                                                                          alt="Активные игры на растяжку">
+                                                                          alt="Фото тренера Анны Поповой">
                     </picture>
                 </li>
                 <li class="slider__item">
                     <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_02_desktop_x1.webp 1x,
+                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                       img/trainer_02_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
                                                                                       img/trainer_02_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_mobile_x1.webp 1x,
-                                                                                      img/trainer_02_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_02desktop_x1.png 1x,
-                                                                    img/trainer_02_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
-                                                                    img/trainer_02_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_02_mobile_x1.png"
-                                                                          srcset="img/trainer_02_mobile_x2.png 2x"
-                                                                          alt="Активные игры на растяжку с спецеффектами">
-                    </picture>
-                </li>
-                <li class="slider__item">
-                    <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_03_desktop_x1.webp 1x,
-                                                                                      img/trainer_03_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                      img/trainer_01_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                        <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                      img/trainer_01_tablet_x2.png 2x">
+                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                       img/trainer_01_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
-                                                                    img/trainer_04_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                    img/trainer_01_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
-                                                                          srcset="img/trainer_01_mobile_x2.png 2x"
-                                                                          alt="Активные игры на растяжку с спецеффектами">
+                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                    img/trainer_01_mobile_x2.png 2x">
+
+                        <img class="games__process" width="274" height="226" src="img/trainer_02_desktop_x1.png"
+                                                                          srcset="img/trainer_02_desktop_x2.png 2x"
+                                                                          alt="Фото тренера Алексея Лаврова">
                     </picture>
                 </li>
                 <li class="slider__item">
-                    <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.webp 1x,
-                                                                                      img/trainer_04_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                  <picture>
+                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                    img/trainer_03_desktop_x2.webp 2x">
+                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
                                                                                     img/trainer_01_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                        img/trainer_01_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
-                                                                    img/trainer_04_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                    img/trainer_01_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
-                                                                            srcset="img/trainer_01_mobile_x2.png 2x"
-                                                            alt="Активные игры на растяжку с спецеффектами">
+                      <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                    img/trainer_01_tablet_x2.png 2x">
+                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                    img/trainer_01_mobile_x2.webp 2x">
+                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                    img/trainer_01_mobile_x2.png 2x">
+                      <img class="games__process" width="274" height="226" src="img/trainer_03_desktop_x1.png"
+                                                                        srcset="img/trainer_03_desktop_x2.png 2x"
+                                                                        alt="Фото тренера Александра Пашкова">
+                  </picture>
+                </li>
+                <li class="slider__item">
+                    <picture>
+                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                    img/trainer_04_desktop_x2.webp 2x">
+                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                    img/trainer_02_tablet_x2.webp 2x">
+                      <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                                    img/trainer_02_tablet_x2.png 2x">
+                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                    img/trainer_01_mobile_x2.webp 2x">
+                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                     img/trainer_01_mobile_x2.png 2x">
+                      <img class="games__process" width="274" height="226" src="img/trainer_04_desktop_x1.png"
+                                                                            srcset="img/trainer_04_desktop_x2.png 2x"
+                                                            alt="Фото тренера Марии Кетовой">
                     </picture>
+                </li>
+                <li class="slider__item slider__item--finish">
+                  <a href="#" class="pagination-forward" aria-label="Листаем вконец слайдера">
+                  </a>
                 </li>
             </ul>
             <ul class="slider__list slider__list--two">
-                <li class="slider__item">
-                  <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
-                  </a>
-                </li>
-                <li class="slider__item">
-                    <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
+                <li class="slider__item slider__item--start ">
+                    <a href="#" class="pagination-forward" aria-label="Листаем вначало слайдера">
                     </a>
                 </li>
                 <li class="slider__item">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                    img/trainer_01_mobile_x2.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                    img/trainer_01_tablet_x2.webp 2x">
-                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                  <picture>
+                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                     img/trainer_01_desktop_x2.webp 2x">
-                      <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                    img/trainer_01_tablet_x2.webp 2x">
+                      <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                    img/trainer_01_tablet_x2.png 2x">
+                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                   img/trainer_01_mobile_x2.webp 2x">
+                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                   img/trainer_01_mobile_x2.png 2x">
-                      <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                  img/trainer_01_tablet_x2.png 2x">
                       <img class="games__process" width="274" height="226" src="img/trainer_01_desktop_x1.png"
                                                                         srcset="img/trainer_01_desktop_x2.png 2x"
-                                                                        alt="Активные игры на растяжку">
-                    </picture>
+                                                                        alt="Фото тренера Анны Поповой">
+                  </picture>
                 </li>
                 <li class="slider__item">
                     <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_02_desktop_x1.webp 1x,
+                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                       img/trainer_02_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
                                                                                       img/trainer_02_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_mobile_x1.webp 1x,
-                                                                                      img/trainer_02_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_02desktop_x1.png 1x,
-                                                                    img/trainer_02_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
-                                                                    img/trainer_02_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_02_mobile_x1.png"
-                                                                          srcset="img/trainer_02_mobile_x2.png 2x"
-                                                                          alt="Активные игры на растяжку с спецеффектами">
-                    </picture>
-                </li>
-                <li class="slider__item">
-                    <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_03_desktop_x1.webp 1x,
-                                                                                      img/trainer_03_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                      img/trainer_01_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                        <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                      img/trainer_01_tablet_x2.png 2x">
+                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                       img/trainer_01_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
-                                                                    img/trainer_04_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                    img/trainer_01_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
-                                                                          srcset="img/trainer_01_mobile_x2.png 2x"
-                                                                          alt="Активные игры на растяжку с спецеффектами">
+                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                    img/trainer_01_mobile_x2.png 2x">
+
+                        <img class="games__process" width="274" height="226" src="img/trainer_02_desktop_x1.png"
+                                                                          srcset="img/trainer_02_desktop_x2.png 2x"
+                                                                          alt="Фото тренера Алексея Лаврова">
                     </picture>
                 </li>
                 <li class="slider__item">
+                <picture>
+                    <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                  img/trainer_03_desktop_x2.webp 2x">
+                    <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                  img/trainer_01_tablet_x2.webp 2x">
+                    <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                  img/trainer_01_tablet_x2.png 2x">
+                    <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                  img/trainer_01_mobile_x2.webp 2x">
+                    <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                  img/trainer_01_mobile_x2.png 2x">
+                    <img class="games__process" width="274" height="226" src="img/trainer_03_desktop_x1.png"
+                                                                      srcset="img/trainer_03_desktop_x2.png 2x"
+                                                                      alt="Фото тренера Александра Пашкова">
+                </picture>
+                </li>
+                <li class="slider__item">
                     <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.webp 1x,
-                                                                                      img/trainer_04_desktop_x2.webp 2x">
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                    img/trainer_01_tablet_x2.webp 2x">
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                        img/trainer_01_mobile_x2.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/trainer_04_desktop_x1.png 1x,
-                                                                    img/trainer_04_desktop_x2.png 2x">
-                        <source media="(min-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                    img/trainer_01_tablet_x2.png 2x">
-                        <img class="games__process" width="274" height="226" src="img/trainer_01_mobile_x1.png"
-                                                                            srcset="img/trainer_01_mobile_x2.png 2x"
-                                                            alt="Активные игры на растяжку с спецеффектами">
+                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                    img/trainer_04_desktop_x2.webp 2x">
+                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                    img/trainer_02_tablet_x2.webp 2x">
+                      <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                                    img/trainer_02_tablet_x2.png 2x">
+                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                    img/trainer_01_mobile_x2.webp 2x">
+                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                    img/trainer_01_mobile_x2.png 2x">
+                      <img class="games__process" width="274" height="226" src="img/trainer_04_desktop_x1.png"
+                                                                            srcset="img/trainer_04_desktop_x2.png 2x"
+                                                            alt="Фото тренера Марии Кетовой">
                     </picture>
                 </li>
-                <li>
-                    <a href="#" class="pagination-forward" aria-label="Листаем вперед слайдера">
+                <li class="slider__item slider__item--finish">
+                    <a href="#" class="pagination-forward" aria-label="Листаем вконец слайдера">
                     </a>
                 </li>
-              </ul>
+            </ul>
         </section>
         </main>
 
             <footer></footer>
         </div>
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script> -->
     </body>
 </html>
