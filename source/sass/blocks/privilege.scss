@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0;
+    padding: 70px 0 3px;
   }
 }
 
@@ -23,7 +23,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    @include  mobile-Bebas-hall;
+    @include mobile-Bebas-hall;
+    margin-bottom: 47px;
   }
 }
 
@@ -46,7 +47,15 @@
   width: 29.3%;
   margin: 0 60px 83px;
   padding: 1px 0 120px 83px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $red-opacity;
+
+  @media (min-width: $desktop-width) {
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
 
   @media (max-width: $tablet-width) {
     margin: 0 0 325px 0;
@@ -56,7 +65,33 @@
   }
 
   @media (max-width: $mobile-width) {
-    @include  mobile-Bebas-hall;
+    @include mobile-Bebas-hall;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 71px;
+    top: 0;
+    left: 10px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: $tablet-width) {
+      top: 5px;
+      width: 89px;
+      height: 62px;
+    }
+
+    @media (max-width: $mobile-width) {
+      left: calc(50% - 45px);
+    }
   }
 }
 
@@ -68,8 +103,15 @@
     padding-right: 25px;
   }
 
-  // @media (max-width: $mobile-width) {
-  // }
+  @media (max-width: $mobile-width) {
+    padding: 77px 68px 38px;
+  }
+
+  &::before {
+    @media (max-width: $mobile-width) {
+      left: calc(50% - 44px);
+    }
+  }
 }
 
 .privilege__item--short {
@@ -79,49 +121,48 @@
     padding-left: 95px;
   }
 
-  // @media (max-width: $mobile-width) {
-  // }
-}
+  @media (max-width: $mobile-width) {
+    padding: 77px 46px 38px;
+  }
 
-.privilege__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-.privilege__item:before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 71px;
-  top: 0;
-  left: 10px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (max-width: $tablet-width) {
-    top: 5px;
-    width: 89px;
-    height: 62px;
+  &::before {
+    @media (max-width: $mobile-width) {
+      left: calc(50% - 30px);
+    }
   }
 }
 
 .privilege__item--square::before {
   background-image: url("../../img/square.svg");
-  width: 108px;
+  // width: 108px;
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/square_mobile.svg");
+  }
 }
 
 .privilege__item--parking::before {
   background-image: url("../../img/parking.svg");
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/parking_mobile.svg");
+  }
 }
 
 .privilege__item--comfort::before {
   background-image: url("../../img/comfort.svg");
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/comfort_mobile.svg");
+  }
 }
 
 .privilege__item--xp::before {
   background-image: url("../../img/xp.svg");
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/xp_mobile.svg");
+  }
 }
 
 .privilege__losung {
@@ -134,7 +175,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    @include  mobile-Bebas-hall;
+    margin-bottom: 1px;
   }
 }
 
@@ -146,8 +187,11 @@
     margin: 0;
   }
 
-  // @media (max-width: $mobile-width) {
-  // }
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
 }
 
 .privilege__item--center {
@@ -171,6 +215,14 @@
   }
 
   @media (max-width: $mobile-width) {
+    position: static;
+    display: block;
+    margin: 6px 0 44px;
+    padding: 58px 74px 45px;
+    width: 100%;
+  }
+
+  &::before {
     display: none;
   }
 
@@ -182,6 +234,10 @@
     @media (max-width: $tablet-width) {
       padding-bottom: 29px;
     }
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 17px;
+    }
   }
 
   & .privilege__losung {
@@ -191,6 +247,10 @@
     @media (max-width: $tablet-width) {
       text-align: center;
     }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 11px;
+    }
   }
 
   & .privilege__text {
@@ -199,4 +259,3 @@
     }
   }
 }
-

@@ -1,7 +1,3 @@
-.slider__switch {
-  position: relative;
-}
-
 .slider__btn {
   content: "";
   position: absolute;
@@ -13,18 +9,29 @@
   z-index: 5;
   border: none;
   outline: none;
+
+  @media (max-width: $mobile-width) {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .slider__btn--start {
-  top: 50%;
-  left: 0;
   background-image: url("../img/start.svg");
+
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .slider__btn--finish {
-  top: 50%;
-  right: 0;
   background-image: url("../img/finish.svg");
+
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .slider__btn:hover,

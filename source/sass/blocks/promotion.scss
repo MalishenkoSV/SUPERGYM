@@ -5,14 +5,102 @@
     flex-direction: column;
     width: 100%;
   }
-
 }
+
+.promotions__list {
+  display: flex;
+}
+
+.promotions__list--action {
+  flex-direction: column;
+  width: 48%;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column;
+  }
+}
+
+.promotions__list--abonement {
+  width: 48%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-height: 462px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    min-height: 299px;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.promotions__list--action .promotions__item {
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    padding: 39px 25px 39px;
+  }
+}
+
+.promotions__list--action p {
+  width: 53%;
+  padding: 20px 35px 35px;
+
+  @media (max-width: $tablet-width) {
+
+  }
+
+  @media (max-width: $mobile-width) {
+   margin: 0 auto;
+   padding: 0;
+  }
+}
+
+.promotions__link--discount {
+  @include font-link;
+  text-transform: uppercase;
+  align-self: flex-end;
+  color: $action-blue;
+
+  @media (max-width: $tablet-width) {
+
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
+}
+
+.promotions__list--action .promotions__item {
+  border: 7px solid $promo-red;
+  border-image: linear-gradient(to right bottom,#d10a42,#00359f) 30;
+}
+
 
 .promotions__item {
   width: 50%;
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 20px 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .promotions h3 {
@@ -34,7 +122,6 @@
 
   }
 }
-
 
 .promotions__item--unlimited {
   background-color: $promo-red;
@@ -82,6 +169,10 @@
   @include super-bold;
   line-height: 1;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+  margin-bottom: 20px;
+  }
 }
 
 .promotions b {
@@ -94,91 +185,19 @@
   @media (max-width: $tablet-width) {
     margin: 0;
   }
-
-  @media (max-width: $mobile-width) {
-
-  }
 }
 
 .promotions p {
   margin-bottom: 10px;
-}
-
-.promotions__list {
-  display: flex;
-}
-
-.promotions__list--abonement {
-  width: 48%;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
-    min-height: 462px;
+    margin: 0;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    min-height: 299px;
-    text-align: center;
-    flex-direction: column;
-    padding: 0;
+     width:  99%;
+     margin-bottom: 20px;
   }
-}
-
-.promotions__list--action {
-  flex-direction: column;
-  width: 48%;
-
-  @media (max-width: $tablet-width) {
-
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-    padding-left: 0;
-  }
-}
-
-.promotions__list--action .promotions__item {
-
-  @media (max-width: $mobile-width) {
-    text-align: center;
-    padding: 39px 70px 39px;
-  }
-}
-
-.promotions__list--action p {
-  width: 53%;
-  padding: 20px 35px 35px;
-
-  @media (max-width: $tablet-width) {
-
-  }
-
-  @media (max-width: $mobile-width) {
-   margin: 0 auto;
-   padding: 0;
-  }
-}
-
-.promotions__link--discount {
-  @include font-link;
-  text-transform: uppercase;
-  align-self: flex-end;
-  color: $action-blue;
-
-  @media (max-width: $tablet-width) {
-
-  }
-
-  @media (max-width: $mobile-width) {
-    align-self: center;
-  }
-}
-
-.promotions__list--action .promotions__item {
-  border: 7px solid $promo-red;
-  border-image: linear-gradient(to right bottom,#d10a42,#00359f) 30;
 }
 
 .promotions__item--discount {
@@ -187,6 +206,19 @@
   height: 211px;
   padding: 18px 4.9% 28px;
   color: $action-blue;
+
+  @media (max-width: $tablet-width) {
+    width: 48%;
+    padding: 18px 1.5% 28px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 18px 25px 28px;
+  }
+}
+
+.promotions__item--discount--one {
+  margin-right: 30px;
 }
 
 .promotions__item--photo {

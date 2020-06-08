@@ -1,7 +1,7 @@
 .communications {
   width: 50%;
   height: 337px;
-  padding: 50px 8.5% 70px 8.8%;
+  padding: 50px 8.5% 0px 8.8%;
 }
 
 .communications h3 {
@@ -35,12 +35,15 @@
 }
 
 .communications__info--link {
+  text-decoration: none;
+  @include font-min;
+  color: $dark-blue;
 
 }
 
 .communications__info {
   @include font-min;
-  line-height: 1;
+
 }
 
 .communications__info--link:hover,

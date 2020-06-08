@@ -4,12 +4,26 @@
   background-color: $action-blue;
   text-transform: uppercase;
   padding: 0 170px 30px 103px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 21% 30px 17%;
+  }
+  @media (max-width: $mobile-width) {
+    padding: 70px 15px 30px 15px;
+    height: 386px;
+  }
 }
 
 .registration h3 {
   @include font-Bebas-form;
   text-transform: uppercase;
   color: $white;
+
+  @media (max-width: $mobile-width) {
+    @include mobile-Bebas-title;
+    width: 240px;
+  }
 }
 
 .registration__btn {
@@ -20,6 +34,13 @@
   margin-bottom: 30px;
   text-transform: uppercase;
   background-color: transparent;
+
+  @media (max-width: $tablet-width) {
+
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .registration__form {
@@ -37,6 +58,6 @@
   margin-bottom: 30px;
 }
 
-.registration__form input:placeholder {
+.registration__form input[placeholder] {
   color: $white;
 }

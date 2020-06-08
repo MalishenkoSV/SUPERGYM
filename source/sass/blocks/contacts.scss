@@ -1,4 +1,12 @@
 .contacts {
   display: flex;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+  @media (max-width: $mobile-width) {
+    min-height: 507px;
+
+  }
 }
 

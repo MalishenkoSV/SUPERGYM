@@ -1,16 +1,16 @@
-$bg-grey: rgba(184, 184, 184, 1);
-$white: rgba(255, 255, 255, 1);
-$blue-font: rgba(16, 38, 84, 1);
-$blue: rgba(0, 61, 133, 1);
-$dark-blue: rgba(16, 38, 84, 1);
-$adv-blue: rgba(16, 38, 84, 0.5);
-$focus-blue: rgba(16, 38, 84, 0.3);
-$dark-grey:rgba(120, 120, 120, 0.2);
-$font-blue: rgba(16, 58, 174, 1);
-$action-blue: rgba(28, 58, 116, 1);
-$border-color: rgba(116, 129, 156, 1);
-$red: rgba(209, 10, 66, 1);
-$promo-red: rgba(237, 2, 51, 1);
+$bg-grey: rgba(184, 184, 184, 1); /* #b8b8b8 */
+$white: rgba(255, 255, 255, 1);   /* #ffffff */
+$blue-font: rgba(16, 38, 84, 1); /* #102654 */
+$blue: rgba(0, 61, 133, 1); /* #003e85 */
+$dark-blue: rgba(16, 38, 84, 1); /* #102654 */
+$adv-blue: rgba(16, 38, 84, 0.5); /* #102654 */
+$focus-blue: rgba(16, 38, 84, 0.3); /* #102654 */
+$dark-grey:rgba(120, 120, 120, 0.2); /* #787878 */
+$font-blue: rgba(16, 58, 174, 1); /* #103aae */
+$red: rgba(209, 10, 66, 1); /* #D10A42 */
+$red-opacity: rgba(209, 10, 66, 0.2); /* #D10A42  */
+$whitegrey: rgba(248, 249, 252, 1); /* #F8F9FC */
+$grey: rgba(232, 232, 232, 1); /* #e8e8e8 */
 $red-opacity: rgba(209, 10, 66, 0.2);
 $whitegrey: rgba(248, 249, 252, 1);
 $grey: rgba(232, 232, 232, 1);
@@ -91,6 +91,7 @@ $retina-dppx: 1.5dppx;
 @mixin tablet-Bebas-hall {
   font-size: 42px;
   line-height: 42px;
+  letter-spacing: 0.03em;
 }
 
 @mixin mobile-Bebas-hall {

@@ -3,22 +3,57 @@
   margin: 0 auto 120px;
   padding-left: 7.3%;
   padding-right: 7.3%;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 80px;
+    padding: 0 100px;
+    margin: 0 auto;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .trainers__title {
   @include adv-Bebas-bold;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    @include tablet-Bebas-hall;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
+
 .trainers__list {
   position: relative;
   @include list-reset;
   display: flex;
+
+  @media (max-width: $tablet-width) {
+    width: 74%;
+    justify-content: space-between;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .trainers__item  {
   width: 19.5%;
   height: 294px;
   margin-right: 40px;
+
+  @media (max-width: $tablet-width) {
+    width: 47%;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .trainers__item  picture {
@@ -46,4 +81,19 @@
 
 .trainers__info {
   display: none;
+}
+
+.trainers__item--three,
+.trainers__item--four {
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.trainers__item--two {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
