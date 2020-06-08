@@ -1,14 +1,38 @@
-.slider__list {
-  @include list-reset;
-  display: flex;
+.slider__switch {
+  position: relative;
 }
 
-.slider__item  {
-  width: 22.5%;
-  height: 294px;
+.slider__btn {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 32px;
+  background-color: $white;
+  background-repeat: no-repeat;
+  z-index: 5;
+  border: none;
+  outline: none;
 }
 
-.slider__item  picture {
-  width: 100%;
-  height: 100%;
+.slider__btn--start {
+  top: 50%;
+  left: 0;
+  background-image: url("../img/start.svg");
+}
+
+.slider__btn--finish {
+  top: 50%;
+  right: 0;
+  background-image: url("../img/finish.svg");
+}
+
+.slider__btn:hover,
+.slider__btn:focus {
+  box-shadow: 0 0 0 2px $action-blue;
+  color: $white;
+}
+
+.slider__btn:active {
+  opacity: 0.4;
 }

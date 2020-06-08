@@ -1,0 +1,45 @@
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews h3 {
+  @include adv-Bebas-bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reviews__list {
+  @include list-reset;
+  width: 48%;
+  height: 242px;
+  background-color: $action-blue;
+  color: $white;
+  padding: 62px;
+  margin: 0 auto;
+
+}
+
+.reviews__item {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.reviews__item--hidden {
+  display: none;
+}
+
+.reviews__client h4 {
+  @include review;
+}
+
+.reviews__photo {
+  margin-right: 28px;
+}
+
+.reviews__client p {
+  width: 58.5%;
+}
+
+.reviews__btn {
+  top: -150px;
+}

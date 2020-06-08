@@ -7,7 +7,10 @@ $adv-blue: rgba(16, 38, 84, 0.5);
 $focus-blue: rgba(16, 38, 84, 0.3);
 $dark-grey:rgba(120, 120, 120, 0.2);
 $font-blue: rgba(16, 58, 174, 1);
+$action-blue: rgba(28, 58, 116, 1);
+$border-color: rgba(116, 129, 156, 1);
 $red: rgba(209, 10, 66, 1);
+$promo-red: rgba(237, 2, 51, 1);
 $red-opacity: rgba(209, 10, 66, 0.2);
 $whitegrey: rgba(248, 249, 252, 1);
 $grey: rgba(232, 232, 232, 1);
@@ -15,10 +18,7 @@ $mobile-width: 767px;
 $tablet-width: 1199px;
 $desktop-width: 1200px;
 $super-width: 1366px;
-// $transition-duration: 0.3s;
-// $transition-type: ease;
-// $opacity-hover: 0.6;
-// $opacity-active: 0.3;
+$black: rgba(3, 10, 26, 1);
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
@@ -29,6 +29,15 @@ $retina-dppx: 1.5dppx;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
+
+@mixin games-title {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 90px;
+  line-height: 90px;
+}
+
 
 @mixin tablet-Bebas-title {
   font-size: 86px;
@@ -104,6 +113,7 @@ $retina-dppx: 1.5dppx;
 @mixin font-Bebas-form {
   font-family: "Bebas Neue", "Arial Narrow", sans-serif;
   font-size: 49px;
+  line-height: 64px;
   letter-spacing: 0.03em;
 }
 
@@ -125,7 +135,12 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 150%;
+}
+
+@mixin review {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 @mixin font-cost {
@@ -166,14 +181,12 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 150px;
 }
 
 @mixin super-year {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 28px;
-  line-height: 156%;
 }
 
 @mixin font-btn {
@@ -223,7 +236,6 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 70px;
-  line-height: 156%;
 }
 
 @mixin font-link {

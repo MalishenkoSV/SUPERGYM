@@ -1,0 +1,53 @@
+.communications {
+  width: 50%;
+  height: 337px;
+  padding: 50px 8.5% 70px 8.8%;
+}
+
+.communications h3 {
+  @include font-Bebas-form;
+  text-transform: uppercase;
+  color: $dark-blue;
+  @include mp-reset;
+}
+
+.communications__list {
+  position: relative;
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.communications__list::before {
+  content: "";
+  position: absolute;
+  left: 52.5%;
+  top: 5px;
+  width: 1px;
+  height: 102px;
+  background-color: $border-color;
+}
+
+.communications__item {
+  margin-bottom: 17px;
+  margin-right: 16.5%;
+  width: auto;
+}
+
+.communications__info--link {
+
+}
+
+.communications__info {
+  @include font-min;
+  line-height: 1;
+}
+
+.communications__info--link:hover,
+.communications__info--link:focus {
+  opacity: 0.7;
+}
+
+.communications__info--link:active {
+  opacity: 0.5;
+}
