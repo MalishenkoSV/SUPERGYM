@@ -260,3 +260,8 @@ $retina-dppx: 1.5dppx;
   font-size: 12px;
   line-height: 14px;
 }
+
+@mixin mobile-Bebas-main {
+  font-size: 79px;
+  line-height: 78px;
+}

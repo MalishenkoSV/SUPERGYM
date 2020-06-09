@@ -1,6 +1,7 @@
 .tel {
   @include font-Bebas-tel;
   text-decoration: none;
+  line-height: 26px;
   color: $white;
 
   @media (max-width: $tablet-width) {

@@ -6,7 +6,8 @@
   align-self: flex-end;
   align-content: flex-end;
   margin-left: auto;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
+  text-align: right;
 
 
   @media (max-width: $tablet-width) {
@@ -23,6 +24,5 @@
 }
 
 .social__item {
-  padding-top: 7px;
-  padding-right: 5px;
+  padding: 9px 0 0;
 }
