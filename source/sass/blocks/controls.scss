@@ -1,0 +1,61 @@
+.controls__list {
+  @include list-reset;
+  position: relative;
+  width: 341px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+  @media (max-width: $tablet-width) {
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.controls::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $dark-grey;
+}
+
+.controls__btn {
+  border: transparent;
+  @include month-abonem;
+  background-color: $white;
+  background-color: $whitegrey;
+  cursor: pointer;
+  margin-bottom: 10px;
+  outline: none;
+
+  @media (max-width: $tablet-width) {
+    // width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include adv-Bebas-title;
+  }
+}
+
+.controls__btn--one {
+  cursor: default;
+}
+
+// .controls__btn:target {
+//   border-bottom: 2px solid $red;
+//   z-index: 55;
+// }
+
+.controls__btn:hover {
+  border-bottom: 2px solid $red-opacity;
+}
+
+.controls__btn:active {
+  border-bottom: $red;
+}

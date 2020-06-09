@@ -57,7 +57,7 @@
   padding: 20px 35px 35px;
 
   @media (max-width: $tablet-width) {
-
+     width: 100%;
   }
 
   @media (max-width: $mobile-width) {
@@ -66,20 +66,6 @@
   }
 }
 
-.promotions__link--discount {
-  @include font-link;
-  text-transform: uppercase;
-  align-self: flex-end;
-  color: $action-blue;
-
-  @media (max-width: $tablet-width) {
-
-  }
-
-  @media (max-width: $mobile-width) {
-    align-self: center;
-  }
-}
 
 .promotions__list--action .promotions__item {
   border: 7px solid $promo-red;
@@ -89,6 +75,7 @@
 
 .promotions__item {
   width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
@@ -157,22 +144,22 @@
   }
 }
 
-.promotions__link--unlimited {
-  @include font-link;
-  color: $white;
-  margin-top: 150px;
-  text-transform: uppercase;
-}
-
 .promotions__top  h4,
 .promotions__bottom  h4 {
   @include super-bold;
   line-height: 1;
   margin: 0;
 
-  @media (max-width: $mobile-width) {
-  margin-bottom: 20px;
+  @media (max-width: $tablet-width) {
+    margin-left: 30px;
   }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.promotions__bottom {
+  margin-bottom: 30px;
 }
 
 .promotions b {
@@ -213,7 +200,7 @@
   }
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding: 18px 25px 28px;
+    padding: 18px 35px 28px;
   }
 }
 
@@ -252,5 +239,29 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fit-girl-mobile@2x.png");
     }
+  }
+}
+
+.promotions__link--unlimited {
+  @include font-link;
+  color: $white;
+  margin-top: 150px;
+  text-transform: uppercase;
+}
+
+.promotions__link--discount {
+  @include font-link;
+  text-transform: uppercase;
+  align-self: flex-end;
+  color: $action-blue;
+
+  @media (max-width: $tablet-width) {
+    @include font-btn;
+    align-self: start;
+    margin-left: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
   }
 }

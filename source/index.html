@@ -95,41 +95,63 @@
                     <button class="video__button">Воспроизвести</button>
                 </div>
             </section>
-            <section class="main__abonement abonement">
-                <div class="abonement__wrapper wrapper">
-                    <h3 class="abonement__title">Абонементы</h3>
-                    <ul class="abonement__adventure adventure">
-                        <li class="adventure__item">
-                            <a href="http://www.example.com/index.html#adventure-2"  target="self" id="#adventure-1" class="adventure__link adventure__link--one">1 месяц</a>
+            <section class="main__abonements abonements">
+                <div class="abonements__wrapper wrapper">
+                    <h3 class="abonements__title">Абонементы</h3>
+                    <ul class="abonements__btns controls controls__list">
+                        <li class="controls__item">
+                            <button type="button" class="controls__btn controls__btn--first controls__btn--active">1месяц</button>
                         </li>
-                        <li class="adventure__item">
-                            <a  href="http://www.example.com/index.html#adventure-3" id="#adventure-2" target="self" class="adventure__link adventure__link--two">6 месяцев</a>
+                        <li class="controls__item">
+                            <button type="button" class="controls__btn controls__btn--second">6 месяцев</button>
                         </li>
-                        <li class="adventure__item ">
-                            <a href="http://www.example.com/index.html#adventure-1" id="#adventure-3" target="self" class="adventure__link adventure__link--three">12 месяцев</a>
+                        <li class="controls__item">
+                            <button type="button" class="controls__btn controls__btn--third">12 месяцев</button>
                         </li>
                     </ul>
-                    <ul class="abonement__list">
+                    <ul class="abonements__list abonements__list--first abonements__list--shown">
                         <li class="abonement__item">
                             <h4>С тренером</h4>
                             <p>12 занятий</p>
                             <span>5000</span>
-                            <!-- <b>5000₽</b> -->
+                            <b>5000₽</b>
                             <a href="#">Купить абонемент</a>
                         </li>
                         <li class="abonement__item">
                             <h4>Дневной</h4>
                             <p>с 8:00 до 17:00</p>
                             <span>1700</span>
-                            <!-- <b>1700₽</b> -->
+                            <b>1700₽</b>
                             <a class="abonement__link" href="#">Купить абонемент</a>
                         </li>
                         <li class="abonement__item abonement__item--full">
                             <h4>Полный день</h4>
                             <p>с 8:00 до 22:00</p>
                             <span>2700</span>
-                            <!-- <b>2700₽</b> -->
+                            <b>2700₽</b>
                             <a class="abonement__btn" href="#">Купить абонемент</a>
+                        </li>
+                    </ul>
+                    <ul class="abonements__list abonements__list--second">
+                      <li class="abonement__item">
+                        <h3>С тренером</h3>
+                        <p>72 занятия</p>
+                        <b>13000₽</b>
+                        <a href="#" class="button abonement__link">Купить абонемент</a>
+                      </li>
+                      <li class="abonement__item">
+                        <h3>Полный день</h3>
+                        <p>с 8:00 до 22:00 </p>
+                        <b>13000₽</b>
+                        <a href="#" class="abonement__link">Купить абонемент</a>
+                      </li>
+                    </ul>
+                    <ul class="abonements__list abonements__list--third">
+                        <li class="planes__item">
+                            <h3>С тренером</h3>
+                            <p>144 занятия</p>
+                            <b>27000₽</b>
+                            <a href="#" class="abonement__link">Купить абонемент</a>
                         </li>
                     </ul>
                 </div>
@@ -163,132 +185,35 @@
                 <ul class="trainers__list">
                     <li class="slider__item slider__item--one">
                         <ul class="trainers__list trainers__list--one">
-                            <li class="trainers__item trainers__item--one">
-                                <a href="img/trainer_01_desktop_x1.png">
-                                    <picture>
-                                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
-                                                                                                      img/trainer_01_desktop_x2.webp 2x">
-                                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                                      img/trainer_01_tablet_x2.webp 2x">
-                                        <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                                                      img/trainer_01_tablet_x2.png 2x">
-                                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                    img/trainer_01_mobile_x2.webp 2x">
-                                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                    img/trainer_01_mobile_x2.png 2x">
-                                        <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
-                                                                                          srcset="img/trainer_01_desktop_x2.png 2x"
-                                                                                          alt="Фото тренера Анны Поповой">
-                                    </picture>
-
-                                </a>
-                            </li>
-                            <li class="trainers__item trainers__item--two">
-                              <a href="img/trainer_02_desktop_x1.png">
-                                  <picture>
-                                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_02_desktop_x1.webp 1x,
-                                                                                                    img/trainer_02_desktop_x2.webp 2x">
-                                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
-                                                                                                    img/trainer_02_tablet_x2.webp 2x">
-                                      <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                                                    img/trainer_01_tablet_x2.png 2x">
-                                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                    img/trainer_01_mobile_x2.webp 2x">
-                                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                  img/trainer_01_mobile_x2.png 2x">
-
-                                      <img class="slider__image" width="274" height="226" src="img/trainer_02_desktop_x1.png"
-                                                                                        srcset="img/trainer_02_desktop_x2.png 2x"
-                                                                                        alt="Фото тренера Алексея Лаврова">
-                                  </picture>
-                              </a>
-                            </li>
-                            <li class="trainers__item trainers__item--three">
-                                <a href="img/trainer_03_desktop_x1.png">
-                                    <picture>
-                                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
-                                                                                                      img/trainer_03_desktop_x2.webp 2x">
-                                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                                      img/trainer_01_tablet_x2.webp 2x">
-                                        <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                                                      img/trainer_01_tablet_x2.png 2x">
-                                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                      img/trainer_01_mobile_x2.webp 2x">
-                                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                                      img/trainer_01_mobile_x2.png 2x">
-                                        <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.png"
-                                                                                          srcset="img/trainer_03_desktop_x2.png 2x"
-                                                                                          alt="Фото тренера Александра Пашкова">
-                                    </picture>
-                                </a>
+                            <li class="trainers__item trainers__item--one" tabindex="0">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                                                                                                  img/trainer_01_desktop_x2.webp 2x">
+                                    <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                                  img/trainer_01_tablet_x2.webp 2x">
+                                    <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                                  img/trainer_01_tablet_x2.png 2x">
+                                    <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                img/trainer_01_mobile_x2.webp 2x">
+                                    <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                img/trainer_01_mobile_x2.png 2x">
+                                    <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
+                                                                                      srcset="img/trainer_01_desktop_x2.png 2x"
+                                                                                      alt="Фото тренера Анны Поповой">
+                                </picture>
                                 <div class="trainers__info">
-                                    <h3>Александр Пашков</h3>
+                                    <h4> Анна Попова</h4>
                                     <div class="trainers__info-hide">
-                                        <p>Crossfit</p>
+                                        <p>Yoga</p>
                                         <ul class="trainers__achievs-list">
-                                            <li class="trainers__achievs-item">Certified Level 3 Trainer</li>
-                                            <li class="trainers__achievs-item">Победитель чемпионата России по CrossFit </li>
-                                            <li class="trainers__achievs-item">Опыт — 6 лет</li>
+                                            <li class="trainers__achievs-item">Certified Level 4 Trainer</li>
+                                            <li class="trainers__achievs-item">Инструктор по йоге</li>
+                                            <li class="trainers__achievs-item">Опыт — 7 лет</li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li class="trainers__item trainers__item--four">
-                                <a href="img/trainer_04_desktop_x1.png">
-                                    <picture>
-                                        <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
-                                                                                                      img/trainer_04_desktop_x2.webp 2x">
-                                        <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
-                                                                                                      img/trainer_02_tablet_x2.webp 2x">
-                                        <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
-                                                                                                      img/trainer_02_tablet_x2.png 2x">
-                                        <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                      img/trainer_01_mobile_x2.webp 2x">
-                                        <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                                      img/trainer_01_mobile_x2.png 2x">
-                                        <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
-                                                                                            srcset="img/trainer_04_desktop_x2.png 2x"
-                                                                                            alt="Фото тренера Марии Кетовой">
-                                    </picture>
-                                    <div class="trainers__info">
-                                      <h3>Мария Кетова</h3>
-                                      <div class="trainers__info-hide">
-                                        <p>Zumba</p>
-                                        <ul class="trainers__achievs-list">
-                                          <li class="trainers__achievs-item">Certified Level 5 Trainer</li>
-                                          <li class="trainers__achievs-item">Мастер спорта по бальным танцам</li>
-                                          <li class="trainers__achievs-item">Опыт — 6 лет</li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slider__item trainers__item--two trainers__list--hidden">
-                      <ul class="trainers__list trainers__list--one">
-                          <li class="trainers__item">
-                              <a href="img/trainer_01_desktop_x1.png">
-                                  <picture>
-                                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
-                                                                                                    img/trainer_01_desktop_x2.webp 2x">
-                                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                                    img/trainer_01_tablet_x2.webp 2x">
-                                      <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                                                    img/trainer_01_tablet_x2.png 2x">
-                                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                  img/trainer_01_mobile_x2.webp 2x">
-                                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                  img/trainer_01_mobile_x2.png 2x">
-                                      <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
-                                                                                        srcset="img/trainer_01_desktop_x2.png 2x"
-                                                                                        alt="Фото тренера Анны Поповой">
-                                  </picture>
-
-                              </a>
-                          </li>
-                          <li class="trainers__item">
-                            <a href="img/trainer_02_desktop_x1.png">
+                            <li class="trainers__item trainers__item--two" tabindex="0">
                                 <picture>
                                     <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                                   img/trainer_02_desktop_x2.webp 2x">
@@ -305,66 +230,165 @@
                                                                                       srcset="img/trainer_02_desktop_x2.png 2x"
                                                                                       alt="Фото тренера Алексея Лаврова">
                                 </picture>
-                            </a>
+                                <div class="trainers__info">
+                                    <h4>Алексея Лавров</h4>
+                                    <div class="trainers__info-hide">
+                                        <p>Jiu Jitsu</p>
+                                        <ul class="trainers__achievs-list">
+                                            <li class="trainers__achievs-item">Certified Level 4 Trainer</li>
+                                            <li class="trainers__achievs-item">Мастер спорта по джиу джицу</li>
+                                            <li class="trainers__achievs-item">Опыт — 6 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="trainers__item trainers__item--three" tabindex="0">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                                  img/trainer_03_desktop_x2.webp 2x">
+                                    <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                                  img/trainer_01_tablet_x2.webp 2x">
+                                    <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                                  img/trainer_01_tablet_x2.png 2x">
+                                    <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                  img/trainer_01_mobile_x2.webp 2x">
+                                    <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                                  img/trainer_01_mobile_x2.png 2x">
+                                    <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.jpg"
+                                                                                      srcset="img/trainer_03_desktop_x2.jpg 2x"
+                                                                                      alt="Фото тренера Александра Пашкова">
+                                </picture>
+                                <div class="trainers__info">
+                                    <h4>Александр Пашков</h4>
+                                    <div class="trainers__info-hide">
+                                        <p>Crossfit</p>
+                                        <ul class="trainers__achievs-list">
+                                            <li class="trainers__achievs-item">Certified Level 3 Trainer</li>
+                                            <li class="trainers__achievs-item">Победитель чемпионата России по CrossFit </li>
+                                            <li class="trainers__achievs-item">Опыт — 6 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="trainers__item trainers__item--four" tabindex="0">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                                  img/trainer_04_desktop_x2.webp 2x">
+                                    <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                                  img/trainer_02_tablet_x2.webp 2x">
+                                    <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                                                  img/trainer_02_tablet_x2.png 2x">
+                                    <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                  img/trainer_01_mobile_x2.webp 2x">
+                                    <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                                  img/trainer_01_mobile_x2.png 2x">
+                                    <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
+                                                                                        srcset="img/trainer_04_desktop_x2.png 2x"
+                                                                                        alt="Фото тренера Марии Кетовой">
+                                </picture>
+                                <div class="trainers__info">
+                                    <h4>Мария Кетова</h4>
+                                    <div class="trainers__info-hide">
+                                        <p>Zumba</p>
+                                        <ul class="trainers__achievs-list">
+                                            <li class="trainers__achievs-item">Certified Level 5 Trainer</li>
+                                            <li class="trainers__achievs-item">Мастер спорта по бальным танцам</li>
+                                            <li class="trainers__achievs-item">Опыт — 6 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slider__item trainers__item--two trainers__list--hidden">
+                      <ul class="trainers__list trainers__list--one">
+                          <li class="trainers__item" tabindex="0">
+                              <picture>
+                                  <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
+                                                                                                img/trainer_01_desktop_x2.webp 2x">
+                                  <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                                img/trainer_01_tablet_x2.webp 2x">
+                                  <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                                img/trainer_01_tablet_x2.png 2x">
+                                  <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                              img/trainer_01_mobile_x2.webp 2x">
+                                  <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                              img/trainer_01_mobile_x2.png 2x">
+                                  <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
+                                                                                    srcset="img/trainer_01_desktop_x2.png 2x"
+                                                                                    alt="Фото тренера Анны Поповой">
+                              </picture>
                           </li>
-                          <li class="trainers__item">
-                              <a href="img/trainer_03_desktop_x1.png">
-                                  <picture>
-                                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
-                                                                                                    img/trainer_03_desktop_x2.webp 2x">
-                                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
-                                                                                                    img/trainer_01_tablet_x2.webp 2x">
-                                      <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                                                    img/trainer_01_tablet_x2.png 2x">
-                                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                    img/trainer_01_mobile_x2.webp 2x">
-                                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                                    img/trainer_01_mobile_x2.png 2x">
-                                      <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.png"
-                                                                                        srcset="img/trainer_03_desktop_x2.png 2x"
-                                                                                        alt="Фото тренера Александра Пашкова">
-                                  </picture>
-                              </a>
+                          <li class="trainers__item" tabindex="0">
+                              <picture>
+                                  <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_02_desktop_x1.webp 1x,
+                                                                                                img/trainer_02_desktop_x2.webp 2x">
+                                  <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                                img/trainer_02_tablet_x2.webp 2x">
+                                  <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                                img/trainer_01_tablet_x2.png 2x">
+                                  <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                img/trainer_01_mobile_x2.webp 2x">
+                                  <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                              img/trainer_01_mobile_x2.png 2x">
+
+                                  <img class="slider__image" width="274" height="226" src="img/trainer_02_desktop_x1.png"
+                                                                                    srcset="img/trainer_02_desktop_x2.png 2x"
+                                                                                    alt="Фото тренера Алексея Лаврова">
+                              </picture>
                           </li>
-                          <li class="trainers__item slider__item--four">
-                              <a href="img/trainer_04_desktop_x1.png">
-                                  <picture>
-                                      <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
-                                                                                                    img/trainer_04_desktop_x2.webp 2x">
-                                      <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
-                                                                                                    img/trainer_02_tablet_x2.webp 2x">
-                                      <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
-                                                                                                    img/trainer_02_tablet_x2.png 2x">
-                                      <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
-                                                                                                    img/trainer_01_mobile_x2.webp 2x">
-                                      <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
-                                                                                                    img/trainer_01_mobile_x2.png 2x">
-                                      <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
-                                                                                          srcset="img/trainer_04_desktop_x2.png 2x"
-                                                                                          alt="Фото тренера Марии Кетовой">
-                                  </picture>
-                                  <div class="trainers__info">
-                                      <h3>Мария Кетова</h3>
-                                      <div class="trainers__info-hide">
-                                          <p>Zumba</p>
-                                          <ul class="trainers__achievs-list">
-                                              <li class="trainers__achievs-item">Certified Level 5 Trainer</li>
-                                              <li class="trainers__achievs-item">Мастер спорта по бальным танцам</li>
-                                              <li class="trainers__achievs-item">Опыт — 6 лет</li>
-                                          </ul>
-                                      </div>
+                          <li class="trainers__item" tabindex="0">
+                              <picture>
+                                  <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_03_desktop_x1.webp 1x,
+                                                                                                img/trainer_03_desktop_x2.webp 2x">
+                                  <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.webp 1x,
+                                                                                                img/trainer_01_tablet_x2.webp 2x">
+                                  <source media="(max-width: $tablet-width)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                                img/trainer_01_tablet_x2.png 2x">
+                                  <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                img/trainer_01_mobile_x2.webp 2x">
+                                  <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                                img/trainer_01_mobile_x2.png 2x">
+                                  <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.png"
+                                                                                    srcset="img/trainer_03_desktop_x2.png 2x"
+                                                                                    alt="Фото тренера Александра Пашкова">
+                              </picture>
+                          </li>
+                          <li class="trainers__item slider__item--four" tabindex="0">
+                              <picture>
+                                  <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_04_desktop_x1.webp 1x,
+                                                                                                img/trainer_04_desktop_x2.webp 2x">
+                                  <source type="image/webp" media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.webp 1x,
+                                                                                                img/trainer_02_tablet_x2.webp 2x">
+                                  <source media="(max-width: $tablet-width)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                                                                                img/trainer_02_tablet_x2.png 2x">
+                                  <source type="image/webp" media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.webp 1x,
+                                                                                                img/trainer_01_mobile_x2.webp 2x">
+                                  <source media="(max-width: $mobile-width)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                                                                                img/trainer_01_mobile_x2.png 2x">
+                                  <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
+                                                                                      srcset="img/trainer_04_desktop_x2.png 2x"
+                                                                                      alt="Фото тренера Марии Кетовой">
+                              </picture>
+                              <div class="trainers__info">
+                                  <h3>Мария Кетова</h3>
+                                  <div class="trainers__info-hide">
+                                      <p>Zumba</p>
+                                      <ul class="trainers__achievs-list">
+                                          <li class="trainers__achievs-item">Certified Level 5 Trainer</li>
+                                          <li class="trainers__achievs-item">Мастер спорта по бальным танцам</li>
+                                          <li class="trainers__achievs-item">Опыт — 6 лет</li>
+                                      </ul>
                                   </div>
-                              </a>
+                              </div>
                           </li>
                       </ul>
                     </li>
                 </ul>
-                <div class="slider__switch trainers__slider btn">
-                    <button type="button" class="slider__btn slider__btn--start trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
-                    </button>
-                    <button type="button" class="slider__btn slider__btn--finish trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
-                    </button>
-                </div>
+                <button type="button" class="slider__btn slider__btn--start trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
+                </button>
+                <button type="button" class="slider__btn slider__btn--finish trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
+                </button>
             </section>
             <section class="privilege">
                 <h3 class="privilege__title">Наши преимущества</h3>
@@ -581,7 +605,7 @@
             </div>
         </footer>
         </div>
-        <script src="js/vendor.js"></script>
+        <!-- <script src="js/vendor.js"></script> -->
         <script src="js/main.js"></script>
     </body>
 </html>

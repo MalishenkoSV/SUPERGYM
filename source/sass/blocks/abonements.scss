@@ -1,4 +1,4 @@
-.abonement {
+.abonements {
   position: relative;
   background-color: $whitegrey;
   padding-bottom: 120px;
@@ -10,7 +10,7 @@
   }
 }
 
-.abonement__wrapper {
+.abonements__wrapper {
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -23,7 +23,7 @@
   }
 }
 
-.abonement__title {
+.abonements__title {
   @include adv-Bebas-bold;
   margin: 0 auto;
   margin-top: 120px;
@@ -42,7 +42,7 @@
   }
 }
 
-.abonement__list {
+.abonements__list {
   @include list-reset;
   width: 100%;
   display: flex;
@@ -54,6 +54,36 @@
 
   @media (max-width: $mobile-width) {
     padding: 0;
+  }
+}
+
+.abonements__list::after {
+  content: "";
+    position: absolute;
+    width: 321px;
+    height: 384px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 1;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/blin_bg_pseudo__desktop_x2.png");
+  }
+  @media (max-width: $tablet-width) {
+    width: 58.9%;
+    height: 462px;
+    background-image: url("../img/blin_bg_pseudo__tablet_x2.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/blin_bg_pseudo__tablet_x2.png");
+    }
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 }
 
@@ -82,11 +112,14 @@
 
 .abonement__item--full {
   margin-right: 0;
-
+  position: relative;
+  z-index: 55;
   @media (max-width: $tablet-width) {
     margin: 0 auto;
   }
 }
+
+
 
 .abonement__item h4 {
   @include desk-abonem;
@@ -145,11 +178,13 @@
 
 .abonement__item--activ {
   border: 5px solid  $red;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 }
 
 .abonement__item:focus,
 .abonement__item:hover {
   border: 5px solid  $red;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 }
 
 .abonement__item:hover a,
@@ -160,4 +195,13 @@
 
 .abonement__item a:active {
   opacity: 0.4;
+}
+
+.abonements__list--second,
+.abonements__list--third {
+  display: none;
+}
+
+.abonements__list--shown {
+  display: flex;
 }

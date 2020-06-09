@@ -7,13 +7,14 @@ $adv-blue: rgba(16, 38, 84, 0.5); /* #102654 */
 $focus-blue: rgba(16, 38, 84, 0.3); /* #102654 */
 $dark-grey:rgba(120, 120, 120, 0.2); /* #787878 */
 $font-blue: rgba(16, 58, 174, 1); /* #103aae */
+$action-blue: rgba(28, 58, 116, 1);
+$border-color: rgba(116, 129, 156, 1);
 $red: rgba(209, 10, 66, 1); /* #D10A42 */
+$promo-red: rgba(237, 2, 51, 1);
 $red-opacity: rgba(209, 10, 66, 0.2); /* #D10A42  */
 $whitegrey: rgba(248, 249, 252, 1); /* #F8F9FC */
 $grey: rgba(232, 232, 232, 1); /* #e8e8e8 */
-$red-opacity: rgba(209, 10, 66, 0.2);
-$whitegrey: rgba(248, 249, 252, 1);
-$grey: rgba(232, 232, 232, 1);
+$overlay-color: rgba(16, 38, 84, 0.89);
 $mobile-width: 767px;
 $tablet-width: 1199px;
 $desktop-width: 1200px;
@@ -214,41 +215,48 @@ $retina-dppx: 1.5dppx;
 
 @mixin font-superbas {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
 }
 
 @mixin font-superbas-150 {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
 
 @mixin super-name {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 150%;
 }
 
 @mixin font-super {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
 }
 
 @mixin font-link {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
 
+@mixin font-foot-mob {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 @mixin link-min {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
 }

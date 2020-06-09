@@ -2,6 +2,16 @@
   width: 50%;
   height: 337px;
   padding: 50px 8.5% 0px 8.8%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+    padding: 70px 17% 70px 23%;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .communications h3 {
@@ -9,6 +19,13 @@
   text-transform: uppercase;
   color: $dark-blue;
   @include mp-reset;
+
+  @media (max-width: $tablet-width) {
+    @include tablet-Bebas-hall;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .communications__list {
@@ -32,6 +49,13 @@
   margin-bottom: 17px;
   margin-right: 16.5%;
   width: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 28%;
+  }
+  @media (max-width: $mobile-width) {
+
+  }
 }
 
 .communications__info--link {

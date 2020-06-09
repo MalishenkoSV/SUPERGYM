@@ -35,8 +35,8 @@
   font-family: "Bebas Neue";
   src: local("Bebas Neue Regular"),
     local("BebasNeue-Regular"),
-    url("bebasneue-regular-webfont.woff2") format("woff2"),
-    url("bebasneue-regular-webfont.woff") format("woff");
+    url("../fonts/bebasneue-regular-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue-regular-webfont.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -46,8 +46,8 @@
   font-family: "Bebas Neue";
   src: local("Bebas Neue Bold"),
     local("BebasNeue-Bold"),
-    url("bebasneue-bold-webfont.woff2") format("woff2"),
-    url("bebasneue-bold-webfont.woff") format("woff");
+    url("../fonts/bebasneue-bold-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue-bold-webfont.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
