@@ -53,13 +53,12 @@
   }
 }
 
+.controls__btn--active {
+  cursor: auto;
+  border-bottom-color: $red;
+}
+
 .controls__btn--one {
   cursor: default;
 }
-
-// .controls__btn:target {
-//   border-bottom: 2px solid $red;
-//   z-index: 55;
-// }
-
 
