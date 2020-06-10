@@ -1062,7 +1062,7 @@ input[type="radio"].visually-hidden {
       .abonements__list::after {
         display: none; } }
 
-.abonement__item {
+.abonements__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,47 +1079,47 @@ input[type="radio"].visually-hidden {
   padding-top: 22px;
   border: 8px solid transparent; }
   @media (max-width: 1199px) {
-    .abonement__item {
+    .abonements__item {
       width: 80%;
       margin: 0 auto;
       margin-bottom: 40px; } }
   @media (max-width: 767px) {
-    .abonement__item {
+    .abonements__item {
       width: 100%;
       min-height: 385px;
       padding: 0;
       margin-bottom: 33px; } }
-  .abonement__item:focus, .abonement__item:hover {
+  .abonements__item:focus, .abonements__item:hover {
     border: 8px solid #d10a42;
     -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
        border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 30;
        border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30; }
 
-.abonement__item--full {
+.abonements__item--full {
   margin-right: 0;
   position: relative;
   z-index: 55; }
   @media (max-width: 1199px) {
-    .abonement__item--full {
+    .abonements__item--full {
       margin: 0 auto; } }
 
-.abonement__item h4 {
+.abonements__item h4 {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 26px;
   margin-bottom: 0; }
   @media (max-width: 767px) {
-    .abonement__item h4 {
+    .abonements__item h4 {
       font-family: "Roboto Condensed", "Tahoma", sans-serif;
       font-weight: 700;
       font-size: 22px;
       padding: 0;
       margin-top: 40px; } }
 
-.abonement__item p {
+.abonements__item p {
   margin: 13px 66px; }
 
-.abonement__item div {
+.abonements__item div {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 100px;
@@ -1130,17 +1130,17 @@ input[type="radio"].visually-hidden {
   opacity: 0.48;
   color: #e8e8e8; }
   @media (max-width: 1199px) {
-    .abonement__item div {
+    .abonements__item div {
       top: 28%;
       left: 26%; } }
   @media (max-width: 767px) {
-    .abonement__item div {
+    .abonements__item div {
       top: 30%;
       left: 20%;
       padding: 0;
       font-size: 79px; } }
 
-.abonement__item b {
+.abonements__item b {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 60px;
@@ -1149,14 +1149,14 @@ input[type="radio"].visually-hidden {
   margin: 29px 0 34px;
   z-index: 5; }
   @media (max-width: 767px) {
-    .abonement__item b {
+    .abonements__item b {
       font-size: 46px;
       margin-top: 20px; } }
 
-.abonement__item span {
+.abonements__item span {
   color: #102654; }
 
-.abonement__item a {
+.abonements__item a {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -1170,21 +1170,21 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   border: 2px solid #102654;
   cursor: pointer; }
-  .abonement__item a a:active {
+  .abonements__item a a:active {
     opacity: 0.4; }
   @media (max-width: 1199px) {
-    .abonement__item a {
+    .abonements__item a {
       width: 49%; } }
   @media (max-width: 767px) {
-    .abonement__item a {
+    .abonements__item a {
       width: 76%; } }
 
-.abonement__item:hover a,
-.abonement__item:focus a {
+.abonements__item:hover a,
+.abonements__item:focus a {
   background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: white; }
 
-.abonement__item--activ {
+.abonements__item--activ {
   border: 8px solid #d10a42;
   -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
      border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 30;

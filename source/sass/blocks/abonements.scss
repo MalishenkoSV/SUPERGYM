@@ -97,7 +97,7 @@
   }
 }
 
-.abonement__item {
+.abonements__item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@
   }
 }
 
-.abonement__item--full {
+.abonements__item--full {
   margin-right: 0;
   position: relative;
   z-index: 55;
@@ -141,7 +141,7 @@
 
 
 
-.abonement__item h4 {
+.abonements__item h4 {
   @include desk-abonem;
   margin-bottom: 0;
 
@@ -152,11 +152,11 @@
   }
 }
 
-.abonement__item p {
+.abonements__item p {
   margin: 13px 66px;
 }
 
-.abonement__item div {
+.abonements__item div {
   @include super-abonem;
   position: absolute;
   top: 130px;
@@ -177,7 +177,7 @@
   }
 }
 
-.abonement__item b {
+.abonements__item b {
   @include font-cost;
   color: $font-blue;
   margin: 29px 0 34px;
@@ -189,11 +189,11 @@
   }
 }
 
-.abonement__item span {
+.abonements__item span {
   color: $dark-blue;
 }
 
-.abonement__item a {
+.abonements__item a {
   @include font-btn;
   display: inline-block;
   margin: 0 auto 20px;
@@ -218,13 +218,13 @@
   }
 }
 
-.abonement__item:hover a,
-.abonement__item:focus a {
+.abonements__item:hover a,
+.abonements__item:focus a {
   background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: $white;
 }
 
-.abonement__item--activ {
+.abonements__item--activ {
   border: 8px solid  $red;
   border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 }
