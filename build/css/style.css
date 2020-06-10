@@ -1376,8 +1376,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   max-width: 1366px;
   margin: 0 auto 120px;
-  padding-left: 7.3%;
-  padding-right: 7.3%; }
+  padding-left: 7.6%;
+  padding-right: 7.6%; }
   @media (max-width: 1199px) {
     .trainers {
       padding-top: 71px;
@@ -1390,7 +1390,11 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 49px;
   letter-spacing: 0.03em;
-  margin-bottom: 50px; }
+  margin-top: 33px;
+  margin-bottom: 64px;
+  padding-left: 7px;
+  font-size: 48px;
+  letter-spacing: 0.04em; }
   @media (max-width: 1199px) {
     .trainers__title {
       font-size: 42px;
@@ -1406,7 +1410,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1160px; }
   @media (max-width: 1199px) {
     .trainers__list {
       width: 74%;
@@ -1416,10 +1424,7 @@ input[type="radio"].visually-hidden {
 
 .trainers__item {
   position: relative;
-  width: 23%;
-  height: 294px;
-  margin-right: 40px;
-  z-index: 55; }
+  margin-right: 40px; }
   @media (max-width: 1199px) {
     .trainers__item {
       width: 47%; } }
