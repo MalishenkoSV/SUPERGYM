@@ -28,8 +28,9 @@
     flex-wrap: wrap;
     @include font-foot-mob;
     flex-direction: reverse;
+    align-content: flex-start;
     min-width: 100%;
-    padding: 50px 15px;
+    padding: 45px 15px;
   }
 }
 
@@ -41,6 +42,8 @@
 .footer-social__list {
   @include list-reset;
   display: flex;
+  align-items: flex-start;
+
   flex-wrap: nowrap;
   align-content: center;
   width: 111px;
@@ -53,6 +56,9 @@
 
   @media (max-width: $mobile-width) {
     align-items: center;
+     width: auto;
+
+
   }
 }
 
@@ -61,6 +67,7 @@
 
   @media (max-width: $mobile-width) {
     margin-right: 36px;
+    margin-left: 0;
   }
 }
 

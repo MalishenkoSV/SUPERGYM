@@ -47,6 +47,8 @@ $retina-dppx: 1.5dppx;
 
 
 @mixin mobile-Bebas-title {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 32px;
 }

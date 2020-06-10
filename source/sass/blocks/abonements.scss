@@ -39,6 +39,7 @@
 
   @media (max-width: $mobile-width) {
     padding: 0;
+    @include mobile-Bebas-title;
   }
 }
 

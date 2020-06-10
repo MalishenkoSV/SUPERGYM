@@ -20,11 +20,7 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: flex-start;
-    column: 2;
-    // padding-left: 4.5%;
-    // padding-right: 4.5%;
-    // padding-top: 38px;
-    // padding-bottom: 43px;
+    width: 100%;
     height: auto;
   }
 }
@@ -53,3 +49,49 @@
   }
 }
 
+
+.nav__item--promo {
+
+  @media (max-width: $mobile-width) {
+  order: 2;
+  margin-top: -75px;
+  margin-right: 0;
+  margin-left: 120px;
+  }
+}
+
+.nav__item--services {
+
+  @media (max-width: $mobile-width) {
+  order: 1;
+  margin-top: 0;
+  }
+}
+
+.nav__item--trainers {
+
+  @media (max-width: $mobile-width) {
+  order: 4;
+  margin-top: -40px;
+  margin-right: 0;
+  margin-left: 120px;
+  }
+}
+
+.nav__item--abon {
+
+  @media (max-width: $mobile-width) {
+  order: 3;
+  margin-top: 10%;
+  }
+}
+
+.nav__item--tab {
+
+  @media (max-width: $mobile-width) {
+  order: 5;
+  margin-top: -10px;
+  margin-left: 25%;
+  margin-right: 0;
+  }
+}

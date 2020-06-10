@@ -27,6 +27,8 @@
 
 .slider__btn--finish {
   background-image: url("../img/finish.svg");
+  right: 46px;
+  top: 171px;
 
   @media (max-width: $mobile-width) {
     width: 10px;
@@ -42,4 +44,8 @@
 
 .slider__btn:active {
   opacity: 0.4;
+}
+
+.slider__control--show {
+
 }

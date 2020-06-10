@@ -1,4 +1,5 @@
 .trainers {
+  position: relative;
   max-width: 1366px;
   margin: 0 auto 120px;
   padding-left: 7.3%;
@@ -54,8 +55,8 @@
     width: 47%;
   }
   @media (max-width: $mobile-width) {
-     width: 100%;
-     height: 274px;
+    width: 100%;
+    height: 274px;
   }
 }
 
@@ -86,7 +87,7 @@
   position: absolute;
   bottom: 20px;
   left: 0;
-  width: 260px;
+  width: 200px;
   @include super-name;
   color: $white;
   text-align: center;
@@ -121,10 +122,17 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
-
 }
 
-.trainers__item--two {
+// .trainers__item--hidden {
+//     display: none;
+// }
+
+.trainers__list--active {
+   display: flex;
+}
+
+.trainers__info-hide {
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -133,13 +141,6 @@
 .trainers__item:focus .trainers__info-hide,
 .trainers__item:hover .trainers__info-hide {
   display: block;
-
-  @media (max-width: $tablet-width) {
-
-  }
-  @media (max-width: $mobile-width) {
-
-  }
 }
 
 .trainers__slider-btn-left {

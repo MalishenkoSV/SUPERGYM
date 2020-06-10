@@ -15,7 +15,6 @@
   height: 242px;
   background-color: $action-blue;
   color: $white;
-
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -24,7 +23,7 @@
   }
 
   @media (max-width: $mobile-width) {
-
+    width: 100%;
   }
 }
 
@@ -40,7 +39,7 @@
   }
   @media (max-width: $mobile-width) {
     padding: 85px 12% 32px;
-    width: auto;
+    width: 100%;
   }
 }
 
