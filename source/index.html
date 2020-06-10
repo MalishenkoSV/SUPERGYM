@@ -179,12 +179,27 @@
                     <p class="games__text">Ежегодные соревнования по CrossFit</p>
                     <a class="games__btn btn" href="#">заполнить заявку</a>
                 </article>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.webp 1x,
+                                                                                img/supergames_prewiev_mobile_x2.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.webp 1x,
+                                                                                img/supergames_prewiev_tablet_x2.webp 2x">
+                  <source type="image/webp" srcset="img/supergames_prewiev_desktop_x1.webp 1x,
+                                                                                img/supergames_prewiev_desktop_x2.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.png 1x,
+                    img/supergames_prewiev_mobile_x2.png 2x">
+                  <source media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.png 1x,
+                    img/supergames_prewiev_tablet_x2.png 2x">
+                  <img class="games__process" width="660" height="500" src="img/supergames_prewiev_desktop_x1.png"
+                                                                      srcset="img/supergames_prewiev_desktop_x2.png 2x"
+                                                                      alt="Активные игры на растяжку с спецеффектами">
+                </picture>
             </section>
             <section class="main__trainers trainers slider">
                 <h3 class="trainers__title">Тренеры</h3>
                 <ul class="trainers__list">
                     <li class="slider__item slider__item--one">
-                        <ul class="trainers__list trainers__list--one">
+                        <ul class="trainers__list trainers__list--one trainers__list--active">
                             <li class="trainers__item trainers__item--one" tabindex="0">
                                 <picture>
                                     <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
@@ -301,7 +316,7 @@
                         </ul>
                     </li>
                     <li class="slider__item trainers__item--two trainers__list--hidden">
-                      <ul class="trainers__list trainers__list--one">
+                      <ul class="trainers__list trainers__list--two">
                           <li class="trainers__item" tabindex="0">
                               <picture>
                                   <source type="image/webp" media="(min-width: $desktop-width)" srcset="img/trainer_01_desktop_x1.webp 1x,
@@ -565,7 +580,7 @@
                         <li class="nav__item nav__item--services">
                             <a class="nav__link" href="#services">Услуги</a>
                         </li>
-                        <li class="nav__item nav__item--subs">
+                        <li class="nav__item nav__item--abon">
                             <a class="nav__link" href="#subscriptions">Абонементы</a>
                         </li>
                         <li class="nav__item nav__item--promo">
@@ -574,7 +589,7 @@
                         <li class="nav__item nav__item--trainers">
                             <a class="nav__link" href="#trainers">Тренеры</a>
                         </li>
-                        <li class="nav__item nav__item--schedule">
+                        <li class="nav__item nav__item--tab">
                             <a class="nav__link" href="#">Расписание</a>
                         </li>
                     </ul>
