@@ -2,7 +2,11 @@
   padding-bottom: 31px;
 
   @media (max-width: $tablet-width) {
-    padding: 20px 0 0;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 20px;
   }
 }
 

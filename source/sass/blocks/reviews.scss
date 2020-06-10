@@ -15,10 +15,11 @@
   height: 242px;
   background-color: $action-blue;
   color: $white;
+
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    width: 266px;
+    // width: 266px;
     height: 335px;
   }
 

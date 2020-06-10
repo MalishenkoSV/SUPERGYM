@@ -13,10 +13,11 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin-bottom: 33px;
   }
 }
 
-.controls::before {
+.controls::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -31,15 +32,24 @@
   background-color: $white;
   background-color: $whitegrey;
   cursor: pointer;
-  margin-bottom: 10px;
+  padding: 2px 0 14px;
   outline: none;
+  border-bottom: 2px solid transparent;
 
   @media (max-width: $tablet-width) {
     // width: 100%;
   }
 
   @media (max-width: $mobile-width) {
-    @include adv-Bebas-title;
+    @include font-basic;
+  }
+
+  &:hover {
+    border-bottom-color: $red-opacity;
+  }
+
+  &:active {
+    border-bottom-color: $red;
   }
 }
 
@@ -52,10 +62,4 @@
 //   z-index: 55;
 // }
 
-.controls__btn:hover {
-  border-bottom: 2px solid $red-opacity;
-}
 
-.controls__btn:active {
-  border-bottom: $red;
-}

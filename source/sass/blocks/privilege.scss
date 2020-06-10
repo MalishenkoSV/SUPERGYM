@@ -1,10 +1,10 @@
 .privilege {
   background-color: $whitegrey;
   width: 100%;
-  padding: 100px 20px;
+  padding: 130px 20px 120px;
 
   @media (max-width: $tablet-width) {
-    padding: 99px 35px;
+    padding: 99px 35px 66px;
   }
 
   @media (max-width: $mobile-width) {
@@ -45,8 +45,8 @@
 .privilege__item {
   position: relative;
   width: 29.3%;
-  margin: 0 60px 83px;
-  padding: 1px 0 120px 83px;
+  margin: 0 60px 83px 105px;
+  padding: 1px 0 75px 120px;
   border-bottom: 1px solid $red-opacity;
 
   @media (min-width: $desktop-width) {
@@ -57,9 +57,16 @@
     }
   }
 
+  @media (min-width: $mobile-width+1) {
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
   @media (max-width: $tablet-width) {
-    margin: 0 0 325px 0;
-    padding: 0 20px 25px 138px;
+    margin: 0 0 300px 0;
+    padding: 0 12px 25px 138px;
     width: 49%;
     border-bottom: none;
   }
@@ -84,7 +91,6 @@
     background-size: contain;
 
     @media (max-width: $tablet-width) {
-      top: 5px;
       width: 89px;
       height: 62px;
     }
@@ -166,12 +172,14 @@
 }
 
 .privilege__losung {
+  line-height: 0.7em;
   font-size: 22px;
   margin-top: 0;
+  margin-bottom: 13px;
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   @media (max-width: $mobile-width) {
@@ -182,10 +190,8 @@
 .privilege__text {
   text-align: left;
   font-weight: 300;
-
-  @media (max-width: $tablet-width) {
-    margin: 0;
-  }
+  margin: 0;
+  text-align: left;
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
@@ -196,11 +202,12 @@
 
 .privilege__item--center {
   position: absolute;
+  display: table;
   top: 0;
   bottom: 0;
-  left: calc(50% - 120px);
+  left: calc(50% - 111px);
   margin: 0;
-  padding: 65px 34px;
+  padding: 75px 34px 60px;
   width: 240px;
   height: auto;
   color: $white;
@@ -208,10 +215,10 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    padding: 58px 130px;
-    width: 442px;
-    left: calc(50% - 221px);
-    top: 118px;
+    padding: 58px 130px 36px;
+    width: 433px;
+    left: calc(50% - 217px);
+    top: 110px;
   }
 
   @media (max-width: $mobile-width) {
@@ -229,10 +236,10 @@
   & strong {
     display: block;
     font-size: 72px;
-    padding-bottom: 25px;
+    padding-bottom: 46px;
 
     @media (max-width: $tablet-width) {
-      padding-bottom: 29px;
+      padding-bottom: 40px;
     }
 
     @media (max-width: $mobile-width) {
@@ -241,11 +248,13 @@
   }
 
   & .privilege__losung {
-    font-size: 22px;
-    margin-bottom: 18px;
+    font-size: 26px;
+    margin-bottom: 40px;
 
     @media (max-width: $tablet-width) {
+      font-size: 22px;
       text-align: center;
+      margin-bottom: 22px;
     }
 
     @media (max-width: $mobile-width) {

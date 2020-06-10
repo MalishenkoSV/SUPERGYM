@@ -2,7 +2,7 @@
   margin-top: 120px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 100px;
+    margin-top: 96px;
   }
 
   @media (max-width: $mobile-width) {
@@ -16,13 +16,18 @@
   margin: 0 auto;
   width: 100%;
   color: $white;
-  padding: 100px 0;
+  padding: 123px 0 100px;
   font-size: 18px;
   font-weight: 400;
 
   @media (max-width: $tablet-width) {
     padding: 100px 45px;
     font-size: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 69px 15px;
+    flex-direction: column;
   }
 }
 
@@ -34,7 +39,12 @@
   align-items: flex-start;
 
   @media (max-width: $tablet-width) {
-    padding: 40px 45px;
+    padding: 40px 45px 47px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 40px 44px 50px;
   }
 }
 
@@ -46,7 +56,6 @@
 
 .games__title {
   @include games-title;
-  // width: 201px;
   margin: 3px 0 0;
 
   @media (max-width: $tablet-width) {
@@ -61,8 +70,14 @@
   margin-left: 45px;
 
   @media (max-width: $tablet-width) {
-    margin-left: -35px;
+    // margin-left: -35px;
+    margin-left: 25px;
+    width: auto;
     letter-spacing: 0.03em;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 25px;
   }
 }
 
@@ -70,61 +85,76 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-}
 
-.table tr {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 21px;
+  & tr {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 21px;
 
-  @media (max-width: $tablet-width) {
-    margin-bottom: 0;
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
-}
 
-.table th {
-  font-weight: 400;
-  padding-bottom: 5px;
-  border-bottom: 1px solid $white;
-  margin-bottom: 9px;
+  & th {
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $white;
+    margin-bottom: 9px;
 
-  @media (max-width: $tablet-width) {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
-}
 
-.table td {
-  display: flex;
-  font-weight: 700;
-  font-size: 40px;
-  // margin-bottom: 5px;
+  & td {
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+    // margin-bottom: 5px;
 
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+    }
   }
-}
 
-.table div {
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  line-height: 1.2;
+  & div {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.2;
 
-  @media (max-width: $tablet-width) {
-    font-size: 10px;
+    @media (max-width: $tablet-width) {
+      font-size: 10px;
+    }
   }
 }
 
 .games__text {
-  margin: 7px 2px 47px;
+  margin: 7px 2px 46px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 25px;
+  }
 }
 
 .games__btn {
   width: 100%;
   padding: 25px 25px 24px;
+
+  @media (max-width: $tablet-width) {
+    padding: 11px;
+    font-size: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 11px 25px 12px;
+    font-size: 10px;
+    border-width: 2px;
+  }
 }
 
 .games__process {
@@ -132,7 +162,10 @@
   width: 660px;
 
   @media (max-width: $tablet-width) {
-    width: 368px;
+    width: 386px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
-

@@ -1,12 +1,18 @@
 .abonements {
   position: relative;
   background-color: $whitegrey;
-  padding-bottom: 120px;
+  padding-bottom: 86px;
   margin: 0;
+  overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    padding-top: 100px;
+    padding: 100px 0 105px;
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 68px;
+    padding-bottom: 52px;
   }
 }
 
@@ -26,20 +32,21 @@
 .abonements__title {
   @include adv-Bebas-bold;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 102px;
   margin-bottom: 48px;
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    margin-top: 0;
+    margin: 0 auto 29px;
     line-height: 44px;
     font-size: 42px;
     letter-spacing: 0.03em;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0;
     @include mobile-Bebas-title;
+    margin-bottom: 20px;
+    padding: 0;
   }
 }
 
@@ -56,32 +63,36 @@
   @media (max-width: $mobile-width) {
     padding: 0;
   }
-}
 
-.abonements__list::after {
-  content: "";
+  &::after {
+    content: "";
     position: absolute;
-    width: 321px;
-    height: 384px;
-    bottom: 0;
-    right: 0;
+    width: 470px;
+    height: 494px;
+    bottom: -150px;
+    right: -182px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    z-index: 1;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("../img/blin_bg_pseudo__desktop_x2.png");
-  }
-  @media (max-width: $tablet-width) {
-    width: 58.9%;
-    height: 462px;
-    background-image: url("../img/blin_bg_pseudo__tablet_x2.png");
+    background-size: cover;
+    // z-index: 1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/blin_bg_pseudo__tablet_x2.png");
+      background-image: url("../img/blin_bg_pseudo__desktop_x2.webp");
     }
+
+    @media (max-width: $tablet-width) {
+      width: 423px;
+      height: 444px;
+      bottom: -121px;
+      right: -76px;
+      background-image: url("../img/blin_bg_pseudo_tablet_x1.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/blin_bg_pseudo_tablet_x2.png");
+      }
+    }
+
     @media (max-width: $mobile-width) {
       display: none;
     }
@@ -97,17 +108,26 @@
   margin-right: 40px;
   background-color: $white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 22px;
+  border: 8px solid transparent;
 
   @media (max-width: $tablet-width) {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    min-height: 385px;
     padding: 0;
+    margin-bottom: 33px;
+  }
+
+  &:focus,
+  &:hover {
+    border: 8px solid  $red;
+    border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
   }
 }
 
@@ -115,6 +135,7 @@
   margin-right: 0;
   position: relative;
   z-index: 55;
+
   @media (max-width: $tablet-width) {
     margin: 0 auto;
   }
@@ -124,17 +145,20 @@
 
 .abonement__item h4 {
   @include desk-abonem;
+  margin-bottom: 0;
 
   @media (max-width: $mobile-width) {
+    @include super-adv;
     padding: 0;
+    margin-top: 40px;
   }
 }
 
 .abonement__item p {
-  margin-bottom: 59px;
+  margin: 13px 66px;
 }
 
-.abonement__item span {
+.abonement__item div {
   @include super-abonem;
   position: absolute;
   top: 130px;
@@ -148,44 +172,52 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 28%;
-    left: 15%;
+    top: 30%;
+    left: 20%;
     padding: 0;
+    font-size: 79px;
   }
 }
 
 .abonement__item b {
   @include font-cost;
   color: $font-blue;
-  margin-bottom: 59px;
+  margin: 52px 0 34px;
   z-index: 5;
+
+  @media (max-width: $mobile-width) {
+    font-size: 46px;
+    margin-top: 42px;
+  }
+}
+
+.abonement__item span {
+  color: $dark-blue;
 }
 
 .abonement__item a {
   @include font-btn;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 71%;
-  height: 14%;
+  margin: 0 auto 20px;
+  padding: 24px;
+  width: 60%;
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
-  padding: 22px 20px;
   border: 2px solid $dark-blue;
-  margin-bottom: 68px;
   cursor: pointer;
-}
 
-.abonement__item--activ {
-  border: 5px solid  $red;
-  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
-}
+  & a:active {
+    opacity: 0.4;
+  }
 
-.abonement__item:focus,
-.abonement__item:hover {
-  border: 5px solid  $red;
-  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
+  @media (max-width: $tablet-width) {
+    width: 49%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 76%;
+  }
 }
 
 .abonement__item:hover a,
@@ -194,8 +226,9 @@
   color: $white;
 }
 
-.abonement__item a:active {
-  opacity: 0.4;
+.abonement__item--activ {
+  border: 8px solid  $red;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 }
 
 .abonements__list--second,
