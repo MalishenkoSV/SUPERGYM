@@ -182,12 +182,12 @@
 .abonement__item b {
   @include font-cost;
   color: $font-blue;
-  margin: 52px 0 34px;
+  margin: 29px 0 34px;
   z-index: 5;
 
   @media (max-width: $mobile-width) {
     font-size: 46px;
-    margin-top: 42px;
+    margin-top: 20px;
   }
 }
 
