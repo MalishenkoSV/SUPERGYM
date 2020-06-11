@@ -1,9 +1,12 @@
 .promotions__wrapper {
   display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     width: 100%;
+    width: 48%;
   }
 }
 
@@ -93,7 +96,7 @@
 .promotions h3 {
   @include adv-Bebas-bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 95px 0 0;
 }
 
 .promotions__item--unlimited h4 {
@@ -158,9 +161,9 @@
   }
 }
 
-.promotions__bottom {
-  margin-bottom: 30px;
-}
+// .promotions__bottom {
+//   margin-bottom: 30px;
+// }
 
 .promotions b {
   @include font-super;
@@ -249,7 +252,7 @@
 
 .promotions__link:hover,
 .promotions__link:focus  {
-  box-shadow: 0 0 0 4px $action-blue;
+  box-shadow: 0 0 0 3px $action-blue;
 }
 
 .promotions__link:active {
