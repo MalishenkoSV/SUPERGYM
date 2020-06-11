@@ -16,15 +16,15 @@
 
   // переключение табов в блоке Абонементы
   togglesList.addEventListener('click', function (evt) {
-    if (!evt.target.closest('button').classList.contains('controls__button--active')) {
+    if (!evt.target.closest('button').classList.contains('controls__btn--active')) {
       for (var i = 0; i < toggles.length; i++) {
-        if (toggles[i].classList.contains('controls__button--active')) {
-          toggles[i].classList.remove('controls__button--active');
+        if (toggles[i].classList.contains('controls__btn--active')) {
+          toggles[i].classList.remove('controls__btn--active');
         }
       }
 
       var toggleButton = evt.target.closest('button');
-      toggleButton.classList.add('controls__button--active');
+      toggleButton.classList.add('controls__btn--active');
 
       for (var j = 0; j < abonements.length; j++) {
         if (abonements[j].classList.contains('abonements__list--shown')) {

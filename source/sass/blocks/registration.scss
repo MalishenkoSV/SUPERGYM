@@ -20,6 +20,8 @@
   @include font-Bebas-form;
   text-transform: uppercase;
   color: $white;
+  margin-top: 61px;
+  margin-bottom: 38px;
 
   @media (max-width: $mobile-width) {
     @include mobile-Bebas-title;
@@ -50,13 +52,17 @@
 }
 
 .registration__form input {
-  width: 28%;
+  width: 46%;
   border: none;
   background-color: $action-blue;
   border-bottom: 1px solid $border-color;
   margin-bottom: 30px;
   outline: none;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 28%;
+  }
 }
 
 .registration__form input:hover,

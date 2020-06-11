@@ -18,15 +18,6 @@
   }
 }
 
-.controls::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: $dark-grey;
-}
-
 .controls__btn {
   @include month-abonem;
   border: transparent;
@@ -37,27 +28,39 @@
   outline: none;
   border-bottom: 2px solid transparent;
 
+
+  // &:hover,
+  // &:focus {
+  //   border-color: $red;
+  //   color: $blue-font;
+  // }
+
+  // &:active {
+  //   color: $blue-font;
+  // }
   @media (max-width: $mobile-width) {
     @include font-basic;
-  }
-
-  .controls__btn:hover,
-  .controls__btn:focus {
-    border-bottom-color: $red-opacity;
-    color: $red;
-  }
-
-  .controls__btn:active {
-    border-bottom-color: $red;
   }
 }
 
 .controls__btn--active {
   cursor: auto;
-  border-bottom-color: $red;
+  border-color: $red;
   color: $blue-font;
+
+//   &:hover,
+//   &:focus {
+//   color: $red;
+// }
 }
 
-.controls__btn--one {
-  cursor: default;
+.controls__btn--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  cursor: auto;
+  border-color: $red;
+  color: $blue-font;
 }

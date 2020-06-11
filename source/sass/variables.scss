@@ -15,6 +15,7 @@ $promo-red: rgba(237, 2, 51, 1);
 $red-opacity: rgba(209, 10, 66, 0.2); /* #D10A42  */
 $whitegrey: rgba(248, 249, 252, 1); /* #F8F9FC */
 $grey: rgba(232, 232, 232, 1); /* #e8e8e8 */
+$grey-opacity: rgba(232, 232, 232, 0.47); /* #e8e8e8 */
 $overlay-color: rgba(16, 38, 84, 0.89);
 $mobile-width: 767px;
 $tablet-width: 1199px;
@@ -86,7 +87,6 @@ $retina-dppx: 1.5dppx;
   letter-spacing: 0.03em;
 }
 
-
 @mixin tablet-Bebas-city {
   font-size: 34px;
   line-height: 34px;
@@ -152,6 +152,13 @@ $retina-dppx: 1.5dppx;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 60px;
+  line-height: 150%;
+}
+
+@mixin font-abon {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
   line-height: 150%;
 }
 

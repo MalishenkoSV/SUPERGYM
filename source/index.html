@@ -102,68 +102,71 @@
                         <button type="button" class="controls__btn controls__btn--second">6 месяцев</button>
                         <button type="button" class="controls__btn controls__btn--third">12 месяцев</button>
                     </div>
-                    <ul class="abonements__list abonements__list--first abonements__list--shown">
+                     <ul class="abonements__list abonements__list--first abonements__list--shown">
                         <li class="abonements__item abonements__item--one">
                             <h4>С тренером</h4>
                             <p>12 занятий</p>
-                            <span>5000</span>
-                            <b>5000₽</b>
+                            <span>5000<strong>₽</strong></span>
+                            <b data-parent="5000"></b>
                             <a href="#" tabindex="0">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--one">
                             <h4>Дневной</h4>
                             <p>с 8:00 до 17:00</p>
-                            <span>1700</span>
-                            <b>1700₽</b>
+                            <span>1700₽</span>
+                            <b data-parent="1700"></b>
                             <a class="abonement__link" href="#">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--one abonements__item--full">
                             <h4>Полный день</h4>
                             <p>с 8:00 до 22:00</p>
-                            <span>2700</span>
-                            <b>2700₽</b>
+                            <span>2700₽</span>
+                            <b data-parent="2700"></b>
                             <a class="abonement__btn" href="#">Купить абонемент</a>
                         </li>
                     </ul>
                     <ul class="abonements__list abonements__list--second">
                         <li class="abonements__item abonements__item--six">
-                            <h3>С тренером</h3>
+                            <h4>С тренером</h4>
                             <p>72 занятия</p>
-                            <b>18000₽</b>
+                            <span>18000₽</span>
+                            <b data-parent="18000"></b>
                             <a href="#" class="button abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--six">
-                            <h3>Дневной</h3>
+                            <h4>Дневной</h4>
                             <p>с 8:00 до 22:00 </p>
-                            <b>13000₽</b>
+                            <span>13000₽</span>
+                            <b data-parent="13000"></b>
                             <a href="#" class="abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--six abonements__item--full">
                           <h4>Полный день</h4>
-                          <p>с 8:00 до 22:00</p>
-                          <span>2700</span>
-                          <b>17000₽</b>
+                          <span>17000₽</span>
+                          <b data-parent="17000"></b>
                           <a class="abonements__btn" href="#">Купить абонемент</a>
                       </li>
                     </ul>
                     <ul class="abonements__list abonements__list--third">
                         <li class="abonements__item abonements__item--year">
-                          <h3>С тренером</h3>
+                          <h4>С тренером</h4>
                           <p>72 занятия</p>
-                          <b>28000₽</b>
+                          <span>28000₽</span>
+                          <b data-parent="28000"></b>
                           <a href="#" class="button abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--year">
-                            <h3>Дневной</h3>
+                            <h4>Дневной</h4>
                             <p>с 8:00 до 22:00 </p>
-                            <b>26000₽</b>
+                            <span>26000₽</span>
+                            <b data-parent="26000"></b>
                             <a href="#" class="abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--year abonements__item--full">
                           <h4>Полный день</h4>
                           <p>с 8:00 до 22:00</p>
-                          <span>2700</span>
-                          <b>32000₽</b>
+                          <span>32000₽</span>
+                          <b data-parent="32000"></b>
                           <a class="abonements__btn" href="#">Купить абонемент</a>
                       </li>
                     </ul>
@@ -507,44 +510,48 @@
             <section class="main__reviews reviews" id="reviews">
                 <h3>Отзывы</h3>
                 <ul class="reviews__list reviews__wrapper">
-                    <li class="reviews__item reviews__item--active">
-                        <div class="reviews__photo">
-                            <picture>
-                                <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
-                                <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Анна Орлова, клиентка клуба">
-                            </picture>
-                        </div>
-                        <div class="reviews__client">
-                            <h4>Анна Орлова</h4>
-                            <p>«Хожу в SuperClub уже больше года.
-                              Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-                              Зал просторный, даже в вечернее время нет очередей»</p>
-                        </div>
-                    </li>
-                    <li class="reviews__item reviews__item--hidden">
-                        <div class="reviews__photo">
+                  <li class="reviews__item reviews__item--active">
+                      <div class="reviews__photo">
                           <picture>
-                            <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
-                            <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Регина Лаврова, клиентка клуба">
-                        </picture>
-                        </div>
-                        <h4>Регина Лаврова</h4>
-                        <p>«Supergym сочетает в себе разные виды физической нагрузки и комфортный релакс.
-                          Тут вы найдете индивидуальные и групповые занятия»</p>
-                    </li>
-                    <li class="reviews__item reviews__item--hidden">
-                        <div class="reviews__photo">
+                              <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                              <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Анна Орлова, клиентка клуба">
+                          </picture>
+                      </div>
+                      <div class="reviews__client">
+                          <h4>Анна Орлова</h4>
+                          <p>«Хожу в SuperClub уже больше года.
+                            Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                            Зал просторный, даже в вечернее время нет очередей»</p>
+                      </div>
+                  </li>
+                  <li class="reviews__item reviews__item--hidden">
+                      <div class="reviews__photo">
                           <picture>
-                            <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
-                            <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Елена Иванова, клиентка клуба">
-                        </picture>
-                        </div>
-                            <h4>Елена Иванова</h4>
-                            <p>«Хожу в SuperClub уже больше года.
-                              Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-                              Зал просторный, даже в вечернее время нет очередей»
-                            </p>
-                    </li>
+                              <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                              <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Регина Лаврова, клиентка клуба">
+                          </picture>
+                      </div>
+                      <div class="reviews__client">
+                          <h4>Регина Лаврова</h4>
+                          <p>«Supergym сочетает в себе разные виды физической нагрузки и комфортный релакс.
+                            Тут вы найдете индивидуальные и групповые занятия»</p>
+                      </div>
+                  </li>
+                  <li class="reviews__item reviews__item--hidden">
+                      <div class="reviews__photo">
+                          <picture>
+                              <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                              <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Елена Иванова, клиентка клуба">
+                          </picture>
+                      </div>
+                      <div class="reviews__client">
+                          <h4>Елена Иванова</h4>
+                          <p>«Хожу в SuperClub уже больше года.
+                            Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                            Зал просторный, даже в вечернее время нет очередей»
+                          </p>
+                      </div>
+                  </li>
                 </ul>
                 <div class="reviews__slider slider__switch slider__switch--trainers">
                   <button type="button" class="slider__btn slider__btn--start reviews__slider-btn-left" aria-label="Переключение вконец слайдера">

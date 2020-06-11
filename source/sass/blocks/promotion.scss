@@ -48,7 +48,7 @@
 
 .promotions__list--action .promotions__item {
   border: 7px solid $promo-red;
-  border-image: linear-gradient(to right bottom, #d10a42, #00359f);
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 
   @media (max-width: $mobile-width) {
     text-align: center;

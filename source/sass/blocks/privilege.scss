@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $mobile-width+1) {
-    &:nth-last-child(-n+1) {
+    &:nth-last-child(-n+2) {
       margin-bottom: 0;
       padding-bottom: 0;
     }
