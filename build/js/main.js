@@ -1,14 +1,12 @@
 'use strict';
 
 (function () {
-
   var togglesList = document.querySelector('.controls__list');
   var toggles = document.querySelectorAll('.controls__btn');
   var abonements = document.querySelectorAll('.abonements__list');
   var firstList = document.querySelector('.abonements__list--first');
   var secondList = document.querySelector('.abonements__list--second');
   var thirdList = document.querySelector('.abonements__list--third');
-
 
   var togglesMap = {
     first: 'controls__btn--first',
@@ -44,26 +42,8 @@
     }
   });
 
-  // Скролл страницы
-  var btnScreen = document.querySelector('.main-screen__btn');
-
-  if (btnScreen) {
-    btnScreen.addEventListener('click', function (evt) {
-      evt.preventDefault();
-
-      var blockSubscription = btnScreen.getAttribute('href');
-
-      document.querySelector(blockSubscription).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  }
-
 
   // Определение ширины элементов в зависимости от экрана
-
-  // var telNumber = document.querySelector('.main-form input[name="customer-phone"]');
   var trainers = document.querySelector('.trainers');
   var trainersList = document.querySelector('.trainers__list');
   var trainerItemsAll = document.querySelectorAll('.trainers__item');
@@ -135,12 +115,14 @@
     trainerPrev.addEventListener('keydown', function (evt) {
       if (evt.keyCode === 13) {
         prevTrainerItem();
+        // trainerNext.setAttribute('disabled', 'true');
       }
     });
 
     trainerNext.addEventListener('keydown', function (evt) {
       if (evt.keyCode === 13) {
         nextTrainerItem();
+        // trainerNext.setAttribute('disabled', 'true');
       }
     });
   }
@@ -149,17 +131,6 @@
   window.addEventListener('resize', function () {
     screenWidthDetection();
   });
-
-  // // Маска номера телефона
-  // var telOptions = {
-  //   mask: '+{7}(000)000-00-00'
-  // };
-
-  // if (telNumber) {
-  //   var iMask;
-  //   iMask(telNumber, telOptions);
-  // }
-
 
   // Основной код
   screenWidthDetection();
