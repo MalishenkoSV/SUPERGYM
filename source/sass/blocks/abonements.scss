@@ -205,10 +205,6 @@
   border: 2px solid $dark-blue;
   cursor: pointer;
 
-  & a:active {
-    opacity: 0.4;
-  }
-
   @media (max-width: $tablet-width) {
     width: 49%;
   }
@@ -222,6 +218,10 @@
 .abonements__item:focus a {
   background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: $white;
+}
+
+.abonements__item:active a {
+  opacity: 0.4;
 }
 
 .abonements__item--activ {

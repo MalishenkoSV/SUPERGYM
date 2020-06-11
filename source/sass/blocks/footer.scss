@@ -37,7 +37,19 @@
 .footer a {
   color: $white;
   text-decoration: none;
+  cursor: pointer;
+  outline: none;
 }
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+  box-shadow: 0 0 0 2px $white;
+}
+
+.footer-social__link:active {
+  opacity: 0.4;
+}
+
 
 .footer-social__list {
   @include list-reset;

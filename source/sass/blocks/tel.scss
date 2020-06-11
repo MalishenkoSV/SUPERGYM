@@ -3,6 +3,8 @@
   text-decoration: none;
   line-height: 26px;
   color: $white;
+  cursor: pointer;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-tel;
@@ -12,4 +14,15 @@
     @include mobile-Bebas-tel;
     line-height: 16px;
   }
+}
+
+
+.tel:hover,
+.tel:focus {
+  box-shadow: 0 0 0 2px $action-blue;
+  color: $white;
+}
+
+.tel:active {
+  opacity: 0.4;
 }

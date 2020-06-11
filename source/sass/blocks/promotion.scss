@@ -242,11 +242,36 @@
   }
 }
 
+.promotions__link {
+  cursor: pointer;
+  outline: none;
+}
+
+.promotions__link:hover,
+.promotions__link:focus  {
+  box-shadow: 0 0 0 4px $action-blue;
+}
+
+.promotions__link:active {
+  opacity: 0.4;
+}
+
+
 .promotions__link--unlimited {
   @include font-link;
   color: $white;
-  margin-top: 150px;
+  margin-top: 90px;
   text-transform: uppercase;
+}
+
+.promotions__link--unlimited:hover,
+.promotions__link--unlimited:focus {
+  box-shadow: 0 0 0 4px $white;
+  color: $white;
+}
+
+.promotions__link--unlimited:active {
+  opacity: 0.4;
 }
 
 .promotions__link--discount {

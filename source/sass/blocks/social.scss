@@ -21,6 +21,18 @@
   text-decoration: none;
   margin-bottom: 24px;
   text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+  box-shadow: 0 0 0 2px $action-blue;
+  color: $white;
+}
+
+.social__link:active {
+  opacity: 0.4;
 }
 
 .social__item {

@@ -5,16 +5,27 @@
     background-repeat: no-repeat;
     bottom: 0;
     right: 0;
+    cursor: pointer;
+    outline: none;
   }
 
-  .logo__img {
-    @media (max-width: $tablet-width) {
-      width: 82px;
-      height: 17px;
-    }
-
-    @media (max-width: $mobile-width) {
-      width: 67px;
-      height: 15px;
-    }
+.logo__img {
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 67px;
+    height: 15px;
+  }
+}
+
+.logo:hover img,
+.logo:focus img {
+  box-shadow: 0 0 0 2px $white;
+}
+
+.logo:active {
+  opacity: 0.4;
+}

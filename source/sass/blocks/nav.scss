@@ -95,3 +95,12 @@
   margin-right: 0;
   }
 }
+
+.nav__link:hover,
+.nav__link:focus {
+  box-shadow: 0 0 0 4px $white;
+}
+
+.nav__link:active {
+  opacity: 0.4;
+}

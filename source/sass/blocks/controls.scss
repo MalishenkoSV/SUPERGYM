@@ -31,24 +31,23 @@
   @include month-abonem;
   background-color: $white;
   background-color: $whitegrey;
+  color: $blue-font-opacity;
   cursor: pointer;
   padding: 2px 0 14px;
   outline: none;
   border-bottom: 2px solid transparent;
 
-  @media (max-width: $tablet-width) {
-    // width: 100%;
-  }
-
   @media (max-width: $mobile-width) {
     @include font-basic;
   }
 
-  &:hover {
+  .controls__btn:hover,
+  .controls__btn:focus {
     border-bottom-color: $red-opacity;
+    color: $red;
   }
 
-  &:active {
+  .controls__btn:active {
     border-bottom-color: $red;
   }
 }
@@ -56,6 +55,7 @@
 .controls__btn--active {
   cursor: auto;
   border-bottom-color: $red;
+  color: $blue-font;
 }
 
 .controls__btn--one {

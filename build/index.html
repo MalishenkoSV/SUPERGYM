@@ -24,7 +24,7 @@
             <h1 class="visually-hidden">SUPERGYM</h1>
             <div class="header__main-screen wrapper">
                 <section class="header__info">
-                    <a class="header__logo logo" title="Логотип компании">
+                    <a class="header__logo logo" title="Логотип компании" tabindex="0">
                         <img class="logo__img" src="img/logo.svg" width="87" height="20" alt="Логотип Supergym">
                     </a>
                     <a class="header__tel tel" href="tel:+88005555555" aria-label="контактный номер телефона">8-800-555-55-55
@@ -39,20 +39,20 @@
                             <li>Групповые занятия</li>
                             <li>Кардио-зона</li>
                         </ul>
-                        <a href="#season-tickets" class="main-screen__btn btn btn__gym" aria-label="Перейти в раздел абонемент">
+                        <a href="#abonements" class="main-screen__btn btn btn__gym" aria-label="Перейти в раздел абонемент">
                             Купить абонемент
                         </a>
                     </div>
                     <div class="main__photo photo"></div>
                     <ul class="main__social social">
                         <li class="social__item social__item--fb">
-                            <a href="#" class="social__link link" aria-label="Наша страница в фейсбуке">Fb</a>
+                            <a href="#" class="social__link link" aria-label="Наша страница в фейсбуке" tabindex="0">Fb</a>
                         </li>
                         <li class="social__item social__item--vk">
-                          <a href="#" class="social__link link" aria-label="Наша страница в вконтакте">VK</a>
+                          <a href="#" class="social__link link" aria-label="Наша страница в вконтакте" tabindex="0">VK</a>
                         </li>
                         <li class="social__item social__item--ig">
-                          <a href="#" class="social__link link" aria-label="Наша страница в инстаграмме">IG</a>
+                          <a href="#" class="social__link link" aria-label="Наша страница в инстаграмме" tabindex="0">IG</a>
                         </li>
                     </ul>
                 </section>
@@ -89,27 +89,21 @@
                     <button class="video__button">Воспроизвести</button>
                 </div>
             </section>
-            <section class="main__abonements abonements">
+            <section class="main__abonements abonements" id="abonements">
                 <div class="abonements__wrapper wrapper">
                     <h3 class="abonements__title">Абонементы</h3>
-                    <ul class="abonements__btns controls controls__list">
-                      <li class="controls__item">
-                          <button type="button" class="controls__btn controls__btn--first controls__btn--active">1месяц</button>
-                      </li>
-                      <li class="controls__item">
-                          <button type="button" class="controls__btn controls__btn--second">6 месяцев</button>
-                      </li>
-                      <li class="controls__item">
-                          <button type="button" class="controls__btn controls__btn--third">12 месяцев</button>
-                      </li>
-                  </ul>
+                    <div class="abonements__btns controls controls__list">
+                        <button type="button" class="controls__btn controls__btn--first controls__btn--active">1месяц</button>
+                        <button type="button" class="controls__btn controls__btn--second">6 месяцев</button>
+                        <button type="button" class="controls__btn controls__btn--third">12 месяцев</button>
+                    </div>
                     <ul class="abonements__list abonements__list--first abonements__list--shown">
                         <li class="abonements__item abonements__item--one">
                             <h4>С тренером</h4>
                             <p>12 занятий</p>
                             <span>5000</span>
                             <b>5000₽</b>
-                            <a href="#">Купить абонемент</a>
+                            <a href="#" tabindex="0">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--one">
                             <h4>Дневной</h4>
@@ -405,43 +399,43 @@
                 <h3 class="privilege__title">Наши преимущества</h3>
                 <ul class="privilege__list">
                     <li class="privilege__item privilege__item--long privilege__item--square">
-                        <h5 class="privilege__losung">
+                        <h4 class="privilege__losung">
                             <strong class="visually-hidden">900 кв/м</strong>
                             Площадь
-                        </h5>
+                        </h4>
                         <p class="privilege__text">Занимайтесь без очередей и толпучки</p>
                     </li>
 
                     <li class="privilege__item privilege__item--short privilege__item--parking">
-                        <h5 class="privilege__losung">
+                        <h4 class="privilege__losung">
                             <strong class="visually-hidden">70 машин</strong>
                             Собственная парковка
-                        </h5>
+                        </h4>
                         <p class="privilege__text">Вы всегда найдете место для своей машины на нашей парковке</p>
                     </li>
 
                     <li class="privilege__item privilege__item--center">
-                        <h5 class="privilege__losung">
+                        <h4 class="privilege__losung">
                             <strong>100</strong>
                             Тренажеров
-                        </h5>
+                        </h4>
                         <p class="privilege__text">Современные тренажеры на все группы мышц</p>
                     </li>
 
                     <li class="privilege__item privilege__item--long privilege__item--comfort">
-                        <h5 class="privilege__losung">
+                        <h4 class="privilege__losung">
                             <strong class="visually-hidden">350 мест</strong>
                             Комфорт
-                        </h5>
+                        </h4>
                         <p class="privilege__text">Просторные раздевалки,
                           душевые, фен, Wi-Fi, кулеры</p>
                     </li>
 
                     <li class="privilege__item privilege__item--short privilege__item--xp">
-                        <h5 class="privilege__losung">
+                        <h4 class="privilege__losung">
                             <strong class="visually-hidden">5+ лет</strong>
                             Тренерский опыт
-                        </h5>
+                        </h4>
                         <p class="privilege__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
                      </li>
                 </ul>
@@ -526,8 +520,9 @@
               </div>
             </section>
             <section class="main__contactcs contacts">
+                <h3 class="visually-hidden">Контакты</h3>
                 <div class="contacts__registration registration">
-                    <h3>Бесплатное занятие</h3>
+                    <h4>Бесплатное занятие</h4>
                     <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
                         <label class="visually-hidden" for="name">Имя</label>
                         <input type="text" name="name" id="name" placeholder="Имя" required="">
@@ -537,7 +532,7 @@
                     </form>
                 </div>
                 <div class="contacts__communications communications">
-                  <h3>Контакты</h3>
+                  <h4>Контакты</h4>
                   <ul class="communications__list">
                       <li class="communications__item">
                           <h4>Адрес:</h4>
@@ -567,7 +562,7 @@
                 <nav class="footer__nav nav">
                     <div class="nav__logo">
                         <h4 class="visually-hidden">Логотип фитнес клуба SUPERGYM</h4>
-                        <a class="footer__logo logo" title="Логотип компании">
+                        <a class="footer__logo logo" title="Логотип компании" tabindex="0">
                             <img class="logo__img" src="img/logo.svg" width="87" height="20" alt="Логотип Supergym">
                         </a>
                     </div>
@@ -576,36 +571,36 @@
                             <a class="nav__link" href="#services">Услуги</a>
                         </li>
                         <li class="nav__item nav__item--abon">
-                            <a class="nav__link" href="#subscriptions">Абонементы</a>
+                            <a class="nav__link" href="#abon">Абонементы</a>
                         </li>
                         <li class="nav__item nav__item--promo">
-                            <a class="nav__link" href="#promotions">Акции</a>
+                            <a class="nav__link" href="#promo">Акции</a>
                         </li>
                         <li class="nav__item nav__item--trainers">
                             <a class="nav__link" href="#trainers">Тренеры</a>
                         </li>
                         <li class="nav__item nav__item--tab">
-                            <a class="nav__link" href="#">Расписание</a>
+                            <a class="nav__link" href="#tab">Расписание</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="footer__social footer-social__list">
                     <li class="footer-social__item footer-social__item--vk">
-                        <a class="footer-social__link" href="#" aria-label="Мы во Вконтакте">
+                        <a class="footer-social__link footer-social__link--vk" href="#vk" aria-label="Мы во Вконтакте">
                             <svg width="24" height="13" fill="none" viewBox="0 0 24 13">
                                 <use xlink:href="#icon-vk"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social__item footer-social__item--instagram">
-                        <a class="footer-social__link" href="#" aria-label="Мы в Инстаграм">
+                        <a class="footer-social__link footer-social__link--insta" href="#insta" aria-label="Мы в Инстаграм">
                             <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <use xlink:href="#icon-insta"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social__item footer-social__item--fb">
-                        <a class="footer-social__link" href="#" aria-label="Мы в Фейсбуке">
+                        <a class="footer-social__link footer-social__link--fb" href="#fb" aria-label="Мы в Фейсбуке">
                             <svg width="12" height="24" fill="none" viewBox="0 0 12 24">
                                 <use xlink:href="#icon-fb"></use>
                             </svg>
