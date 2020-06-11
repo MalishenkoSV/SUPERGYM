@@ -1,13 +1,13 @@
 .logo {
-    display: inline-block;
-    width: 89px;
-    height: 20px;
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-    outline: none;
-  }
+  display: inline-block;
+  width: 89px;
+  height: 20px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  outline: none;
+}
 
 .logo__img {
   @media (max-width: $tablet-width) {

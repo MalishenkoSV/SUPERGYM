@@ -15,11 +15,9 @@
   height: 242px;
   background-color: $action-blue;
   color: $white;
-
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    // width: 266px;
     height: 335px;
   }
 
@@ -38,6 +36,7 @@
   @media (max-width: $tablet-width) {
     width: 566px;
   }
+
   @media (max-width: $mobile-width) {
     padding: 85px 12% 32px;
     width: 100%;
@@ -45,9 +44,10 @@
 }
 
 .reviews__photo {
+  position: absolute;
+  margin-right: 28px;
   width: 25%;
   height: auto;
-  position: absolute;
   top: 55px;
   left: 61px;
 }
@@ -75,10 +75,6 @@
   }
 }
 
-.reviews__photo {
-  margin-right: 28px;
-}
-
 .reviews__client p {
   width: 100%;
 
@@ -100,6 +96,7 @@
   @media (max-width: $tablet-width) {
     left: 5%;
   }
+
   @media (max-width: $mobile-width) {
     left: 3%;
     height: 36px;
@@ -113,6 +110,7 @@
   @media (max-width: $tablet-width) {
     right: 5%;
   }
+
   @media (max-width: $mobile-width) {
     right: 3%;
     height: 36px;

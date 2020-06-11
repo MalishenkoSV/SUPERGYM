@@ -9,6 +9,7 @@
     width: 100%;
     padding: 0 21% 30px 17%;
   }
+
   @media (max-width: $mobile-width) {
     padding: 70px 15px 30px 15px;
     height: 386px;
@@ -34,9 +35,7 @@
   margin-bottom: 30px;
   text-transform: uppercase;
   background-color: transparent;
-
   // @media (max-width: $tablet-width) {
-
   // }
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -49,7 +48,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 
 .registration__form input {
   width: 28%;
@@ -70,8 +68,6 @@
   opacity: 0.4;
 }
 
-
 .registration__form input::placeholder {
   color: $white;
 }
-

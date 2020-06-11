@@ -8,8 +8,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 39px;
-  @media (max-width: $tablet-width) {
-  }
+
+  // @media (max-width: $tablet-width) {
+  // }
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -27,9 +28,8 @@
 }
 
 .controls__btn {
-  border: transparent;
   @include month-abonem;
-  background-color: $white;
+  border: transparent;
   background-color: $whitegrey;
   color: $blue-font-opacity;
   cursor: pointer;
@@ -61,4 +61,3 @@
 .controls__btn--one {
   cursor: default;
 }
-
