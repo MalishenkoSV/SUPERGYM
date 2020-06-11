@@ -233,7 +233,8 @@
     display: none;
   }
 
-  & strong {
+}
+.privilege__item--center strong {
     display: block;
     font-size: 72px;
     padding-bottom: 46px;
@@ -247,7 +248,7 @@
     }
   }
 
-  & .privilege__losung {
+.privilege__item--center .privilege__losung {
     font-size: 26px;
     margin-bottom: 40px;
 
@@ -260,11 +261,10 @@
     @media (max-width: $mobile-width) {
       margin-bottom: 11px;
     }
-  }
+}
 
-  & .privilege__text {
+.privilege__item--center .privilege__text {
     @media (max-width: $tablet-width) {
       text-align: center;
     }
   }
-}
