@@ -1,7 +1,6 @@
 .footer {
   background-color: $black;
   color: $white;
-  height: 108px;
   padding: 0;
 
   // @media (max-width: $tablet-width) {
@@ -20,13 +19,11 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 
-  // @media (max-width: 890px) {
-  //   justify-content: stretch;
-  // }
+  @media (max-width: $tablet-width) {
+  padding: 37px 5.7%;
+  justify-content: stretch;
 
-
-  // @media (max-width: $tablet-width) {
-  // }
+  }
 
   @media (max-width: $mobile-width) {
     @include font-foot-mob;

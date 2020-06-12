@@ -20,6 +20,12 @@
 .slider__btn--start {
   background-image: url("../img/start.svg");
 
+
+  @media (max-width: $tablet-width) {
+    top: 45%;
+    left: 0;
+  }
+
   @media (max-width: $mobile-width) {
     width: 10px;
     height: 19px;
@@ -34,6 +40,7 @@
 
   @media (max-width: $tablet-width) {
     top: 45%;
+    right: 0;
   }
 
   @media (max-width: $mobile-width) {

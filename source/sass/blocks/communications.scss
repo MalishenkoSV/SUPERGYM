@@ -8,11 +8,14 @@
     width: 100%;
     justify-content: space-between;
     padding: 70px 17% 70px 23%;
+    padding: 70px 6% 46px 12.5%;
+    height: auto;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     height: auto;
+    padding: 70px 4.7% 46px;
   }
 }
 
@@ -26,9 +29,12 @@
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-hall;
+    margin-left: 37px;
   }
-  // @media (max-width: $mobile-width) {
-  // }
+  @media (max-width: $mobile-width) {
+    @include mobile-Bebas-title;
+    margin-left: 0;
+  }
 }
 
 .communications__list {
@@ -46,6 +52,15 @@
   width: 1px;
   height: 102px;
   background-color: $border-color;
+
+  @media (max-width: $tablet-width) {
+    height: 130px;
+    left: 48.5%;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .communications__item {
@@ -54,15 +69,24 @@
   width: 49%;
 
   @media (max-width: $tablet-width) {
-    width: 28%;
+    width: 50%;
+    padding: 0 0 10px 38px;
   }
-  // @media (max-width: $mobile-width) {
-  // }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    width: 100%;
+  }
 }
 
 .communications__item h5 {
   margin-top: 5px;
   margin-bottom: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin: 8px 0;
+    font-size: 20px;
+  }
 }
 
 .communications__info--link {
@@ -74,6 +98,10 @@
 .communications__info {
   @include font-min;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .communications__info--link:hover,

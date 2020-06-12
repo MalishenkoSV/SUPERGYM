@@ -37,7 +37,7 @@
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-hall;
-    margin: 0 auto 29px;
+    margin: 4px auto 29px;
     line-height: 44px;
     font-size: 42px;
     letter-spacing: 0.03em;
@@ -153,7 +153,7 @@
   margin: 13px 66px;
 
   @media (max-width: $mobile-width) {
-    margin: 15px 66px;
+    margin: 10px 66px 15px;
   }
 }
 
@@ -167,6 +167,7 @@
   @media (max-width: $mobile-width) {
     @include font-abon;
     margin-bottom: 0;
+    margin-top: 40px;
   }
 }
 
@@ -175,10 +176,12 @@
   color: $font-blue;
   margin-top: -15px;
   z-index: 5;
+  text-align: center;
 
   @media (max-width: $mobile-width) {
     font-size: 46px;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -206,12 +209,9 @@
   }
 }
 
-.abonements__item span {
-  margin-top: 50px;
-}
-
 .abonements__item strong {
   color: $dark-blue;
+  margin-left: 5px;
 }
 
 .abonements__item a {
@@ -228,6 +228,7 @@
 
   @media (max-width: $tablet-width) {
     width: 49%;
+    padding: 22px;
   }
 
   @media (max-width: $mobile-width) {
