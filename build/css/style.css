@@ -600,7 +600,7 @@ input[type="radio"].visually-hidden {
     .gym__title {
       font-size: 79px;
       line-height: 78px;
-      margin-bottom: 42px; } }
+      margin-bottom: 38px; } }
 
 .gym__info {
   display: -webkit-box;
@@ -641,7 +641,7 @@ input[type="radio"].visually-hidden {
     .gym__city {
       font-size: 28px;
       line-height: 44px;
-      margin-bottom: 2px; } }
+      margin-bottom: 8px; } }
 
 .gym__list {
   margin: 0;
@@ -843,7 +843,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f9fc;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
-  padding: 2px 0 14px;
+  padding: 2px 0 14px 3px;
   outline: none;
   border-bottom: 2px solid transparent; }
   @media (max-width: 1199px) {
@@ -877,7 +877,7 @@ input[type="radio"].visually-hidden {
   color: #102654; }
   @media (max-width: 767px) {
     .controls__btn--active::after {
-      width: 110%; } }
+      width: 21%; } }
 
 .description {
   position: relative;
@@ -1028,7 +1028,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .abonements {
       padding-top: 68px;
-      padding-bottom: 52px; } }
+      padding-bottom: 35px; } }
 
 .abonements__wrapper {
   margin: 0 auto; }
@@ -1064,14 +1064,12 @@ input[type="radio"].visually-hidden {
       font-weight: 700;
       font-size: 32px;
       line-height: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      margin-top: 1px;
       padding: 0; } }
 
 .abonements__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%; }
+  display: none; }
   @media (max-width: 1199px) {
     .abonements__list {
       -ms-flex-wrap: wrap;
@@ -1159,7 +1157,7 @@ input[type="radio"].visually-hidden {
       font-weight: 700;
       font-size: 22px;
       padding: 0;
-      margin-top: 40px; } }
+      margin-top: 42px; } }
 
 .abonements__item p {
   margin: 13px 66px; }
@@ -1217,8 +1215,7 @@ input[type="radio"].visually-hidden {
       left: 25%; } }
   @media (max-width: 767px) {
     .abonements__item b::before {
-      top: 30%;
-      left: 20%;
+      left: 17%;
       padding: 0;
       font-size: 79px; } }
 
@@ -1261,9 +1258,6 @@ input[type="radio"].visually-hidden {
   -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
      border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 30;
      border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30; }
-
-.abonements__list {
-  display: none; }
 
 .abonements__list--shown {
   display: -webkit-box;
@@ -1331,6 +1325,9 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-left: 1px; }
+  @media (max-width: 767px) {
+    .games__text-wrapper {
+      margin-bottom: -10px; } }
 
 .games__title {
   font-family: "Bebas Neue", "Arial Narrow", sans-serif;
@@ -1343,7 +1340,10 @@ input[type="radio"].visually-hidden {
     .games__title {
       font-size: 52px;
       line-height: 52px;
-      margin-top: 8px; } }
+      margin-top: 5px; } }
+  @media (max-width: 767px) {
+    .games__title {
+      margin-top: 12px; } }
 
 .games__table {
   width: 100px;
@@ -1356,6 +1356,49 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .games__table {
       margin-left: 25px; } }
+
+.games__text {
+  margin: 7px 2px 46px; }
+  @media (max-width: 1199px) {
+    .games__text {
+      margin: 0 0 25px; } }
+  @media (max-width: 767px) {
+    .games__text {
+      margin: 0 0 27px; } }
+
+.games__btn {
+  width: 100%;
+  padding: 25px 25px 24px;
+  outline: none;
+  cursor: pointer; }
+  @media (max-width: 1199px) {
+    .games__btn {
+      padding: 11px;
+      font-size: 10px; } }
+  @media (max-width: 767px) {
+    .games__btn {
+      padding: 11px 25px 12px;
+      font-size: 10px;
+      border-width: 2px; } }
+
+.games__btn:hover,
+.games__btn:focus {
+  -webkit-box-shadow: 0 0 0 3px white;
+          box-shadow: 0 0 0 3px white;
+  color: white; }
+
+.games__btn:active {
+  opacity: 0.4; }
+
+.games__process {
+  background-color: #102654;
+  width: 660px; }
+  @media (max-width: 1199px) {
+    .games__process {
+      width: 386px; } }
+  @media (max-width: 767px) {
+    .games__process {
+      width: 100%; } }
 
 .table tbody {
   display: -webkit-box;
@@ -1418,45 +1461,13 @@ input[type="radio"].visually-hidden {
     .table div {
       font-size: 10px; } }
 
-.games__text {
-  margin: 7px 2px 46px; }
-  @media (max-width: 1199px) {
-    .games__text {
-      margin: 0 0 25px; } }
-
-.games__btn {
-  width: 100%;
-  padding: 25px 25px 24px;
-  outline: none;
-  cursor: pointer; }
-  @media (max-width: 1199px) {
-    .games__btn {
-      padding: 11px;
-      font-size: 10px; } }
-  @media (max-width: 767px) {
-    .games__btn {
-      padding: 11px 25px 12px;
-      font-size: 10px;
-      border-width: 2px; } }
-
-.games__btn:hover,
-.games__btn:focus {
-  -webkit-box-shadow: 0 0 0 3px white;
-          box-shadow: 0 0 0 3px white;
-  color: white; }
-
-.games__btn:active {
-  opacity: 0.4; }
-
-.games__process {
-  background-color: #102654;
-  width: 660px; }
-  @media (max-width: 1199px) {
-    .games__process {
-      width: 386px; } }
-  @media (max-width: 767px) {
-    .games__process {
-      width: 100%; } }
+@media (max-width: 767px) {
+  .table span {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 150%; } }
 
 .trainers {
   position: relative;
@@ -1495,7 +1506,9 @@ input[type="radio"].visually-hidden {
       font-family: "Bebas Neue", "Arial Narrow", sans-serif;
       font-weight: 700;
       font-size: 32px;
-      line-height: 32px; } }
+      line-height: 32px;
+      padding-left: 0;
+      margin-top: 3px; } }
 
 .trainers__wrap {
   max-width: 1164px;
@@ -1817,8 +1830,7 @@ input[type="radio"].visually-hidden {
       padding: 77px 46px 38px; } }
   @media (max-width: 767px) {
     .privilege__item--short::before {
-      left: calc(50% - 30px);
-      left: 0; } }
+      left: calc(50% - 30px); } }
 
 .privilege__item--square::before {
   background-image: url("../../img/square.svg"); }
@@ -2150,10 +2162,10 @@ input[type="radio"].visually-hidden {
       width: 100%;
       padding: 18px 35px 28px; } }
 
-.promotions__item--discount--one {
+.promotions__item--discount-one {
   margin-right: 30px; }
   @media (max-width: 1199px) {
-    .promotions__item--discount--one {
+    .promotions__item--discount-one {
       margin: 0; } }
 
 .promotions__item--photo {
@@ -2286,8 +2298,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 120px;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2); }
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2); }
   @media (max-width: 1199px) {
     .reviews__item {
       width: 566px; } }
@@ -2489,7 +2501,6 @@ input[type="radio"].visually-hidden {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 70px 17% 70px 23%;
       padding: 70px 6% 46px 12.5%;
       height: auto; } }
   @media (max-width: 767px) {
@@ -2616,7 +2627,8 @@ input[type="radio"].visually-hidden {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      height: auto; } }
+      height: auto;
+      width: 100%; } }
 
 .nav__list {
   margin: 0;
@@ -2631,16 +2643,15 @@ input[type="radio"].visually-hidden {
       margin-right: 20px; } }
   @media (max-width: 767px) {
     .nav__list {
-      margin: 0;
+      margin: -38px 0 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       width: 100%;
-      height: auto; } }
+      max-height: 113px; } }
 
 .nav__item {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
@@ -2656,12 +2667,8 @@ input[type="radio"].visually-hidden {
       margin-left: 25px; } }
   @media (max-width: 767px) {
     .nav__item {
-      margin-bottom: 16px;
-      margin-right: 10%;
-      width: 45%;
-      -webkit-box-ordinal-group: 11;
-          -ms-flex-order: 10;
-              order: 10; } }
+      margin: 0;
+      width: 35%; } }
 
 .nav__logo {
   margin-right: 24%;
@@ -2673,58 +2680,23 @@ input[type="radio"].visually-hidden {
       margin-left: 2px; } }
   @media (max-width: 767px) {
     .nav__logo {
-      margin-bottom: 13px;
-      margin-top: 2px;
-      margin-left: 0; } }
-
-@media (max-width: 767px) {
-  .nav__item--promo {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: -75px;
-    margin-right: 0;
-    margin-left: 120px; } }
+      margin: 0; } }
 
 @media (max-width: 767px) {
   .nav__item--services {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-top: 0; } }
+    margin-top: 42px; } }
 
 @media (max-width: 767px) {
-  .nav__item--trainers {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-    margin-top: -40px;
-    margin-right: 0;
-    margin-left: 120px; } }
-
-@media (max-width: 767px) {
-  .nav__item--abon {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    margin-top: 10%; } }
-
-@media (max-width: 767px) {
-  .nav__item--tab {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-    margin-top: -10px;
-    margin-left: 25%;
-    margin-right: 0; } }
+  .nav__link {
+    display: block;
+    padding: 9px 20px 16px 0; } }
 
 .nav__link:hover,
 .nav__link:focus {
-  -webkit-box-shadow: 0 0 0 4px white;
-          box-shadow: 0 0 0 4px white; }
+  opacity: 0.8; }
 
 .nav__link:active {
-  opacity: 0.4; }
+  opacity: 0.25; }
 
 .footer {
   background-color: #030a1a;
@@ -2776,7 +2748,8 @@ input[type="radio"].visually-hidden {
   outline: none; }
   @media (max-width: 767px) {
     .footer a {
-      padding: 2px 20px 30px 0; } }
+      padding: 9px 20px 16px 0;
+      width: 100%; } }
 
 .footer-social__link:hover,
 .footer-social__link:focus {

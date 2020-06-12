@@ -282,3 +282,11 @@ $retina-dppx: 1.5dppx;
   font-size: 79px;
   line-height: 78px;
 }
+
+@mixin font-table {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 150%;
+}

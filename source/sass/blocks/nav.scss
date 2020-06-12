@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
+    width: 100%;
   }
 }
 
@@ -24,11 +25,12 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0;
+    margin: -38px 0 0;
     flex-direction: column;
-    align-items: flex-start;
+    // align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    max-height: 113px;
   }
 }
 
@@ -46,10 +48,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 16px;
-    margin-right: 10%;
-    width: 45%;
-    order: 10;
+    // margin-bottom: 16px;
+    // margin-right: 10%;
+    margin: 0;
+    width: 35%;
+    // order: 10;
   }
 }
 
@@ -65,59 +68,69 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 13px;
-    margin-top: 2px;
-    margin-left: 0;
+    // margin-bottom: 13px;
+    // margin-top: 2px;
+    // margin-left: 0;
+    margin: 0;
   }
 }
 
 
 .nav__item--promo {
   @media (max-width: $mobile-width) {
-    order: 2;
-    margin-top: -75px;
-    margin-right: 0;
-    margin-left: 120px;
+    // order: 2;
+    // margin-top: -75px;
+    // margin-right: 0;
+    // margin-left: 120px;
   }
 }
 
 .nav__item--services {
   @media (max-width: $mobile-width) {
-    order: 1;
-    margin-top: 0;
+    // order: 1;
+    margin-top: 42px;
   }
 }
 
 .nav__item--trainers {
   @media (max-width: $mobile-width) {
-    order: 4;
-    margin-top: -40px;
-    margin-right: 0;
-    margin-left: 120px;
+    // order: 4;
+    // margin-top: -40px;
+    // margin-right: 0;
+    // margin-left: 120px;
   }
 }
 
 .nav__item--abon {
   @media (max-width: $mobile-width) {
-    order: 3;
-    margin-top: 10%;
+    // order: 3;
+    // margin-top: 10%;
   }
 }
 
 .nav__item--tab {
   @media (max-width: $mobile-width) {
-    order: 5;
-    margin-top: -10px;
-    margin-left: 25%;
-    margin-right: 0;
+    // order: 5;
+    // margin-top: -10px;
+    // margin-left: 25%;
+    // margin-right: 0;
+  }
+}
+
+.nav__link {
+  @media (max-width: $mobile-width) {
+  // box-shadow: 0 0 0 4px $white;
+    display: block;
+    padding: 9px 20px 16px 0;
   }
 }
 
 .nav__link:hover,
 .nav__link:focus {
-  box-shadow: 0 0 0 4px $white;
+  // box-shadow: 0 0 0 4px $white;
+  opacity: 0.8;
 }
 
 .nav__link:active {
-  opacity: 0.4;
+  opacity: 0.25;
 }

@@ -139,7 +139,7 @@
   &::before {
     @media (max-width: $mobile-width) {
       left: calc(50% - 30px);
-      left: 0;
+      // left: 0;
     }
   }
 }
