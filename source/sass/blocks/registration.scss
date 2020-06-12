@@ -31,9 +31,10 @@
 
 .registration__btn {
   width: 99%;
+  font-size: 14px;
   margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 17px;
+  padding-top: 18px;
+  padding-bottom: 16px;
   margin-bottom: 30px;
   text-transform: uppercase;
   background-color: transparent;
@@ -56,9 +57,13 @@
   border: none;
   background-color: $action-blue;
   border-bottom: 1px solid $border-color;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   outline: none;
   cursor: pointer;
+  font-size: 13px;
+  color: $white;
+  padding: 7px 0;
+
 
   @media (max-width: $tablet-width) {
     width: 28%;
