@@ -271,6 +271,13 @@ $retina-dppx: 1.5dppx;
   line-height: 14px;
 }
 
+@mixin font-social-foot {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 @mixin mobile-Bebas-main {
   font-size: 79px;
   line-height: 78px;

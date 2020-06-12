@@ -47,7 +47,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 246px;
+    max-width: 226px;
   }
 }
 
@@ -59,7 +59,7 @@
 
   @media (max-width: $tablet-width) {
     width: auto;
-    min-width: 562px;
+    min-width: 566px;
   }
 
   @media (max-width: $mobile-width) {
@@ -92,7 +92,7 @@
   &:hover .trainers__info,
   &:active .trainers__info,
   &:focus .trainers__info {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
     background-color: rgba(16, 38, 84, 0.89);
     margin: 0;
   }

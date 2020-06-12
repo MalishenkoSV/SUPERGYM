@@ -1,12 +1,22 @@
 .reviews {
   margin-bottom: 120px;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 }
 
 .reviews h3 {
   @include adv-Bebas-bold;
   text-align: center;
   margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    margin-top: 36px;
+    margin-bottom: 49px;
+  }
 }
 
 .reviews__list {
@@ -18,11 +28,11 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    height: 335px;
+    height: auto;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
+    width: 75%;
   }
 }
 
@@ -38,8 +48,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 85px 12% 32px;
+    padding: 52px 8% 5px;
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -57,7 +68,7 @@
 }
 
 .reviews__client {
-  max-height: 118px;
+  // max-height: 118px;
   padding: 57px 11% 15px 30.5%;
 
 
@@ -71,12 +82,19 @@
   @include mp-reset;
 
   @media (max-width: $mobile-width) {
-    padding-left: 80px;
+    padding-left: 95px;
+    padding-bottom: 10px;
+    text-align: left;
   }
 }
 
 .reviews__client p {
   width: 100%;
+  line-height: 140%;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
 
   @media (max-width: $mobile-width) {
     @include font-basic;
@@ -90,29 +108,33 @@
 }
 
 .reviews__slider-btn-left {
-  top: 50%;
+  top: 58%;
   left: 346px;
 
   @media (max-width: $tablet-width) {
-    left: 5%;
+    left: 6%;
+    // top: 61%;
   }
 
   @media (max-width: $mobile-width) {
-    left: 3%;
+    left: 6%;
+    top: 55%;
     height: 36px;
   }
 }
 
 .reviews__slider-btn-right {
-  top: 50%;
+  top: 58%;
   right: 346px;
 
   @media (max-width: $tablet-width) {
-    right: 5%;
+    right: 6%;
+    // top: 61%;
   }
 
   @media (max-width: $mobile-width) {
     right: 3%;
+    top: 55%;
     height: 36px;
   }
 }

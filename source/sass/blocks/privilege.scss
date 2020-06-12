@@ -1,7 +1,7 @@
 .privilege {
   background-color: $whitegrey;
   width: 100%;
-  padding: 130px 20px 120px;
+  padding: 132px 20px 114px;
 
   @media (max-width: $tablet-width) {
     padding: 99px 35px 66px;
@@ -47,7 +47,7 @@
   position: relative;
   width: 29.3%;
   margin: 0 60px 83px 105px;
-  padding: 1px 0 75px 120px;
+  padding: 1px 0 73px 120px;
   border-bottom: 1px solid $red-opacity;
 
   @media (min-width: $desktop-width) {
@@ -83,15 +83,16 @@
   &::before {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 71px;
+    width: 107px;
+    height: 74px;
     top: 0;
-    left: 10px;
+    left: 4px;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (max-width: $tablet-width) {
+      left: 10px;
       width: 89px;
       height: 62px;
     }
@@ -128,6 +129,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 95px;
+    left: -6px;
   }
 
   @media (max-width: $mobile-width) {
@@ -207,7 +209,7 @@
   display: table;
   top: 0;
   bottom: 0;
-  left: calc(50% - 111px);
+  left: calc(50% - 119px);
   margin: 0;
   padding: 75px 34px 60px;
   width: 240px;

@@ -1,7 +1,7 @@
 .promotions__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 49px;
+  padding-top: 46px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -102,12 +102,13 @@
 .promotions h3 {
   @include adv-Bebas-bold;
   text-align: center;
-  margin: 95px 0 0;
+  margin: 103px 0 0;
 
   @media (max-width: $tablet-width) {
     margin: 151px 0 0;
     font-size: 42px;
   }
+
   @media (max-width: $mobile-width) {
     margin: 70px 0 0;
     font-size: 32px;
@@ -211,7 +212,7 @@
   width: 100%;
   margin-bottom: 40px;
   height: 211px;
-  padding: 18px 4.9% 28px;
+  padding: 23px 4.9% 28px;
   color: $action-blue;
 
   @media (max-width: $tablet-width) {
