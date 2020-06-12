@@ -1,7 +1,7 @@
 .privilege {
   background-color: $whitegrey;
   width: 100%;
-  padding: 132px 20px 114px;
+  padding: 133px 20px 114px;
 
   @media (max-width: $tablet-width) {
     padding: 99px 35px 66px;
@@ -139,6 +139,7 @@
   &::before {
     @media (max-width: $mobile-width) {
       left: calc(50% - 30px);
+      left: 0;
     }
   }
 }

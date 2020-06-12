@@ -19,7 +19,7 @@
 .trainers__title {
   @include adv-Bebas-bold;
   margin-top: 33px;
-  margin-bottom: 64px;
+  margin-bottom: 61px;
   padding-left: 7px;
   font-size: 48px;
   letter-spacing: 0.04em;
@@ -137,7 +137,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  margin-top: 246px;
+  margin-top: 244px;
   text-align: center;
 }
 
@@ -175,7 +175,7 @@
 
 .trainers__slider-btn-left {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 45px;
   cursor: pointer;
   background-color: transparent;
@@ -186,15 +186,27 @@
   }
 
   @media (max-width: $mobile-width) {
-
+    width: 10px;
+    height: 19px;
+    left: -5px;
   }
 }
 
 .trainers__slider-btn-right {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 45px;
   cursor: pointer;
   background-color: transparent;
 
+  @media (max-width: $tablet-width) {
+    top: 45%;
+    right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: 5px;
+    width: 10px;
+    height: 19px;
+  }
 }

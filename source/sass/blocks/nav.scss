@@ -24,6 +24,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin: 0;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -66,7 +67,7 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 13px;
     margin-top: 2px;
-    margin-left: 5px;
+    margin-left: 0;
   }
 }
 

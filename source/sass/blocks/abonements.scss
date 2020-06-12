@@ -31,8 +31,8 @@
 .abonements__title {
   @include adv-Bebas-bold;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 48px;
+  margin-top: 33px;
+  margin-bottom: 47px;
   text-align: center;
 
   @media (max-width: $tablet-width) {
@@ -68,7 +68,7 @@
     width: 470px;
     height: 494px;
     bottom: -80px;
-    right: -183px;
+    right: -189px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -160,7 +160,8 @@
 .abonements span {
   @include font-cost;
   color: $font-blue;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
+  margin-top: 53px;
   position: relative;
   z-index: 10;
 
@@ -189,8 +190,8 @@
   content: attr(data-parent);
   text-shadow: 10px 4px 0 $grey-opacity;
   position: absolute;
-  top: 33%;
-  right: 27%;
+  top: 35%;
+  right: 23%;
   line-height: 1;
   font-size: 100px;
   color: transparent;

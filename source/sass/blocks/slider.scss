@@ -19,35 +19,10 @@
 
 .slider__btn--start {
   background-image: url("../img/start.svg");
-
-
-  @media (max-width: $tablet-width) {
-    top: 45%;
-    left: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 10px;
-    height: 19px;
-    left: -5px;
-  }
 }
 
 .slider__btn--finish {
   background-image: url("../img/finish.svg");
-  right: 46px;
-  top: 171px;
-
-  @media (max-width: $tablet-width) {
-    top: 45%;
-    right: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    right: 5px;
-    width: 10px;
-    height: 19px;
-  }
 }
 
 .slider__btn:hover,

@@ -882,7 +882,7 @@ input[type="radio"].visually-hidden {
 .description {
   position: relative;
   width: 39%;
-  padding-left: 53px; }
+  padding-left: 63px; }
   @media (max-width: 1199px) {
     .description {
       width: 74%;
@@ -1046,8 +1046,8 @@ input[type="radio"].visually-hidden {
   font-size: 49px;
   letter-spacing: 0.03em;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 48px;
+  margin-top: 33px;
+  margin-bottom: 47px;
   text-align: center; }
   @media (max-width: 1199px) {
     .abonements__title {
@@ -1085,7 +1085,7 @@ input[type="radio"].visually-hidden {
     width: 470px;
     height: 494px;
     bottom: -80px;
-    right: -183px;
+    right: -189px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1173,7 +1173,8 @@ input[type="radio"].visually-hidden {
   font-size: 60px;
   line-height: 150%;
   color: #103aae;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
+  margin-top: 53px;
   position: relative;
   z-index: 10; }
   @media (max-width: 767px) {
@@ -1204,8 +1205,8 @@ input[type="radio"].visually-hidden {
   content: attr(data-parent);
   text-shadow: 10px 4px 0 rgba(232, 232, 232, 0.47);
   position: absolute;
-  top: 33%;
-  right: 27%;
+  top: 35%;
+  right: 23%;
   line-height: 1;
   font-size: 100px;
   color: transparent;
@@ -1478,7 +1479,7 @@ input[type="radio"].visually-hidden {
   font-size: 49px;
   letter-spacing: 0.03em;
   margin-top: 33px;
-  margin-bottom: 64px;
+  margin-bottom: 61px;
   padding-left: 7px;
   font-size: 48px;
   letter-spacing: 0.04em; }
@@ -1592,7 +1593,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   width: 100%;
   height: 100%;
-  margin-top: 246px;
+  margin-top: 244px;
   text-align: center; }
 
 .trainers__info h4 {
@@ -1627,7 +1628,7 @@ input[type="radio"].visually-hidden {
 
 .trainers__slider-btn-left {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 45px;
   cursor: pointer;
   background-color: transparent; }
@@ -1635,13 +1636,27 @@ input[type="radio"].visually-hidden {
     .trainers__slider-btn-left {
       top: 45%;
       left: 0; } }
+  @media (max-width: 767px) {
+    .trainers__slider-btn-left {
+      width: 10px;
+      height: 19px;
+      left: -5px; } }
 
 .trainers__slider-btn-right {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 45px;
   cursor: pointer;
   background-color: transparent; }
+  @media (max-width: 1199px) {
+    .trainers__slider-btn-right {
+      top: 45%;
+      right: 0; } }
+  @media (max-width: 767px) {
+    .trainers__slider-btn-right {
+      right: 5px;
+      width: 10px;
+      height: 19px; } }
 
 .slider__btn {
   content: "";
@@ -1662,29 +1677,9 @@ input[type="radio"].visually-hidden {
 
 .slider__btn--start {
   background-image: url("../img/start.svg"); }
-  @media (max-width: 1199px) {
-    .slider__btn--start {
-      top: 45%;
-      left: 0; } }
-  @media (max-width: 767px) {
-    .slider__btn--start {
-      width: 10px;
-      height: 19px;
-      left: -5px; } }
 
 .slider__btn--finish {
-  background-image: url("../img/finish.svg");
-  right: 46px;
-  top: 171px; }
-  @media (max-width: 1199px) {
-    .slider__btn--finish {
-      top: 45%;
-      right: 0; } }
-  @media (max-width: 767px) {
-    .slider__btn--finish {
-      right: 5px;
-      width: 10px;
-      height: 19px; } }
+  background-image: url("../img/finish.svg"); }
 
 .slider__btn:hover,
 .slider__btn:focus {
@@ -1698,7 +1693,7 @@ input[type="radio"].visually-hidden {
 .privilege {
   background-color: #f8f9fc;
   width: 100%;
-  padding: 132px 20px 114px; }
+  padding: 133px 20px 114px; }
   @media (max-width: 1199px) {
     .privilege {
       padding: 99px 35px 66px; } }
@@ -1822,7 +1817,8 @@ input[type="radio"].visually-hidden {
       padding: 77px 46px 38px; } }
   @media (max-width: 767px) {
     .privilege__item--short::before {
-      left: calc(50% - 30px); } }
+      left: calc(50% - 30px);
+      left: 0; } }
 
 .privilege__item--square::before {
   background-image: url("../../img/square.svg"); }
@@ -2164,7 +2160,8 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 50%;
   height: 462px;
-  background-image: url("../img/fit-girl-desktop@1x.png");
+  background-color: #003d85;
+  background-image: url("../img/fit-girl-desktop@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0; }
@@ -2634,6 +2631,7 @@ input[type="radio"].visually-hidden {
       margin-right: 20px; } }
   @media (max-width: 767px) {
     .nav__list {
+      margin: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -2677,7 +2675,7 @@ input[type="radio"].visually-hidden {
     .nav__logo {
       margin-bottom: 13px;
       margin-top: 2px;
-      margin-left: 5px; } }
+      margin-left: 0; } }
 
 @media (max-width: 767px) {
   .nav__item--promo {
@@ -2769,13 +2767,16 @@ input[type="radio"].visually-hidden {
       -ms-flex-line-pack: start;
           align-content: flex-start;
       min-width: 100%;
-      padding: 45px 15px; } }
+      padding: 46px 15px 45px; } }
 
 .footer a {
   color: white;
   text-decoration: none;
   cursor: pointer;
   outline: none; }
+  @media (max-width: 767px) {
+    .footer a {
+      padding: 2px 20px 30px 0; } }
 
 .footer-social__link:hover,
 .footer-social__link:focus {
