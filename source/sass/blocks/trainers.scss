@@ -97,6 +97,11 @@
     transform: translate(0, 0);
     background-color: rgba(16, 38, 84, 0.89);
     margin: 0;
+
+    @media (max-width: $mobile-width) {
+      width: auto;
+      height: 274px;
+    }
   }
 
   &:hover h4,
@@ -104,6 +109,10 @@
   &:focus h4 {
     margin-top: 52px;
     margin-bottom: 5px;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 41px;
+    }
   }
 }
 
@@ -153,6 +162,10 @@
   margin: 0;
   line-height: 6px;
   margin-bottom: 41px;
+
+  @media (max-width: $mobile-width) {
+    line-height: 3em;
+  }
 }
 
 .trainers__item:hover h4 {
@@ -164,6 +177,11 @@
   text-align: start;
   padding: 0 20px 10px 72px;
   font-size: 14px;
+  list-style: disc;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 50px;
+  }
 
   .trainers__achievs-list li {
     margin-bottom: 13px;

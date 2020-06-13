@@ -39,7 +39,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    padding-top: 6px;
+    padding: 6px 0 23px;
   }
 }
 
@@ -114,12 +114,13 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 77px 68px 46px;
+    padding: 75px 68px 40px;
   }
 
   &::before {
     @media (max-width: $mobile-width) {
       left: calc(50% - 44px);
+      top: -5px;
     }
   }
 }
@@ -133,20 +134,19 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 77px 46px 38px;
+    padding: 83px 46px 37px;
   }
 
   &::before {
     @media (max-width: $mobile-width) {
-      left: calc(50% - 30px);
-      // left: 0;
+      left: calc(50% - 22px);
+      top: 1px;
     }
   }
 }
 
 .privilege__item--square::before {
   background-image: url("../../img/square.svg");
-  // width: 108px;
 
   @media (max-width: $mobile-width) {
     background-image: url("../../img/square_mobile.svg");
@@ -229,8 +229,8 @@
   @media (max-width: $mobile-width) {
     position: static;
     display: block;
-    margin: 6px 0 44px;
-    padding: 38px 74px 50px;
+    margin: 6px 0 55px;
+    padding: 38px 74px 45px;
     width: 100%;
   }
 
