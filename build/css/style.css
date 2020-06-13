@@ -1463,7 +1463,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .table span {
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -2459,7 +2459,7 @@ input[type="radio"].visually-hidden {
       padding: 0 21% 30px 17%; } }
   @media (max-width: 767px) {
     .registration {
-      padding: 70px 15px 30px 15px;
+      padding: 9px 15px 30px 15px;
       height: 386px; } }
 
 .registration h4 {
@@ -2696,7 +2696,7 @@ input[type="radio"].visually-hidden {
       margin-right: 20px; } }
   @media (max-width: 767px) {
     .nav__list {
-      margin: -38px 0 0;
+      margin: -38px 0 22px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -2704,7 +2704,9 @@ input[type="radio"].visually-hidden {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       width: 100%;
-      max-height: 113px; } }
+      max-height: 133px;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; } }
 
 .nav__item {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
@@ -2721,7 +2723,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .nav__item {
       margin: 0;
-      width: 35%; } }
+      width: 44%; } }
 
 .nav__logo {
   margin-right: 24%;
@@ -2773,7 +2775,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between; }
   @media (max-width: 1199px) {
     .footer__wrapper {
-      padding: 37px 5.7%;
+      padding: 37px 5.7% 15px;
       -webkit-box-pack: stretch;
           -ms-flex-pack: stretch;
               justify-content: stretch; } }
@@ -2838,13 +2840,14 @@ input[type="radio"].visually-hidden {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      margin-left: 2px;
       width: auto; } }
 
 .footer-social__item {
   margin-right: 25px; }
   @media (max-width: 767px) {
     .footer-social__item {
-      margin-right: 36px;
+      margin-right: 20px;
       margin-left: 0; } }
 
 .footer-social__item:last-child {

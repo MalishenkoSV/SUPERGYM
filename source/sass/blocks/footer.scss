@@ -20,7 +20,7 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    padding: 37px 5.7%;
+    padding: 37px 5.7% 15px;
     justify-content: stretch;
   }
 
@@ -71,6 +71,7 @@
 
   @media (max-width: $mobile-width) {
     align-items: center;
+    margin-left: 2px;
     width: auto;
   }
 }
@@ -79,7 +80,7 @@
   margin-right: 25px;
 
   @media (max-width: $mobile-width) {
-    margin-right: 36px;
+    margin-right: 20px;
     margin-left: 0;
   }
 }

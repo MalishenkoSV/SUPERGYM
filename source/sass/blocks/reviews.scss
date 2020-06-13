@@ -75,7 +75,7 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    top:39px;
+    top: 39px;
     left: 41px;
   }
 }
@@ -84,7 +84,8 @@
   @media (max-width: $mobile-width) {
     top: 70px;
     width: 70px;
-  }}
+  }
+}
 
 .reviews__item--hidden {
   display: none;
