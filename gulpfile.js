@@ -32,14 +32,6 @@ gulp.task('css', function () {
       .pipe(server.stream());
 });
 
-gulp.task('js', function () {
-  return gulp.src(['source/js/vendor.js', 'source/js/main.js'])
-  // .pipe(concat('main.js'))
-      .pipe(uglify())
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('build/js'));
-});
-
 gulp.task('server', function () {
   server.init({
     server: 'build/',
@@ -111,13 +103,21 @@ gulp.task('clean', function () {
 
 gulp.task('concat-js-main', function () {
   return gulp.src('source/js/main*.js')
-      .pipe(concat('main.min.js'))
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('concat-js-vendor', function () {
   return gulp.src('source/js/vendor*.js')
-      .pipe(concat('vendor.min.js'))
+      .pipe(concat('vendor.js'))
+      .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('js', function () {
+  return gulp.src(['source/js/vendor.js', 'source/js/main.js'])
+  // .pipe(concat('main.js'))
+      .pipe(uglify())
+      .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('build/js'));
 });
 
