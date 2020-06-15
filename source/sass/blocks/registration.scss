@@ -38,8 +38,7 @@
   margin-bottom: 30px;
   text-transform: uppercase;
   background-color: transparent;
-  // @media (max-width: $tablet-width) {
-  // }
+
   @media (max-width: $mobile-width) {
     width: 100%;
   }
@@ -50,6 +49,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .registration__form input {
@@ -67,6 +71,10 @@
 
   @media (max-width: $tablet-width) {
     width: 28%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 

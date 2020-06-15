@@ -112,3 +112,27 @@
 .communications__info--link:active {
   opacity: 0.5;
 }
+
+.communications__item--adress {
+  @media (max-width: $mobile-width) {
+    order: 1;
+  }
+}
+
+.communications__item--shedule {
+  @media (max-width: $mobile-width) {
+    order: 2;
+  }
+}
+
+.communications__item--tel {
+  @media (max-width: $mobile-width) {
+    order: 3;
+  }
+}
+
+.communications__item--email {
+  @media (max-width: $mobile-width) {
+    order: 4;
+  }
+}
