@@ -2,6 +2,9 @@
 <html lang="ru">
     <head>
       <meta charset="utf-8">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.webp">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.webp">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.webp">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="description" content="Официальный страница компании SUPERGYM">
       <meta name="format-detection" content="telephone=no">
@@ -46,8 +49,7 @@
                     </div>
                     <div class="main-screen__photo photo">
                         <picture>
-
-                            <source type="image/webp" media="(max-width: 767px)" srcset="img/rectangle_mobile_x1.webp 1x, img/rectangle_mobile_x2.webp 2x">
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/rectangle_tablet_x1.webp 1x, img/rectangle_tablet_x2.webp 2x">
                             <source type="image/png" media="(max-width: 1199px)" srcset="img/rectangle_tablet_x1.png 1x, img/rectangle_tablet_x2.png 2x">
                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/rectangle_desktop_x1.webp 1x, img/rectangle_desktop_x2.webp 2x">
                               <!-- 1x: 500px, 2x: 1000px -->
@@ -82,27 +84,24 @@
 
                 <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/hall_mobile_x1.webp 1x, img/hall_mobile_x2.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hall_tablet_x1.webp 1x, img/hall_tablet_x2.webp 2x">
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/hall_desktop_x1.webp 1x, img/hall_desktop_x2.webp 2x">
                     <source media="(max-width: 767px)" srcset="img/hall_mobile_x1.png 1x, img/hall_mobile_x1.png 2x">
-                    <source media="(min-width: 1199px)" srcset="img/hall_tablet_x2.png 1x, img/hall_tablet_x2.png 2x">
-                    <img class="hall__photo" src="img/hall_desktop_x1.png" srcset="img/hall_desktop_x2.png 2x" width="660" height="401" alt="Оборудование в белом просторном зале">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/hall_tablet_x1.webp 1x, img/hall_tablet_x2.webp 2x">
+                    <source type="image/png" media="(max-width: 1199px)" srcset="img/hall_tablet_x2.png 1x, img/hall_tablet_x2.png 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/hall_desktop_x1.webp 1x, img/hall_desktop_x2.webp 2x">
+                    <!-- 1х: 660px; 2x: 1320px -->
+                    <img class="hall__photo" src="img/hall_desktop_x1.png" srcset="img/hall_desktop_x1.png 1x, img/hall_desktop_x2.png 2x" width="660" height="401"
+                                                                                                                                                  alt="Оборудование в белом просторном зале">
                 </picture>
                 <div class="hall__video-container video">
                     <picture>
                         <source type="image/webp" media="(max-width: 767px)" srcset="img/video_poster_mobile@x1.webp 1x, img/video_poster_mobile@x2.webp 2x">
+                        <source type="image/png" media="(max-width: 767px)" srcset="img/video_poster_mobile@x1.png 1x, img/video_poster_mobile@x2.png 2x">
                         <source type="image/webp" media="(max-width: 1199px)" srcset="img/video_poster_tablet@x1.webp 1x, img/video_poster_tablet@x2.webp 2x">
+                        <source type="image/png" media="(max-width: 1199px)" srcset="img/video_poster_tablet@x2.png 1x, img/video_poster_tablet@x2.png 2x">
                         <source type="image/webp" media="(min-width: 1200px)" srcset="img/video_poster_desktop@x1.webp 1x, img/video_poster_desktop@x2.webp 2x">
-                        <source media="(max-width: 767px)"
-                                srcset="img/video_poster_mobile@x1.png 1x,
-                                        img/video_poster_mobile@x2.png 2x">
-                        <source media="(min-width: 1199px)"
-                                srcset="img/video_poster_tablet@x2.png 1x,
-                                        img/video_poster_tablet@x2.png 2x">
-                        <img class="video__poster"
-                              src="img/video_poster_desktop@x1.png"
-                              srcset="img/video_poster_desktop@x2.png 2x" width="368" height="228"
-                              alt="Обычная тренировка в нашем белом просторном зале">
+                        <!-- 1х: 368px; 2x: 736px -->
+                        <img class="video__poster" src="img/video_poster_desktop@x1.png" srcset="img/video_poster_desktop@x1.png 1x, img/video_poster_desktop@x2.png 2x" width="368" height="228"
+                                                                                                                alt="Обычная тренировка в нашем белом просторном зале">
                     </picture>
                     <button type="button" class="video__button">Воспроизвести</button>
                 </div>
@@ -212,16 +211,18 @@
                 <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.webp 1x,
                                                                                   img/supergames_prewiev_mobile_x2.webp 2x">
+                    <source type="image/png" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.png 1x,
+                                                                                  img/supergames_prewiev_mobile_x2.png 2x">
                     <source type="image/webp" media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.webp 1x,
                                                                                   img/supergames_prewiev_tablet_x2.webp 2x">
-                    <source media="(max-width: 1199px)" type="image/webp" srcset="img/supergames_prewiev_desktop_x1.webp 1x,
+                    <source type="image/png" media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.png 1x,
+                                                                                  img/supergames_prewiev_tablet_x2.png 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/supergames_prewiev_desktop_x1.webp 1x,
                                                                                   img/supergames_prewiev_desktop_x2.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.png 1x,
-                      img/supergames_prewiev_mobile_x2.png 2x">
-                    <source media="(max-width: 1199px)" srcset="img/supergames_prewiev_tablet_x1.png 1x,
-                      img/supergames_prewiev_tablet_x2.png 2x">
+                    <!-- 1х: 660px; 2x: 1320px -->
                     <img class="games__process" width="660" height="500" src="img/supergames_prewiev_desktop_x1.png"
-                                                                      srcset="img/supergames_prewiev_desktop_x2.png 2x"
+                                                                      srcset="img/supergames_prewiev_desktop_x1.png 1x,
+                                                                              img/supergames_prewiev_desktop_x2.png 2x"
                                                                       alt="Активные игры на растяжку с спецеффектами">
                 </picture>
             </section>
@@ -229,18 +230,19 @@
                 <div class="trainers__wrap">
                     <h3 class="trainers__title">Тренеры</h3>
                     <ul class="trainers__list trainers__list--one trainers__list--active">
-                        <li class="trainers__item trainers__item--one" tabindex="0">
+                        <li class="trainers__item" tabindex="0">
                             <picture>
                                 <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                             img/trainer_01_mobile_x2.webp 2x">
                                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
                                                                                               img/trainer_01_tablet_x2.webp 2x">
-                                <source type="image/webp" srcset="img/trainer_01_desktop_x1.webp 1x,
+                                <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                               img/trainer_01_desktop_x2.webp 2x">
-                                <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                                               img/trainer_01_mobile_x2.png 2x">
-                                <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                            img/trainer_01_tablet_x2.png 2x">
+                                <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                              img/trainer_01_tablet_x2.png 2x">
+                                <!-- 1х: 260px; 2x: 520px -->
                                 <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
                                                                                   srcset="img/trainer_01_desktop_x2.png 2x"
                                                                                   alt="Фото тренера Анны Поповой">
@@ -255,7 +257,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="trainers__item trainers__item--two" tabindex="0">
+                        <li class="trainers__item" tabindex="0">
                             <picture>
                                 <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                               img/trainer_01_mobile_x2.webp 2x">
@@ -263,12 +265,13 @@
                                                                                               img/trainer_02_tablet_x2.webp 2x">
                                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                               img/trainer_02_desktop_x2.webp 2x">
-                                <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                             img/trainer_01_mobile_x2.png 2x">
-                                <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
                                                                             img/trainer_01_tablet_x2.png 2x">
+                                <!-- 1х: 260px; 2x: 520px -->
                                 <img class="slider__image" width="274" height="226" src="img/trainer_02_desktop_x1.png"
-                                srcset="img/trainer_02_desktop_x2.png 2x"
+                                                                                      srcset="img/trainer_02_desktop_x2.png 2x"
                                                                                             alt="Фото тренера Алексея Лаврова">
                             </picture>
                             <div class="trainers__info">
@@ -281,7 +284,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="trainers__item trainers__item--three" tabindex="0">
+                        <li class="trainers__item" tabindex="0">
                             <picture>
                                 <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                               img/trainer_01_mobile_x2.webp 2x">
@@ -289,10 +292,11 @@
                                                                                               img/trainer_01_tablet_x2.webp 2x">
                                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_03_desktop_x1.webp 1x,
                                                                                               img/trainer_03_desktop_x2.webp 2x">
-                                <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                           img/trainer_01_mobile_x2.png 2x">
-                                <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
                                                                           img/trainer_01_tablet_x2.png 2x">
+                                <!-- 1х: 260px; 2x: 520px -->
                                 <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.jpg"
                                                                                   srcset="img/trainer_03_desktop_x2.jpg 2x"
                                                                                   alt="Фото тренера Александра Пашкова">
@@ -307,18 +311,19 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="trainers__item trainers__item--four" tabindex="0">
+                        <li class="trainers__item" tabindex="0">
                             <picture>
                                 <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                               img/trainer_01_mobile_x2.webp 2x">
                                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
-                                img/trainer_02_tablet_x2.webp 2x">
+                                                                                              img/trainer_02_tablet_x2.webp 2x">
                                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_04_desktop_x1.webp 1x,
                                                                                               img/trainer_04_desktop_x2.webp 2x">
-                                <source media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
+                                <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
                                                                                               img/trainer_02_tablet_x2.png 2x">
-                                <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                                <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                                               img/trainer_01_mobile_x2.png 2x">
+                                <!-- 1х: 260px; 2x: 520px -->
                                 <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
                                                                                     srcset="img/trainer_04_desktop_x2.png 2x"
                                                                                     alt="Фото тренера Марии Кетовой">
@@ -333,18 +338,18 @@
                                 </ul>
                             </div>
                         </li>
-                      <li class="trainers__item trainers__item--one" tabindex="0">
+                        <li class="trainers__item" tabindex="0">
                           <picture>
                               <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                           img/trainer_01_mobile_x2.webp 2x">
                               <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.webp 1x,
                                                                                             img/trainer_01_tablet_x2.webp 2x">
-                              <source type="image/webp" srcset="img/trainer_01_desktop_x1.webp 1x,
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                             img/trainer_01_desktop_x2.webp 2x">
-                              <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                              <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                                             img/trainer_01_mobile_x2.png 2x">
-                              <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
-                                                                          img/trainer_01_tablet_x2.png 2x">
+                              <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                                                                                            img/trainer_01_tablet_x2.png 2x">
                               <img class="slider__image" width="274" height="226" src="img/trainer_01_desktop_x1.png"
                                                                                 srcset="img/trainer_01_desktop_x2.png 2x"
                                                                                 alt="Фото тренера Анны Поповой">
@@ -359,7 +364,7 @@
                               </ul>
                           </div>
                       </li>
-                      <li class="trainers__item trainers__item--two" tabindex="0">
+                      <li class="trainers__item" tabindex="0">
                           <picture>
                               <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                             img/trainer_01_mobile_x2.webp 2x">
@@ -367,12 +372,13 @@
                                                                                             img/trainer_02_tablet_x2.webp 2x">
                               <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                             img/trainer_02_desktop_x2.webp 2x">
-                              <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                              <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                           img/trainer_01_mobile_x2.png 2x">
-                              <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                              <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
                                                                           img/trainer_01_tablet_x2.png 2x">
+                              <!-- 1х: 260px; 2x: 520px -->
                               <img class="slider__image" width="274" height="226" src="img/trainer_02_desktop_x1.png"
-                              srcset="img/trainer_02_desktop_x2.png 2x"
+                                                                                    srcset="img/trainer_02_desktop_x2.png 2x"
                                                                                           alt="Фото тренера Алексея Лаврова">
                           </picture>
                           <div class="trainers__info">
@@ -385,7 +391,7 @@
                               </ul>
                           </div>
                       </li>
-                      <li class="trainers__item trainers__item--three" tabindex="0">
+                      <li class="trainers__item" tabindex="0">
                           <picture>
                               <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                             img/trainer_01_mobile_x2.webp 2x">
@@ -393,11 +399,12 @@
                                                                                             img/trainer_01_tablet_x2.webp 2x">
                               <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_03_desktop_x1.webp 1x,
                                                                                             img/trainer_03_desktop_x2.webp 2x">
-                              <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                              <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                         img/trainer_01_mobile_x2.png 2x">
-                              <source media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
+                              <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_01_tablet_x1.png 1x,
                                                                         img/trainer_01_tablet_x2.png 2x">
-                              <img class="slider__image" width="274" height="226" src="img/trainer_03_desktop_x1.jpg"
+                              <!-- 1х: 260px; 2x: 520px -->
+                              <img class="slider__image" width="260" height="294" src="img/trainer_03_desktop_x1.jpg"
                                                                                 srcset="img/trainer_03_desktop_x2.jpg 2x"
                                                                                 alt="Фото тренера Александра Пашкова">
                           </picture>
@@ -411,17 +418,17 @@
                               </ul>
                           </div>
                       </li>
-                      <li class="trainers__item trainers__item--four" tabindex="0">
+                      <li class="trainers__item" tabindex="0">
                           <picture>
                               <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.webp 1x,
                                                                                             img/trainer_01_mobile_x2.webp 2x">
                               <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.webp 1x,
-                              img/trainer_02_tablet_x2.webp 2x">
+                                                                                            img/trainer_02_tablet_x2.webp 2x">
                               <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_04_desktop_x1.webp 1x,
                                                                                             img/trainer_04_desktop_x2.webp 2x">
-                              <source media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
+                              <source type="image/png" media="(max-width: 1199px)" srcset="img/trainer_02_tablet_x1.png 1x,
                                                                                             img/trainer_02_tablet_x2.png 2x">
-                              <source media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
+                              <source type="image/png" media="(max-width: 767px)" srcset="img/trainer_01_mobile_x1.png 1x,
                                                                                             img/trainer_01_mobile_x2.png 2x">
                               <img class="slider__image" width="274" height="226" src="img/trainer_04_desktop_x1.png"
                                                                                   srcset="img/trainer_04_desktop_x2.png 2x"
@@ -528,6 +535,7 @@
                         <div class="reviews__photo">
                             <picture>
                                 <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                                  <!-- 1х: 80px; 2x: 160px -->
                                 <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Анна Орлова, клиентка клуба">
                             </picture>
                         </div>
@@ -542,6 +550,7 @@
                         <div class="reviews__photo">
                             <picture>
                                 <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                                <!-- 1х: 80px; 2x: 160px -->
                                 <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Регина Лаврова, клиентка клуба">
                             </picture>
                         </div>
@@ -555,6 +564,7 @@
                         <div class="reviews__photo">
                             <picture>
                                 <source type="image/webp" srcset="img/avatar_icon_01_x1.webp 1x, img/avatar_icon_01_x2.webp 2x">
+                                <!-- 1х: 80px; 2x: 160px -->
                                 <img src="img/avatar_icon_01_x1.png" srcset="img/avatar_icon_01_x2.png 2x" width="80" height="80" alt="Елена Иванова, клиентка клуба">
                             </picture>
                         </div>

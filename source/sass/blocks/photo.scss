@@ -1,28 +1,19 @@
 .photo {
   width: 500px;
   height: 556px;
-  background-color: $blue-font;
-  background-image: url("../img/rectangle_desktop_x1.png");
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   margin-top: -5px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/rectangle_desktop_x2.png");
-  }
-
   @media (max-width: $tablet-width) {
-    width: 379px;
-    height: 390px;
     margin-top: 18px;
-    background-image: url("../img/rectangle_tablet_x1.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/rectangle_tablet_x2.png");
-    }
   }
 
   @media (max-width: $mobile-width) {
     display: none;
   }
+}
+
+.photo picture {
+  width: 100%;
+  height: 100%;
 }
