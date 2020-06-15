@@ -1,7 +1,7 @@
 .abonements {
   position: relative;
   background-color: $whitegrey;
-  padding-bottom: 159px;
+  padding-bottom: 120px;
   margin: 0;
 
   @media (max-width: $tablet-width) {
@@ -16,6 +16,7 @@
 }
 
 .abonements__wrapper {
+  padding: 99px 0 0;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -52,7 +53,7 @@
 }
 
 .abonements__list {
-  // @include list-reset;
+  @include list-reset;
   // width: 100%;
   display: none;
 
@@ -69,8 +70,8 @@
     position: absolute;
     width: 470px;
     height: 494px;
-    bottom: -80px;
-    right: -189px;
+    bottom: -150px;
+    right: -182px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
     background-position: 0 0;

@@ -533,7 +533,10 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1199px) {
     .main-screen {
       margin-bottom: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   @media (max-width: 767px) {
     .main-screen {
       padding-right: 0;
@@ -730,22 +733,25 @@ input[type="radio"].visually-hidden {
   opacity: 0.4; }
 
 .photo {
+  margin-top: -5px;
   width: 500px;
   height: 556px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  margin-top: -5px; }
+  background-color: #102654;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (max-width: 1199px) {
     .photo {
+      width: 324px;
+      height: auto;
       margin-top: 18px; } }
   @media (max-width: 767px) {
     .photo {
       display: none; } }
 
-.photo picture {
-  width: 100%;
-  height: 100%; }
+@media (max-width: 1199px) {
+  .photo img {
+    width: 324px;
+    height: auto; } }
 
 .main {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
@@ -769,7 +775,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 187px; }
+  margin-bottom: 117px; }
   @media (max-width: 1199px) {
     .hall {
       margin-bottom: 100px;
@@ -868,6 +874,11 @@ input[type="radio"].visually-hidden {
       font-weight: 400;
       font-size: 16px;
       line-height: 150%; } }
+
+.controls__btn:hover,
+.controls__btn:focus {
+  color: #030a1a;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
 
 .controls__btn--active {
   cursor: auto;
@@ -1027,7 +1038,7 @@ input[type="radio"].visually-hidden {
 .abonements {
   position: relative;
   background-color: #f8f9fc;
-  padding-bottom: 159px;
+  padding-bottom: 120px;
   margin: 0; }
   @media (max-width: 1199px) {
     .abonements {
@@ -1039,6 +1050,7 @@ input[type="radio"].visually-hidden {
       padding-bottom: 35px; } }
 
 .abonements__wrapper {
+  padding: 99px 0 0;
   margin: 0 auto; }
   @media (max-width: 1199px) {
     .abonements__wrapper {
@@ -1077,6 +1089,9 @@ input[type="radio"].visually-hidden {
       padding: 0; } }
 
 .abonements__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: none; }
   @media (max-width: 1199px) {
     .abonements__list {
@@ -1090,8 +1105,8 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 470px;
     height: 494px;
-    bottom: -80px;
-    right: -189px;
+    bottom: -150px;
+    right: -182px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1280,7 +1295,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   width: 100%;
   color: white;
-  padding: 50px 0 100px;
+  padding: 120px 0 100px;
   font-size: 18px;
   font-weight: 400; }
   @media (max-width: 1199px) {
@@ -1494,7 +1509,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.03em;
   margin-top: 33px;
   margin-bottom: 61px;
-  padding-left: 7px;
   font-size: 48px;
   letter-spacing: 0.04em; }
   @media (max-width: 1199px) {
@@ -2459,7 +2473,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1199px) {
     .registration {
       width: 100%;
-      padding: 0 21% 30px 17%; } }
+      padding: 0 20.7% 30px 16.9%; } }
   @media (max-width: 767px) {
     .registration {
       padding: 9px 15px 30px 15px;
@@ -2474,6 +2488,12 @@ input[type="radio"].visually-hidden {
   color: white;
   margin-top: 61px;
   margin-bottom: 38px; }
+  @media (max-width: 1199px) {
+    .registration h4 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: .03em;
+      margin: 89px 3PX 32px; } }
   @media (max-width: 767px) {
     .registration h4 {
       font-family: "Bebas Neue", "Arial Narrow", sans-serif;
@@ -2521,7 +2541,8 @@ input[type="radio"].visually-hidden {
   padding: 7px 0; }
   @media (max-width: 1199px) {
     .registration__form input {
-      width: 28%; } }
+      width: 43%;
+      margin: 0 0 27px; } }
 
 .registration__form input:hover,
 .registration__form input:focus {

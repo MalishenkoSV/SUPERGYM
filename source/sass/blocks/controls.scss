@@ -41,6 +41,12 @@
   }
 }
 
+.controls__btn:hover,
+.controls__btn:focus {
+  color: $black;
+  border-bottom: 2px solid $red-opacity
+}
+
 .controls__btn--active {
   cursor: auto;
   border-color: $red;
