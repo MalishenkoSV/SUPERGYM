@@ -885,7 +885,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   width: 10%;
   height: 2px;
-  cursor: auto;
+  cursor: pointer;
   border-color: #d10a42;
   color: #102654; }
   @media (max-width: 767px) {

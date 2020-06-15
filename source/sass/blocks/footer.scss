@@ -2,10 +2,6 @@
   background-color: $black;
   color: $white;
   padding: 0;
-
-  // @media (max-width: $tablet-width) {
-  // }
-
   @media (max-width: $mobile-width) {
     height: auto;
   }
@@ -39,20 +35,11 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
-
+  width: 79px;
   @media (max-width: $mobile-width) {
     padding: 9px 20px 16px 0;
     width: 100%;
   }
-}
-
-.footer-social__link:hover,
-.footer-social__link:focus {
-  box-shadow: 0 0 0 2px $white;
-}
-
-.footer-social__link:active {
-  opacity: 0.4;
 }
 
 .footer-social {
@@ -89,6 +76,14 @@
   margin-right: 0;
 }
 
+.footer-social__link:hover,
+.footer-social__link:focus {
+  opacity: 0.8;
+}
+
+.footer-social__link:active {
+  opacity: 0.4;
+}
 
 .footer-social__item--vk svg {
   width: 24px;

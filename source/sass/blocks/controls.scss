@@ -39,27 +39,12 @@
   @media (max-width: $mobile-width) {
     @include font-basic;
   }
-
-  // &:hover,
-  // &:focus {
-  //   border-color: $red;
-  //   color: $blue-font;
-  // }
-
-  // &:active {
-  //   color: $blue-font;
-  // }
 }
 
 .controls__btn--active {
   cursor: auto;
   border-color: $red;
   color: $blue-font;
-
-  // &:hover,
-  // &:focus {
-  //   border:  2 px solid $blue-font;
-  // }
 }
 
 .controls__btn--active::after {
@@ -68,7 +53,7 @@
   bottom: 0;
   width: 10%;
   height: 2px;
-  cursor: auto;
+  cursor: pointer;
   border-color: $red;
   color: $blue-font;
 

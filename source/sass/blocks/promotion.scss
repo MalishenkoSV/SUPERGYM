@@ -20,8 +20,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    // width: 100%;
-    // padding-left: 0;
     flex-direction: column;
   }
 }
@@ -43,8 +41,6 @@
 }
 
 .promotions__list--abonement {
-  // width: 48%;
-
   @media (max-width: $tablet-width) {
     width: 100%;
     min-height: 462px;
@@ -94,10 +90,6 @@
     margin-bottom: 0;
     padding: 20px 17px;
   }
-
-  // @media (max-width: $mobile-width) {
-  // }
-}
 
 .promotions h3 {
   @include adv-Bebas-bold;
@@ -307,8 +299,9 @@
 
 .promotions__link--unlimited:hover,
 .promotions__link--unlimited:focus {
-  box-shadow: 0 0 0 4px $white;
-  color: $white;
+  width: 79px;
+  height: 10px;
+  color: $white-opacity;
 }
 
 .promotions__link--unlimited:active {

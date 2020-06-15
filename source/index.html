@@ -15,6 +15,7 @@
       <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-regular.woff2" crossorigin="anonymous">
       <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-bold.woff2" crossorigin="anonymous">
       <link href="css/style.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js" defer></script>
       <title>SUPERGYM</title>
     </head>
     <body>
@@ -44,7 +45,18 @@
                             Купить абонемент
                         </a>
                     </div>
-                    <div class="main__photo photo"></div>
+                    <div class="main-screen__photo photo">
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 1199px)" srcset="img/rectangle_tablet_x1.webp 1x, img/rectangle_tablet_x2.webp 2x">
+                            <source type="image/png" media="(max-width: 1199px)" srcset="img/rectangle_tablet_x1.png 1x, img/rectangle_tablet_x2.png 2x">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/rectangle_desktop_x1.webp 1x, img/rectangle_desktop_x2.webp 2x">
+                              <!-- 1x: 500px, 2x: 1000px -->
+                            <img src="img/rectangle_desktop_x1.png" width="500" height="556" srcset="img/rectangle_desktop_x1.png 1x, img/rectangle_desktop_x2.png 2x"
+                            alt="Супер спортсмен">
+                        </picture>
+
+                    </div>
                     <ul class="main__social social">
                         <li class="social__item social__item--fb">
                             <a href="#" class="social__link link" aria-label="Наша страница в фейсбуке" tabindex="0">Fb</a>
@@ -110,14 +122,14 @@
                             <p>12 занятий</p>
                             <span>5000<strong>₽</strong></span>
                             <b data-parent="5000"></b>
-                            <a href="buy.html" tabindex="0">Купить абонемент</a>
+                            <a href="#" tabindex="0">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--one">
                             <h4>Дневной</h4>
                             <p>с 8:00 до 17:00</p>
                             <span>1700₽</span>
                             <b data-parent="1700"></b>
-                            <a class="abonement__link" href="buy.html">Купить абонемент</a>
+                            <a class="abonement__link" href="#">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--one abonements__item--full">
                             <h4>Полный день</h4>
@@ -133,14 +145,14 @@
                             <p>72 занятия</p>
                             <span>18000₽</span>
                             <b data-parent="18000"></b>
-                            <a href="buy.html" class="button abonements__link">Купить абонемент</a>
+                            <a href="#" class="button abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--six">
                             <h4>Дневной</h4>
                             <p>с 8:00 до 22:00 </p>
                             <span>13000₽</span>
                             <b data-parent="13000"></b>
-                            <a href="buy.html" class="abonements__link">Купить абонемент</a>
+                            <a href="#" class="abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--six abonements__item--full">
                           <h4>Полный день</h4>
@@ -162,14 +174,14 @@
                             <p>с 8:00 до 22:00 </p>
                             <span>26000₽</span>
                             <b data-parent="26000"></b>
-                            <a href="buy.html" class="abonements__link">Купить абонемент</a>
+                            <a href="#" class="abonements__link">Купить абонемент</a>
                         </li>
                         <li class="abonements__item abonements__item--year abonements__item--full">
                           <h4>Полный день</h4>
                           <p>с 8:00 до 22:00</p>
                           <span>32000₽</span>
                           <b data-parent="32000"></b>
-                          <a class="abonement__link" href="buy.html">Купить абонемент</a>
+                          <a class="abonement__link" href="#">Купить абонемент</a>
                       </li>
                     </ul>
                 </div>
@@ -428,10 +440,10 @@
                       </li>
                     </ul>
                     <div class="trainers__wrap slider">
-                      <button type="button" class="slider__btn slider__btn--start trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
-                      </button>
-                      <button type="button" class="slider__btn slider__btn--finish trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
-                      </button>
+                        <button type="button" class="slider__btn slider__btn--start trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
+                        </button>
+                        <button type="button" class="slider__btn slider__btn--finish trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
+                        </button>
                     </div>
                 </div>
             </section>
@@ -498,7 +510,7 @@
                                 <h4>Месяц бесплатно</h4>
                                 <p>Приведи друга, получи абонемент в подарок</p>
                             </div>
-                            <a class="promotions__link promotions__link--discount" href="#">Подробнее</a>
+                            <a class="promotions__link promotions__link--discount" tabindex="0" href="#">Подробнее</a>
                         </li>
                         <li class="promotions__item promotions__item--discount">
                             <div class="promotions__bottom">
@@ -628,7 +640,7 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="footer__social">
+                <ul class="footer__social footer-social">
                     <li class="footer-social__item footer-social__item--vk">
                         <a class="footer-social__link footer-social__link--vk" href="#vk" aria-label="Мы во Вконтакте">
                             <svg width="24" height="13" fill="none" viewBox="0 0 24 13">
@@ -653,7 +665,7 @@
                 </ul>
             </div>
         </footer>
-        <!-- <script src="js/vendor.js"></script> -->
-        <script src="js/main.js"></script>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

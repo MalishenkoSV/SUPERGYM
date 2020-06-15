@@ -16,6 +16,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -29,6 +30,14 @@ gulp.task('css', function () {
       .pipe(sourcemap.write('.'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
+});
+
+gulp.task('js', function () {
+  return gulp.src(['source/js/vendor.js', 'source/js/main.js'])
+  // .pipe(concat('main.js'))
+      .pipe(uglify())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('server', function () {
@@ -102,13 +111,13 @@ gulp.task('clean', function () {
 
 gulp.task('concat-js-main', function () {
   return gulp.src('source/js/main*.js')
-      .pipe(concat('main.js'))
+      .pipe(concat('main.min.js'))
       .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('concat-js-vendor', function () {
   return gulp.src('source/js/vendor*.js')
-      .pipe(concat('vendor.js'))
+      .pipe(concat('vendor.min.js'))
       .pipe(gulp.dest('build/js'));
 });
 

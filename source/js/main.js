@@ -42,8 +42,6 @@
     }
   });
 
-  // валидаци номера телефона
-window.iMaskJS(phoneField, {mask: '+{7}(000)000-00-00', minLength: 15});
   // Определение ширины элементов в зависимости от экрана
   var trainers = document.querySelector('.trainers');
   var trainersList = document.querySelector('.trainers__list');
