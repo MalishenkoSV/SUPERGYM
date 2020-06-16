@@ -4,8 +4,6 @@
   width: 30px;
   height: 32px;
   background-color: transparent;
-  background-repeat: no-repeat;
-  z-index: 5;
   border: none;
   outline: none;
 
@@ -18,12 +16,14 @@
   content: "";
   height: 19px;
   width: 10px;
-  top: 50%;
+  top: 0;
   left: 0;
 }
 
 .slider__btn--start::before {
   background-image: url("../img/start.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .slider__btn--finish::before {

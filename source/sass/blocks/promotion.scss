@@ -273,6 +273,8 @@
 .promotions__link {
   cursor: pointer;
   outline: none;
+  width: 79px;
+  height: 15px;
 }
 
 .promotions__link--unlimited {
@@ -309,8 +311,8 @@
 .promotions__link:hover,
 .promotions__link:focus {
   width: 79px;
-  height: 10px;
-  color: $white-opacity;
+  height: 15px;
+  opacity: 0.8;
 }
 
 .promotions__link:active {

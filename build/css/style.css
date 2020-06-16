@@ -1392,8 +1392,8 @@ input[type="radio"].visually-hidden {
 
 .games__btn:hover,
 .games__btn:focus {
-  -webkit-box-shadow: 0 0 0 3px white;
-          box-shadow: 0 0 0 3px white;
+  -webkit-box-shadow: 0 0 0 2px white;
+          box-shadow: 0 0 0 2px white;
   color: white; }
 
 .games__btn:active {
@@ -1401,7 +1401,8 @@ input[type="radio"].visually-hidden {
 
 .games img {
   background-color: #102654;
-  width: 660px; }
+  width: 660px;
+  height: 100%; }
   @media (max-width: 1199px) {
     .games img {
       width: 386px; } }
@@ -1708,8 +1709,6 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 32px;
   background-color: transparent;
-  background-repeat: no-repeat;
-  z-index: 5;
   border: none;
   outline: none; }
   @media (max-width: 767px) {
@@ -1720,11 +1719,13 @@ input[type="radio"].visually-hidden {
   content: "";
   height: 19px;
   width: 10px;
-  top: 50%;
+  top: 0;
   left: 0; }
 
 .slider__btn--start::before {
-  background-image: url("../img/start.svg"); }
+  background-image: url("../img/start.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .slider__btn--finish::before {
   background-image: url("../img/finish.svg"); }
@@ -2247,7 +2248,9 @@ input[type="radio"].visually-hidden {
 
 .promotions__link {
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  width: 79px;
+  height: 15px; }
 
 .promotions__link--unlimited {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
@@ -2289,8 +2292,8 @@ input[type="radio"].visually-hidden {
 .promotions__link:hover,
 .promotions__link:focus {
   width: 79px;
-  height: 10px;
-  color: rgba(255, 255, 255, 0.5); }
+  height: 15px;
+  opacity: 0.8; }
 
 .promotions__link:active {
   opacity: 0.4; }
