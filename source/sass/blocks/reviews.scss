@@ -7,24 +7,23 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
 .reviews h3 {
   @include adv-Bebas-bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 45px 0 64px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
-    margin-top: 36px;
-    margin-bottom: 49px;
+    margin: 55px 0 49px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
-    margin-bottom: 46px;
+    margin: 37px 0 46px;
   }
 }
 
@@ -38,10 +37,12 @@
 
   @media (max-width: $tablet-width) {
     height: auto;
+    width: 566px;
   }
 
   @media (max-width: $mobile-width) {
     width: 71%;
+    height: 335px;
   }
 }
 
@@ -54,12 +55,14 @@
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 
   @media (max-width: $tablet-width) {
-    width: 566px;
+    margin: 0;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
     padding: 48px 8% 5px;
     width: 100%;
+    min-height: 282px;
     text-align: center;
     margin-bottom: 0;
   }
@@ -73,8 +76,13 @@
   top: 62px;
   left: 61px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0;
+    width: 15%;
+    left: 65px;
+  }
+
+  @media (max-width: $mobile-width) {
     top: 39px;
     left: 41px;
   }
@@ -131,12 +139,17 @@
 .reviews__btn {
   top: 58%;
   @media (max-width: $tablet-width) {
-
+top: 56.5%;
   }
 
   @media (max-width: $mobile-width) {
-    top: 55%;
-
+    right: 12px;
+    width: 15px;
+    background-position: 50% 60%;
+    height: 100%;
+    top: 0;
+    background-size: inherit;
+    padding-left: 31px;
   }
 }
 

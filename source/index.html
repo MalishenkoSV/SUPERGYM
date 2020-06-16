@@ -599,28 +599,31 @@
                         <label class="visually-hidden" for="name">Имя</label>
                         <input type="text" name="name" id="name" placeholder="Имя" required>
                         <label class="visually-hidden" for="phone">Телефон</label>
-                        <input type="tel" name="user-phone" id="phone" minlength="16" required placeholder="Телефон">
+                        <input id="phone" name="phone" type="text" placeholder="Телефон"  value=""
+                        maxlength="18"
+                        required
+                      />
                         <button class="btn registration__btn" type="submit">Отправить</button>
                     </form>
                 </div>
                 <div class="contacts__communications communications">
                   <h4>Контакты</h4>
                   <ul class="communications__list">
-                      <li class="communications__item">
+                      <li class="communications__item communications__item--adress">
                           <h5>Адрес:</h5>
                           <address class="communications__info">
                             г. Омск, ул. 60 лет Октября, 7
                           </address>
                       </li>
-                      <li class="communications__item">
+                      <li class="communications__item communications__item--tel">
                         <h5>Телефон:</h5>
                         <a class="communications__info communications__info--link" href="tel:88005555555">8-800-555-55-55</a>
                       </li>
-                      <li class="communications__item">
+                      <li class="communications__item communications__item--shedule">
                           <h5>График работы:</h5>
                           <p class="communications__info">Пн-Вс: с 8:00 до 22:00</p>
                       </li>
-                      <li class="communications__item">
+                      <li class="communications__item communications__item--email">
                           <h5>Email:</h5>
                           <a class="communications__info communications__info--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                       </li>
@@ -681,7 +684,7 @@
                 </ul>
             </div>
         </footer>
-        <script src="js/vendor.min.js" defer></script>
+        <!-- <script src="js/vendor.min.js" defer></script> -->
         <script src="js/main.min.js" defer></script>
     </body>
 </html>

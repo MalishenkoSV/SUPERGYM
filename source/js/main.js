@@ -1,335 +1,5 @@
 'use strict';
 
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
-var telInputs = document.querySelectorAll('input[type="tel"]');
-
-if (telInputs) {
-  telInputs.forEach(function (input) {
-    Inputmask('+7 (999) 999-99-99').mask(input);
-  });
-}
-
-'use strict';
-
 (function () {
   var togglesList = document.querySelector('.controls__list');
   var toggles = document.querySelectorAll('.controls__btn');
@@ -444,14 +114,12 @@ if (telInputs) {
     trainerPrev.addEventListener('keydown', function (evt) {
       if (evt.keyCode === 13) {
         prevTrainerItem();
-        // trainerNext.setAttribute('disabled', 'true');
       }
     });
 
     trainerNext.addEventListener('keydown', function (evt) {
       if (evt.keyCode === 13) {
         nextTrainerItem();
-        // trainerNext.setAttribute('disabled', 'true');
       }
     });
   }
@@ -466,7 +134,6 @@ if (telInputs) {
 
 
   // слайдер в блоке Отзывы
-  // var reviewsNode = document.querySelector('.reviews');
   var reviewsPrevButton = document.querySelector('.reviews__slider-btn-left');
   var reviewsNextButton = document.querySelector('.reviews__slider-btn-right');
   var reviews = Array.prototype.slice.call(document.querySelectorAll('.reviews__item'));
@@ -521,5 +188,18 @@ if (telInputs) {
   if (reviewsPrevButton && reviews) {
     reviewsPrevButton.addEventListener('click', slideReviewsToPrev);
   }
+
+  // Маска номера телефона
+  var phone = document.querySelector('#phone');
+  if (phone) {
+    phone.addEventListener('input', function () {
+      if (phone.value.length > 16) {
+        phone.setCustomValidity('Введите номер телефона полностью');
+      } else {
+        phone.setCustomValidity('');
+      }
+    });
+  }
+
 
 })();

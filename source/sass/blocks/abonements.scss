@@ -5,13 +5,13 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    padding: 100px 0 105px;
+    padding-bottom: 105px;
     margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 68px;
-    padding-bottom: 35px;
+    padding-bottom: 73px;
   }
 }
 
@@ -38,7 +38,7 @@
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-hall;
-    margin: 4px auto 29px;
+    margin: 0 auto 25px;
     line-height: 44px;
     font-size: 42px;
     letter-spacing: 0.03em;
@@ -54,6 +54,7 @@
 
 .abonements__list {
   @include list-reset;
+  // width: 100%;
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -144,10 +145,14 @@
   @include desk-abonem;
   margin-bottom: 0;
 
+  @media (max-width: $tablet-width) {
+    margin-top: 38px;
+  }
+
   @media (max-width: $mobile-width) {
     @include super-adv;
     padding: 0;
-    margin-top: 42px;
+    margin-top: 47px;
   }
 }
 

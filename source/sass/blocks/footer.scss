@@ -42,6 +42,10 @@
   }
 }
 
+.footer__logo a {
+  padding-top: 5px;
+}
+
 .footer-social {
   @include list-reset;
   display: flex;
@@ -53,7 +57,8 @@
   align-self: flex-end;
 
   @media (max-width: $tablet-width) {
-    margin-left: 6%;
+    margin: auto 0 auto auto;
+    width: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -65,6 +70,10 @@
 
 .footer-social__item {
   margin-right: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-right: 20px;

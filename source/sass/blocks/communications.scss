@@ -1,7 +1,7 @@
 .communications {
   width: 50%;
   height: 337px;
-  padding: 62px 2.6% 0 5%;
+  padding: 62px 3.6% 0 8.5%;
   font-size: 20px;
 
   @media (max-width: $tablet-width) {
@@ -42,12 +42,13 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .communications__list::before {
   content: "";
   position: absolute;
-  left: 49.5%;
+  left: 55.5%;
   top: 12px;
   width: 1px;
   height: 102px;
@@ -66,7 +67,7 @@
 .communications__item {
   margin-bottom: 6px;
   padding-left: 56px;
-  width: 49%;
+  width: 43.5%;
 
   @media (max-width: $tablet-width) {
     width: 50%;
@@ -93,6 +94,7 @@
   @include font-min;
   text-decoration: none;
   color: $dark-blue;
+  margin-top: 5px;
 }
 
 .communications__info {
@@ -101,6 +103,36 @@
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.communications__item--adress {
+  @media (max-width: $mobile-width) {
+    order: 1;
+  }
+}
+
+
+.communications__item--shedule {
+  @media (max-width: $mobile-width) {
+    order: 2;
+  }
+}
+
+.communications__item--tel {
+  @media (max-width: $mobile-width) {
+    order: 3;
+  }
+}
+
+.communications__item--email {
+  @media (max-width: $mobile-width) {
+    order: 4;
   }
 }
 

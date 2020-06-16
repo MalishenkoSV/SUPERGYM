@@ -9,12 +9,12 @@
   font-weight: 400;
 
   @media (max-width: $tablet-width) {
-    padding: 100px 45px 96px;
+    padding: 98px 45px 96px;
     font-size: 12px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 69px 15px;
+    padding: 70px 15px;
     flex-direction: column;
   }
 }
@@ -27,12 +27,12 @@
   align-items: flex-start;
 
   @media (max-width: $tablet-width) {
-    padding: 40px 45px 47px;
+    padding: 46px 45px 47px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding: 40px 44px 50px;
+    padding: 46px 44px 50px;
   }
 }
 
@@ -53,11 +53,11 @@
   @media (max-width: $tablet-width) {
     font-size: 52px;
     line-height: 52px;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 12px;
+    margin-top: 4px;
   }
 }
 
@@ -80,11 +80,12 @@
   margin: 7px 2px 47px;
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 25px;
+    margin: 0 0 28px;
+    line-height: 1.5em;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 27px;
+    margin: 10px 0 29px;
   }
 }
 
@@ -113,6 +114,7 @@
 }
 
 .games__btn:active {
+  box-shadow: 0 0 0 2px $white;
   opacity: 0.4;
 }
 
@@ -122,6 +124,7 @@
   height: 100%;
 
   @media (max-width: $tablet-width) {
+    height: auto;
     width: 386px;
   }
 

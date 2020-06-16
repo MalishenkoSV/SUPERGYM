@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
+    " gulp-uglify ": " ^ 3.0.2 ",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",

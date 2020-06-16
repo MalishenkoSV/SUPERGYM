@@ -4,11 +4,11 @@
   padding: 133px 20px 114px;
 
   @media (max-width: $tablet-width) {
-    padding: 99px 35px 66px;
+    padding: 99px 35px 90px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0 3px;
+    padding: 69px 0 3px;
   }
 }
 
@@ -19,7 +19,7 @@
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-hall;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $mobile-width) {
@@ -45,10 +45,25 @@
 
 .privilege__item {
   position: relative;
-  width: 29.3%;
-  margin: 0 60px 83px 105px;
-  padding: 1px 0 73px 120px;
+  width: 28.3%;
+  margin: 0 78px 79px 82px;
+  padding: 3px 0 76px 120px;
   border-bottom: 1px solid $red-opacity;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 305px 0;
+    padding: 0 12px 25px 138px;
+    width: 49%;
+    border-bottom: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include mobile-Bebas-hall;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
 
   @media (min-width: $desktop-width) {
     &:nth-last-child(-n+2) {
@@ -65,28 +80,13 @@
     }
   }
 
-  @media (max-width: $tablet-width) {
-    margin: 0 0 300px 0;
-    padding: 0 12px 25px 138px;
-    width: 49%;
-    border-bottom: none;
-  }
-
-  @media (max-width: $mobile-width) {
-    @include mobile-Bebas-hall;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-
   &::before {
     content: "";
     position: absolute;
     width: 107px;
     height: 74px;
-    top: 0;
-    left: 4px;
+    top: -1px;
+    left: 0;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -106,7 +106,7 @@
 }
 
 .privilege__item--long {
-  padding-left: 138px;
+  padding-left: 156px;
 
   @media (max-width: $tablet-width) {
     padding-left: 128px;
@@ -114,10 +114,16 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 75px 68px 40px;
+    padding: 78px 68px 40px;
   }
 
   &::before {
+    left: 25px;
+
+    @media (max-width: $tablet-width) {
+      left: 10px;
+    }
+
     @media (max-width: $mobile-width) {
       left: calc(50% - 44px);
       top: -5px;
@@ -130,7 +136,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 95px;
-    left: -6px;
+    // left: -6px;
   }
 
   @media (max-width: $mobile-width) {
@@ -139,7 +145,7 @@
 
   &::before {
     @media (max-width: $mobile-width) {
-      left: calc(50% - 22px);
+      left: calc(50% - 30px);
       top: 1px;
     }
   }
@@ -185,7 +191,7 @@
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $mobile-width) {
@@ -212,7 +218,7 @@
   bottom: 0;
   left: calc(50% - 119px);
   margin: 0;
-  padding: 75px 34px 60px;
+  padding: 82px 34px 60px;
   width: 240px;
   height: auto;
   color: $white;
@@ -220,17 +226,17 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    padding: 58px 130px 36px;
-    width: 433px;
-    left: calc(50% - 217px);
-    top: 110px;
+    padding: 62px 130px 37px;
+    width: 442px;
+    left: calc(50% - 221px);
+    top: 113px;
   }
 
   @media (max-width: $mobile-width) {
     position: static;
     display: block;
-    margin: 6px 0 55px;
-    padding: 38px 74px 45px;
+    margin: 7px 0 53px;
+    padding: 39px 74px 45px;
     width: 100%;
   }
 
@@ -242,7 +248,7 @@
 .privilege__item--center strong {
   display: block;
   font-size: 72px;
-  padding-bottom: 46px;
+  padding-bottom: 42px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 40px;
@@ -265,12 +271,12 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
 .privilege__item--center .privilege__text {
-  @media (max-width: $tablet-width) {
     text-align: center;
-  }
+  // @media (max-width: $tablet-width) {
+  // }
 }

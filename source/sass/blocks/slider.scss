@@ -6,28 +6,21 @@
   background-color: transparent;
   border: none;
   outline: none;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (max-width: $mobile-width) {
     top: 45%;
   }
 }
 
-.slider__btn--start::before {
-  content: "";
-  height: 19px;
-  width: 10px;
-  top: 0;
-  left: 0;
-}
-
-.slider__btn--start::before {
+.slider__btn--start {
   background-image: url("../img/start.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.slider__btn--finish::before {
+.slider__btn--finish {
   background-image: url("../img/finish.svg");
+  background-position-x: 13px;
 }
 
 .slider__btn:hover,
@@ -39,3 +32,4 @@
 .slider__btn:active {
   opacity: 0.4;
 }
+
