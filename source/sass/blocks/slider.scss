@@ -1,27 +1,32 @@
 .slider__btn {
-  content: "";
   position: absolute;
   display: block;
-  width: 16px;
+  width: 30px;
   height: 32px;
-  background-color: $white;
+  background-color: transparent;
   background-repeat: no-repeat;
   z-index: 5;
   border: none;
   outline: none;
 
   @media (max-width: $mobile-width) {
-    width: 36px;
-    height: 36px;
     top: 45%;
   }
 }
 
-.slider__btn--start {
+.slider__btn--start::before {
+  content: "";
+  height: 19px;
+  width: 10px;
+  top: 50%;
+  left: 0;
+}
+
+.slider__btn--start::before {
   background-image: url("../img/start.svg");
 }
 
-.slider__btn--finish {
+.slider__btn--finish::before {
   background-image: url("../img/finish.svg");
 }
 

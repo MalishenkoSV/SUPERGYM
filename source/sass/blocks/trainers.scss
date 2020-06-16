@@ -20,7 +20,6 @@
   @include adv-Bebas-bold;
   margin-top: 33px;
   margin-bottom: 61px;
-  // padding-left: 7px;
   font-size: 48px;
   letter-spacing: 0.04em;
 
@@ -207,8 +206,8 @@
 
   @media (max-width: $mobile-width) {
     width: 10px;
-    height: 19px;
-    left: -5px;
+    height: 16px;
+    left: -5%;
   }
 }
 
@@ -227,6 +226,7 @@
   @media (max-width: $mobile-width) {
     right: 5px;
     width: 10px;
-    height: 19px;
+    height: 16px;
+    right: -7%;
   }
 }
