@@ -1710,7 +1710,7 @@ input[type="radio"].visually-hidden {
     .trainers__slider-btn-left {
       width: 10px;
       height: 16px;
-      left: -5%; } }
+      left: 0; } }
 
 .trainers__slider-btn-right {
   position: absolute;
@@ -1727,7 +1727,7 @@ input[type="radio"].visually-hidden {
       right: 5px;
       width: 10px;
       height: 16px;
-      right: -7%; } }
+      right: 0; } }
 
 .slider__btn {
   position: absolute;
@@ -1741,7 +1741,7 @@ input[type="radio"].visually-hidden {
   background-size: contain; }
   @media (max-width: 767px) {
     .slider__btn {
-      top: 45%; } }
+      top: 46%; } }
 
 .slider__btn--start {
   background-image: url("../img/start.svg"); }
