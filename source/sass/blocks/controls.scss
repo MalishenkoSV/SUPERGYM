@@ -33,7 +33,7 @@
 
   @media (max-width: $tablet-width) {
     @include font-superbas-150;
-    padding-bottom: 7px;
+    padding-bottom: 11px;
     font-size: 18px;
   }
 
@@ -49,7 +49,7 @@
 }
 
 .controls__btn--active {
-  cursor: auto;
+  cursor: pointer;
   border-color: $red;
   color: $blue-font;
 }

@@ -72,7 +72,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__hall hall hall__wripper">
+            <section class="main__hall hall hall__wrapper">
                 <h2 class="visually-hidden">Немного о нашем зале</h2>
                 <article class="hall__description description">
                     <h3 class="description__title">Тренажерный зал</h3>
@@ -213,7 +213,7 @@
                         </table>
                     </div>
                     <p class="games__text">Ежегодные соревнования по CrossFit</p>
-                    <a class="games__btn btn" href="application.html">заполнить заявку</a>
+                    <a class="games__btn btn" href="#">заполнить заявку</a>
                 </article>
                 <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/supergames_prewiev_mobile_x1.webp 1x,
@@ -550,7 +550,8 @@
                             <h4>Анна Орлова</h4>
                             <p>«Хожу в SuperClub уже больше года.
                               Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-                              Зал просторный, даже в вечернее время нет очередей»</p>
+                              Зал просторный, даже в вечернее время нет очередей»
+                            </p>
                         </div>
                     </li>
                     <li class="reviews__item reviews__item--hidden">
@@ -599,7 +600,7 @@
                         <label class="visually-hidden" for="name">Имя</label>
                         <input type="text" name="name" id="name" placeholder="Имя" required>
                         <label class="visually-hidden" for="phone">Телефон</label>
-                        <input id="phone" name="phone" type="text" placeholder="Телефон"  value=""
+                        <input id="phone" name="phone" type="text" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value=""
                         maxlength="18"
                         required
                       />

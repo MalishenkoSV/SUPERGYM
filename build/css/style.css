@@ -426,7 +426,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 1px; }
 
 .header__logo {
   display: inline-block;
@@ -540,7 +541,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .main-screen {
       padding-right: 0;
-      margin-bottom: 45px; } }
+      margin-bottom: 25px; } }
 
 .gym {
   position: relative;
@@ -775,7 +776,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 117px; }
+  padding-bottom: 188px; }
   @media (max-width: 1199px) {
     .hall {
       margin-bottom: 100px;
@@ -786,21 +787,8 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin-bottom: 70px; } }
 
-.wrapper__hall {
-  margin: 0 103px; }
-  @media (max-width: 1199px) {
-    .wrapper__hall {
-      padding: 0;
-      margin: 0 45px;
-      max-width: 88%; } }
-  @media (max-width: 767px) {
-    .wrapper__hall {
-      padding: 20px 0;
-      margin: 0 auto;
-      max-width: 91%; } }
-
 .hall__wrapper {
-  margin: 0 103px; }
+  margin: 0 auto 117px; }
   @media (max-width: 1199px) {
     .hall__wrapper {
       padding: 0;
@@ -808,9 +796,9 @@ input[type="radio"].visually-hidden {
       max-width: 88%; } }
   @media (max-width: 767px) {
     .hall__wrapper {
-      padding: 20px 0;
-      margin: 0 auto;
-      max-width: 91%; } }
+      padding: 20px 0 70px;
+      margin: 0;
+      max-width: 100%; } }
 
 @media (max-width: 1199px) {
   .hall picture {
@@ -867,7 +855,7 @@ input[type="radio"].visually-hidden {
       font-weight: 400;
       font-size: 18px;
       line-height: 150%;
-      padding-bottom: 7px;
+      padding-bottom: 11px;
       font-size: 18px; } }
   @media (max-width: 767px) {
     .controls__btn {
@@ -882,7 +870,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
 
 .controls__btn--active {
-  cursor: auto;
+  cursor: pointer;
   border-color: #d10a42;
   color: #102654; }
 
@@ -986,9 +974,12 @@ input[type="radio"].visually-hidden {
 
 .video {
   left: 37.7%;
-  margin-top: -113px; }
+  position: absolute;
+  top: 287px; }
   @media (max-width: 1199px) {
     .video {
+      position: relative;
+      top: 0;
       margin-top: -84px;
       left: calc(50% - 133px); } }
   @media (max-width: 767px) {
@@ -1051,11 +1042,12 @@ input[type="radio"].visually-hidden {
       padding-bottom: 73px; } }
 
 .abonements__wrapper {
-  padding: 99px 0 0;
+  padding: 30px 0 0;
   margin: 0 auto; }
   @media (max-width: 1199px) {
     .abonements__wrapper {
-      margin: 0 108px; } }
+      margin: 0 108px;
+      padding-top: 100px; } }
   @media (max-width: 767px) {
     .abonements__wrapper {
       padding-top: 0;
@@ -2369,13 +2361,13 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   width: 560px;
-  height: 242px;
+  height: auto;
   background-color: #1c3a74;
   color: white;
   margin: 0 auto; }
   @media (max-width: 1199px) {
     .reviews__list {
-      height: auto;
+      height: 100%;
       width: 566px; } }
   @media (max-width: 767px) {
     .reviews__list {
@@ -2385,7 +2377,7 @@ input[type="radio"].visually-hidden {
 .reviews__item {
   width: 560px;
   position: relative;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2430,7 +2422,7 @@ input[type="radio"].visually-hidden {
   display: none; }
 
 .reviews__client {
-  padding: 57px 11% 15px 30.5%; }
+  padding: 57px 11% 57px 30.5%; }
   @media (max-width: 767px) {
     .reviews__client {
       padding: 0 4% 0 5%; } }
@@ -2474,13 +2466,11 @@ input[type="radio"].visually-hidden {
       right: 12px;
       width: 15px;
       background-position: 50% 60%;
-      height: 100%;
-      top: 0;
       background-size: inherit;
       padding-left: 31px; } }
 
 .reviews__slider-btn-left {
-  left: 346px; }
+  left: 25.5%; }
   @media (max-width: 1199px) {
     .reviews__slider-btn-left {
       left: 6%; } }
@@ -2489,7 +2479,7 @@ input[type="radio"].visually-hidden {
       left: 0; } }
 
 .reviews__slider-btn-right {
-  right: 346px; }
+  right: 25.5%; }
   @media (max-width: 1199px) {
     .reviews__slider-btn-right {
       right: 6%; } }
@@ -2578,6 +2568,7 @@ input[type="radio"].visually-hidden {
           align-items: center; }
 
 .registration__form input {
+  border-radius: 0;
   width: 46%;
   border: none;
   background-color: #1c3a74;

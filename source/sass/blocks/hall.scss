@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 117px;
+  padding-bottom: 188px;
 
   @media (max-width: 1199px) {
     margin-bottom: 100px;
@@ -20,24 +20,8 @@
   }
 }
 
-.wrapper__hall {
-  margin: 0 103px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0;
-    margin: 0 45px;
-    max-width: 88%;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 20px 0;
-    margin: 0 auto;
-    max-width: 91%;
-  }
-}
-
 .hall__wrapper {
-  margin: 0 103px;
+  margin: 0 auto 117px;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -46,9 +30,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 0;
-    margin: 0 auto;
-    max-width: 91%;
+    padding: 20px 0 70px;
+    margin: 0;
+    max-width: 100%;
   }
 }
 
