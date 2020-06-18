@@ -1,5 +1,7 @@
 .reviews {
-  margin-bottom: 120px;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto 120px;
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -100,7 +102,7 @@
 }
 
 .reviews__client {
-  padding: 57px 11% 57px 30.5%;
+  padding: 57px 11% 40px 30.5%;
 
 
   @media (max-width: $mobile-width) {
@@ -152,7 +154,7 @@
 }
 
 .reviews__slider-btn-left {
-  left: 25.5%;
+  left: 22%;
 
   @media (max-width: $tablet-width) {
     left: 6%;
@@ -164,7 +166,7 @@
 }
 
 .reviews__slider-btn-right {
-  right: 25.5%;
+  right: 22%;
 
   @media (max-width: $tablet-width) {
     right: 6%;
