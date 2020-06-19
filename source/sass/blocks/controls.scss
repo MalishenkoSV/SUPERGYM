@@ -15,7 +15,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
+    width: 290px;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 }
@@ -45,7 +46,7 @@
 .controls__btn:hover,
 .controls__btn:focus {
   color: $black;
-  border-bottom: 2px solid $red-opacity
+  border-bottom: 2px solid $red-opacity;
 }
 
 .controls__btn--active {

@@ -37,7 +37,7 @@
 }
 
 .trainers__wrap {
-  max-width: 1164px;
+  max-width: 85%;
   box-sizing: border-box;
   margin: 0 7.6%;
   overflow: hidden;
@@ -175,6 +175,7 @@
     line-height: 0.5em;
   }
 }
+
 .trainers__achievs-list {
   text-align: start;
   padding: 0 20px 10px 72px;
@@ -204,41 +205,34 @@
   display: flex;
 }
 
-.trainers__slider-btn-left {
-  position: absolute;
+.trainers__slider {
   top: 60%;
-  left: 45px;
-  cursor: pointer;
-  background-color: transparent;
 
   @media (max-width: $tablet-width) {
     top: 45%;
+  }
+}
+
+.trainers__slider-btn-left {
+  left: 2.5%;
+
+  @media (max-width: $tablet-width) {
     left: 0;
   }
 
   @media (max-width: $mobile-width) {
-    width: 10px;
-    height: 16px;
     left: 0;
   }
 }
 
 .trainers__slider-btn-right {
-  position: absolute;
-  top: 60%;
-  right: 45px;
-  cursor: pointer;
-  background-color: transparent;
+  right: 2.5%;
 
   @media (max-width: $tablet-width) {
-    top: 45%;
     right: 0;
   }
 
   @media (max-width: $mobile-width) {
-    right: 5px;
-    width: 10px;
-    height: 16px;
     right: 0;
   }
 }

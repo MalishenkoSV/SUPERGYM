@@ -6,7 +6,8 @@
   padding: 0 170px 30px 103px;
 
   @media (max-width: $tablet-width) {
-    width: 100%;height: auto;
+    width: 100%;
+    height: auto;
     padding: 0 20.7% 37px 16.9%;
   }
 
@@ -26,13 +27,13 @@
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     margin: 71px 3px 32px;
   }
 
   @media (max-width: $mobile-width) {
     @include mobile-Bebas-title;
-    margin: 61px 0px 30px;
+    margin: 61px 0 30px;
   }
 }
 
@@ -86,7 +87,6 @@
 
 .registration__form input:hover,
 .registration__form input:focus {
-  // box-shadow: 0 0 0 3px $white;
   opacity: 0.6;
 }
 

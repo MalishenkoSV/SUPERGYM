@@ -1,205 +1,266 @@
 'use strict';
-
 (function () {
-  var togglesList = document.querySelector('.controls__list');
-  var toggles = document.querySelectorAll('.controls__btn');
-  var abonements = document.querySelectorAll('.abonements__list');
-  var firstList = document.querySelector('.abonements__list--first');
-  var secondList = document.querySelector('.abonements__list--second');
-  var thirdList = document.querySelector('.abonements__list--third');
+  /**
+   * Функция определения события swipe на элементе.
+   * @param {Object} el - элемент DOM.
+   * @param {Object} settings - объект с предварительными настройками.
+   */
+  var swipe = function (el, settings) {
 
-  var togglesMap = {
-    first: 'controls__btn--first',
-    second: 'controls__btn--second',
-    third: 'controls__btn--third',
-  };
+    // настройки по умолчанию
+    settings = Object.assign({}, {
+      minDist: 60, // минимальная дистанция, которую должен пройти указатель, чтобы жест считался как свайп (px)
+      maxDist: 120, // максимальная дистанция, не превышая которую может пройти указатель, чтобы жест считался как свайп (px)
+      maxTime: 700, // максимальное время, за которое должен быть совершен свайп (ms)
+      minTime: 50 // минимальное время, за которое должен быть совершен свайп (ms)
+    }, settings);
 
-  // переключение табов в блоке Абонементы
-  togglesList.addEventListener('click', function (evt) {
-    if (!evt.target.closest('button').classList.contains('controls__btn--active')) {
-      for (var i = 0; i < toggles.length; i++) {
-        if (toggles[i].classList.contains('controls__btn--active')) {
-          toggles[i].classList.remove('controls__btn--active');
-        }
-      }
-
-      var toggleButton = evt.target.closest('button');
-      toggleButton.classList.add('controls__btn--active');
-
-      for (var j = 0; j < abonements.length; j++) {
-        if (abonements[j].classList.contains('abonements__list--shown')) {
-          abonements[j].classList.remove('abonements__list--shown');
-        }
-      }
-
-      if (toggleButton.classList.contains(togglesMap.first)) {
-        firstList.classList.add('abonements__list--shown');
-      } else if (toggleButton.classList.contains(togglesMap.second)) {
-        secondList.classList.add('abonements__list--shown');
-      } else if (toggleButton.classList.contains(togglesMap.third)) {
-        thirdList.classList.add('abonements__list--shown');
-      }
+    // коррекция времени при ошибочных значениях
+    if (settings.maxTime < settings.minTime) {
+      settings.maxTime = settings.minTime + 500;
     }
-  });
-
-  // Определение ширины элементов в зависимости от экрана
-  var trainers = document.querySelector('.trainers');
-  var trainersList = document.querySelector('.trainers__list');
-  var trainerItemsAll = document.querySelectorAll('.trainers__item');
-  var trainerPrev = document.querySelector('.trainers__slider-btn-left');
-  var trainerNext = document.querySelector('.trainers__slider-btn-right');
-  var trainerWidth;
-  var trainerCount;
-  var trainerPosition;
-
-  var screenWidthDetection = function () {
-    if (trainers) {
-      trainersList.style.marginLeft = 0 + 'px';
+    if (settings.maxTime < 100 || settings.minTime < 50) {
+      settings.maxTime = 700;
+      settings.minTime = 50;
     }
 
-    if (window.matchMedia('(min-width: 320px)').matches) {
-      trainerWidth = 256; // 226px + 30px
-      trainerCount = 1;
-      trainerPosition = 0;
-    }
+    var dir,                // направление свайпа (horizontal, vertical)
+      swipeType,            // тип свайпа (up, down, left, right)
+      dist,                 // дистанция, пройденная указателем
+      isMouse = false,      // поддержка мыши (не используется для тач-событий)
+      isMouseDown = false,  // указание на активное нажатие мыши (не используется для тач-событий)
+      startX = 0,           // начало координат по оси X (pageX)
+      distX = 0,            // дистанция, пройденная указателем по оси X
+      startY = 0,           // начало координат по оси Y (pageY)
+      distY = 0,            // дистанция, пройденная указателем по оси Y
+      startTime = 0,        // время начала касания
+      support = {           // поддерживаемые браузером типы событий
+        pointer: !!('PointerEvent' in window || ('msPointerEnabled' in window.navigator)),
+        touch: !!(typeof window.orientation !== 'undefined' || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 'ontouchstart' in window || navigator.msMaxTouchPoints || 'maxTouchPoints' in window.navigator > 1 || 'msMaxTouchPoints' in window.navigator > 1)
+      };
 
-    if (window.matchMedia('(min-width: 768px)').matches) {
-      trainerWidth = 298; // 266px + 30px
-      trainerCount = 2;
-      trainerPosition = 0;
-    }
-
-    if (window.matchMedia('(min-width: 1200px)').matches) {
-      trainerWidth = 300; // 260px + 40px
-      trainerCount = 4;
-      trainerPosition = 0;
-    }
-  };
-
-  // Если блок тренеров сущесвует на странице
-  if (trainers) {
-    // Предыдущий тренер
-    var prevTrainerItem = function () {
-      trainerPosition = Math.min(trainerPosition, 0);
-      if (trainerPosition === 0) {
-        trainerPosition = -trainerWidth * (trainerItemsAll.length - trainerCount);
-      } else {
-        trainerPosition += trainerWidth;
+    /**
+     * Опредление доступных в браузере событий: pointer, touch и mouse.
+     * @return {Object} - возвращает объект с доступными событиями.
+     */
+    var getSupportedEvents = function () {
+      switch (true) {
+        case support.pointer:
+          events = {
+            type: 'pointer',
+            start: 'PointerDown',
+            move: 'PointerMove',
+            end: 'PointerUp',
+            cancel: 'PointerCancel',
+            leave: 'PointerLeave'
+          };
+          // добавление префиксов для IE10
+          var ie10 = (window.navigator.msPointerEnabled && Function('/*@cc_on return document.documentMode===10@*/')());
+          for (var value in events) {
+            if (value === 'type') {
+              continue;
+            }
+            events[value] = (ie10) ? 'MS' + events[value] : events[value].toLowerCase();
+          }
+          break;
+        case support.touch:
+          events = {
+            type: 'touch',
+            start: 'touchstart',
+            move: 'touchmove',
+            end: 'touchend',
+            cancel: 'touchcancel'
+          };
+          break;
+        default:
+          events = {
+            type: 'mouse',
+            start: 'mousedown',
+            move: 'mousemove',
+            end: 'mouseup',
+            leave: 'mouseleave'
+          };
+          break;
       }
-      if (trainersList) {
-        trainersList.style.marginLeft = trainerPosition + 'px';
-        trainersList.style.transition = 'margin-left 0.5s';
-      }
+      return events;
     };
 
-    // Следующий тренер
-    var nextTrainerItem = function () {
-      trainerPosition = Math.max(trainerPosition, -trainerWidth * (trainerItemsAll.length - trainerCount));
-      if (trainerPosition === -trainerWidth * (trainerItemsAll.length - trainerCount)) {
-        trainerPosition = 0;
-      } else {
-        trainerPosition -= trainerWidth;
-      }
-      if (trainersList) {
-        trainersList.style.marginLeft = trainerPosition + 'px';
-        trainersList.style.transition = 'margin-left 0.5s';
-      }
+
+    /**
+     * Объединение событий mouse/pointer и touch.
+     * @param evt {object} - принимает в качестве аргумента событие.
+     * @return{TouchList|Event} - возвращает либо TouchList, либо оставляет событие без изменения.
+     */
+    var eventsUnify = function (evt) {
+      return evt.changedTouches ? evt.changedTouches[0] : evt;
     };
 
-    // Клики на контролах
-    trainerPrev.addEventListener('click', prevTrainerItem);
-    trainerNext.addEventListener('click', nextTrainerItem);
 
-    // Нажатия Enter на контролах
-    trainerPrev.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 13) {
-        prevTrainerItem();
+    /**
+     * Обрабочик начала касания указателем.
+     * @param evt {Event} - получает событие.
+     */
+    var checkStart = function (evt) {
+      var event = eventsUnify(evt);
+      if (support.touch && typeof evt.touches !== 'undefined' && evt.touches.length !== 1) {
+        return; // игнорирование касания несколькими пальцами
       }
-    });
-
-    trainerNext.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 13) {
-        nextTrainerItem();
+      dir = 'none';
+      swipeType = 'none';
+      dist = 0;
+      startX = event.pageX;
+      startY = event.pageY;
+      startTime = new Date().getTime();
+      if (isMouse) {
+        isMouseDown = true; // поддержка мыши
       }
-    });
-  }
+      evt.preventDefault();
+    };
 
-  // Переопределение ширины элементов при изменении экрана
-  window.addEventListener('resize', function () {
-    screenWidthDetection();
-  });
-
-  // Основной код
-  screenWidthDetection();
-
-
-  // слайдер в блоке Отзывы
-  var reviewsPrevButton = document.querySelector('.reviews__slider-btn-left');
-  var reviewsNextButton = document.querySelector('.reviews__slider-btn-right');
-  var reviews = Array.prototype.slice.call(document.querySelectorAll('.reviews__item'));
-  var reviewsStep = 1;
-
-  var slideReviewsToNext = function () {
-    var currentIndex = 0;
-    for (var a = 0; a < reviews.length; a++) {
-      if (reviews[a].classList.contains('reviews__item--active')) {
-        currentIndex = a;
-        break;
+    /**
+     * Обработчик движения указателя.
+     * @param evt {Event} - получает событие.
+     */
+    var checkMove = function (evt) {
+      if (isMouse && !isMouseDown) {
+        return; // выход из функции, если мышь перестала быть активна во время движения
       }
-    }
-
-    reviews[currentIndex].classList.remove('reviews__item--active');
-    reviews[currentIndex].classList.add('reviews__item--hidden');
-
-    if (currentIndex < reviews.length - 1) {
-      reviews[currentIndex + reviewsStep].classList.remove('reviews__item--hidden');
-      reviews[currentIndex + reviewsStep].classList.add('reviews__item--active');
-    } else {
-      reviews[0].classList.remove('reviews__item--hidden');
-      reviews[0].classList.add('reviews__item--active');
-    }
-  };
-
-  var slideReviewsToPrev = function () {
-    var currentIndex = 0;
-    for (var z = 0; z < reviews.length; z++) {
-      if (reviews[z].classList.contains('reviews__item--active')) {
-        currentIndex = z;
-        break;
-      }
-    }
-
-    reviews[currentIndex].classList.remove('reviews__item--active');
-    reviews[currentIndex].classList.add('reviews__item--hidden');
-
-    if (currentIndex > 0) {
-      reviews[currentIndex - reviewsStep].classList.remove('reviews__item--hidden');
-      reviews[currentIndex - reviewsStep].classList.add('reviews__item--active');
-    } else {
-      reviews[reviews.length - 1].classList.remove('reviews__item--hidden');
-      reviews[reviews.length - 1].classList.add('reviews__item--active');
-    }
-  };
-
-  if (reviewsNextButton && reviews) {
-    reviewsNextButton.addEventListener('click', slideReviewsToNext);
-  }
-
-  if (reviewsPrevButton && reviews) {
-    reviewsPrevButton.addEventListener('click', slideReviewsToPrev);
-  }
-
-  // Маска номера телефона
-  var phone = document.querySelector('#phone');
-  if (phone) {
-    phone.addEventListener('input', function () {
-      if (phone.value.length > 16) {
-        phone.setCustomValidity('Введите номер телефона полностью');
+      var event = eventsUnify(evt);
+      distX = event.pageX - startX;
+      distY = event.pageY - startY;
+      if (Math.abs(distX) > Math.abs(distY)) {
+        dir = (distX < 0) ? 'left' : 'right';
       } else {
-        phone.setCustomValidity('');
+        dir = (distY < 0) ? 'up' : 'down';
       }
-    });
-  }
+      evt.preventDefault();
+    };
+
+    /**
+     * Обработчик окончания касания указателем.
+     * @param evt {Event} - получает событие.
+     */
+    var checkEnd = function (evt) {
+      if (isMouse && !isMouseDown) { // выход из функции и сброс проверки нажатия мыши
+        mouseDown = false;
+        return;
+      }
+      var endTime = new Date().getTime();
+      var time = endTime - startTime;
+      if (time >= settings.minTime && time <= settings.maxTime) { // проверка времени жеста
+        if (Math.abs(distX) >= settings.minDist && Math.abs(distY) <= settings.maxDist) {
+          swipeType = dir; // опредление типа свайпа как 'left' или 'right'
+        } else if (Math.abs(distY) >= settings.minDist && Math.abs(distX) <= settings.maxDist) {
+          swipeType = dir; // опредление типа свайпа как 'top' или 'down'
+        }
+      }
+      dist = (dir === 'left' || dir === 'right') ? Math.abs(distX) : Math.abs(distY); // опредление пройденной указателем дистанции
+
+      // генерация кастомного события swipe
+      if (swipeType !== 'none' && dist >= settings.minDist) {
+        var swipeEvent = new CustomEvent('swipe', {
+          bubbles: true,
+          cancelable: true,
+          detail: {
+            full: evt, // полное событие Event
+            dir: swipeType, // направление свайпа
+            dist: dist, // дистанция свайпа
+            time: time // время, потраченное на свайп
+          }
+        });
+        el.dispatchEvent(swipeEvent);
+      }
+      evt.preventDefault();
+    };
+
+    // добавление поддерживаемых событий
+    var events = getSupportedEvents();
+
+    // проверка наличия мыши
+    if ((support.pointer && !support.touch) || events.type === 'mouse') isMouse = true;
+
+    // добавление обработчиков на элемент
+    el.addEventListener(events.start, checkStart);
+    el.addEventListener(events.move, checkMove);
+    el.addEventListener(events.end, checkEnd);
+
+  };
+
+
+  /**
+   * Примеры работы swipe()
+   */
+  var getExampleDiv = function (id) {
+    return document.getElementById('example-' + id);
+  };
+
+  var makeDone = function (el, currentDir, dirs) {
+    if (dirs.indexOf(currentDir) > -1) {
+      el.classList.add('swiped');
+      el.querySelector('.swipe-block-text').textContent = 'сделан свайп (' + currentDir + ')';
+    }
+  };
+
+  var examples = {
+    simpleLeft: {
+      el: getExampleDiv('simple-one'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'left');
+      }
+    },
+    simpleRight: {
+      el: getExampleDiv('simple-two'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'right');
+      }
+    },
+    simpleUpDown: {
+      el: getExampleDiv('simple-three'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'up down');
+      }
+    },
+    distRight: {
+      el: getExampleDiv('dist-one'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'right');
+      },
+      set: {
+        minDist: 180,
+        maxDist: 250
+      }
+    },
+    distLeft: {
+      el: getExampleDiv('dist-two'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'left');
+      },
+      set: {
+        minDist: parseInt((getExampleDiv('dist-two').clientWidth / 2).toFixed(), 10),
+        maxDist: parseInt(getExampleDiv('dist-two').clientWidth.toFixed(), 10)
+      }
+    },
+    timeDown: {
+      el: getExampleDiv('timeout-one'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'down');
+      },
+      set: {
+        minTime: 750,
+        maxTime: 1750
+      }
+    },
+    timeLeft: {
+      el: getExampleDiv('timeout-two'),
+      callback: function (evt) {
+        makeDone(evt.target, evt.detail.dir, 'left');
+      },
+      set: {
+        maxTime: 175,
+        minTime: 50
+      }
+    }
+  };
 
 
 })();

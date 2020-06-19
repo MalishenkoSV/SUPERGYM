@@ -106,9 +106,9 @@
                 <div class="abonements__wrapper wrapper">
                     <h3 class="abonements__title">Абонементы</h3>
                     <div class="abonements__btns controls controls__list">
-                        <button type="button" class="controls__btn controls__btn--first controls__btn--active">1 месяц</button>
-                        <button type="button" class="controls__btn controls__btn--second">6 месяцев</button>
-                        <button type="button" class="controls__btn controls__btn--third">12 месяцев</button>
+                        <button type="button" class="controls__btn controls__btn--first controls__btn--active" aria-label="Кнопка выбора листа абонементов на 1 месяц">1 месяц</button>
+                        <button type="button" class="controls__btn controls__btn--second" aria-label="Кнопка выбора листа абонементов на 6 месяцев">6 месяцев</button>
+                        <button type="button" class="controls__btn controls__btn--third" aria-label="Кнопка выбора листа абонементов на 12 месяцев">12 месяцев</button>
                     </div>
                     <ul class="abonements__list abonements__list--first abonements__list--shown">
                         <li class="abonements__item abonements__item--one">
@@ -432,9 +432,9 @@
                       </li>
                     </ul>
                     <div class="trainers__wrap slider">
-                        <button type="button" class="slider__btn slider__btn--start trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
+                        <button type="button" class="slider__btn slider__btn--start trainers__slider trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
                         </button>
-                        <button type="button" class="slider__btn slider__btn--finish trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
+                        <button type="button" class="slider__btn slider__btn--finish trainers__slider trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
                         </button>
                     </div>
                 </div>
@@ -579,8 +579,8 @@
                         <label class="visually-hidden" for="name">Имя</label>
                         <input type="text" name="name" id="name" placeholder="Имя" required="">
                         <label class="visually-hidden" for="phone">Телефон</label>
-                        <input id="phone" name="phone" type="text" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="" maxlength="18" required="">
-                        <button class="btn registration__btn" type="submit">Отправить</button>
+                        <input id="phone" name="phone" type="text" placeholder="Телефон" value="" maxlength="18" required="">
+                        <button class="btn registration__btn" type="submit" aria-label="Кнопка для отправки Ваших данных">Отправить</button>
                     </form>
                 </div>
                 <div class="contacts__communications communications">

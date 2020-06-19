@@ -2,6 +2,7 @@
   background-color: $black;
   color: $white;
   padding: 0;
+
   @media (max-width: $mobile-width) {
     height: auto;
   }
@@ -36,6 +37,7 @@
   cursor: pointer;
   outline: none;
   width: 79px;
+
   @media (max-width: $mobile-width) {
     padding: 9px 20px 16px 0;
     width: 100%;

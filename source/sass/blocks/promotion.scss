@@ -31,11 +31,13 @@
 }
 
 .promotions__list--action {
+  // margin: 0;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
   }
 
@@ -62,6 +64,9 @@
 }
 
 .promotions__list--action .promotions__item {
+  // margin: 21px 0;
+  // height: 100%;
+  height: auto;
   border: 7px solid $promo-red;
   border-image: linear-gradient(to right bottom, #d10a42, #00359f) 30;
 
@@ -198,7 +203,7 @@
 
 .promotions p {
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 62px;
 
   @media (max-width: $tablet-width) {
     margin: 17px 0 0;
@@ -224,12 +229,13 @@
 
 .promotions__item--discount {
   width: 100%;
-  margin-bottom: 40px;
-  height: 211px;
-  padding: 23px 4.9% 28px;
+  margin-bottom: 0;
+  height: auto;
+  padding: 23px 4.9% 30px;
   color: $action-blue;
 
   @media (max-width: $tablet-width) {
+    min-height: 210px;
     width: 48%;
     padding: 24px 4.5% 28px;
   }
@@ -242,7 +248,7 @@
 }
 
 .promotions__item--discount-one {
-  margin-right: 30px;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     margin: 0;

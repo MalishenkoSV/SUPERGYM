@@ -8,9 +8,11 @@
   outline: none;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 
   @media (max-width: $mobile-width) {
     top: 46%;
+    background-size: 23px 22px;
   }
 }
 
@@ -20,7 +22,6 @@
 
 .slider__btn--finish {
   background-image: url("../img/finish.svg");
-  background-position-x: 13px;
 }
 
 .slider__btn:hover,
@@ -32,4 +33,3 @@
 .slider__btn:active {
   opacity: 0.4;
 }
-
