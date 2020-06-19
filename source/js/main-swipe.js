@@ -1,17 +1,6 @@
 'use strict';
 (function () {
   /**
- * Object.assign() polyfill
- */
-Object.assign||Object.defineProperty(Object,'assign',{enumerable:!1,configurable:!0,writable:!0,value:function(a,b){'use strict';if(void 0===a||null===a)error('Cannot convert first argument to object');for(var c=Object(a),d=1;d<arguments.length;d++){var e=arguments[d];if(void 0!==e&&null!==e)for(var f=Object.keys(Object(e)),g=0,h=f.length;g<h;g++){var i=f[g],j=Object.getOwnPropertyDescriptor(e,i);void 0!==j&&j.enumerable&&(c[i]=e[i])}}return c}});
-
-  /**
- * CustomEvent() polyfill
- */
-!function(){if('function'==typeof window.CustomEvent)return;function t(t,e){e=e||{bubbles:!1,cancelable:!1,detail:void 0};var n=document.createEvent('CustomEvent');return n.initCustomEvent(t,e.bubbles,e.cancelable,e.detail),n}t.prototype=window.Event.prototype,window.CustomEvent=t}();
-
-
-  /**
    * Функция определения события swipe на элементе.
    * @param {Object} el - элемент DOM.
    * @param {Object} settings - объект с предварительными настройками.
@@ -103,7 +92,7 @@ Object.assign||Object.defineProperty(Object,'assign',{enumerable:!1,configurable
      * @return{TouchList|Event} - возвращает либо TouchList, либо оставляет событие без изменения.
      */
     var eventsUnify = function (evt) {
-      return evt.changedTouches ? evt.changedTouches[0] : e;
+      return evt.changedTouches ? evt.changedTouches[0] : evt;
     };
 
 

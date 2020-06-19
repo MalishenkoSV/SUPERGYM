@@ -2618,7 +2618,7 @@ input[type="radio"].visually-hidden {
 .communications {
   width: 50%;
   height: 337px;
-  padding: 62px 2.6% 0 8.6%;
+  padding: 62px 35px 0 68px;
   font-size: 20px;
   border-top: 1px solid #74819c; }
   @media (max-width: 1199px) {
@@ -2678,7 +2678,7 @@ input[type="radio"].visually-hidden {
 .communications__list::before {
   content: "";
   position: absolute;
-  left: 54.2%;
+  left: 49.3%;
   top: 12px;
   width: 1px;
   height: 102px;
@@ -2694,7 +2694,8 @@ input[type="radio"].visually-hidden {
 .communications__item {
   margin-bottom: 6px;
   padding-left: 56px;
-  width: 45%; }
+  width: 45%;
+  width: 50%; }
   @media (max-width: 1199px) {
     .communications__item {
       width: 50%;
