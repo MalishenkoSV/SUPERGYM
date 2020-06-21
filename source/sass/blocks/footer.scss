@@ -24,7 +24,6 @@
   @media (max-width: $mobile-width) {
     @include font-foot-mob;
     flex-wrap: wrap;
-    flex-direction: reverse;
     align-content: flex-start;
     min-width: 100%;
     padding: 46px 15px 45px;
