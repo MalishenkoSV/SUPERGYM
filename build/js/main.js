@@ -191,15 +191,11 @@
 
   // Маска номера телефона
   var phone = document.querySelector('#phone');
-  if (phone) {
-    phone.addEventListener('input', function () {
-      if (phone.value.length > 16) {
-        phone.setCustomValidity('Введите номер телефона полностью');
-      } else {
-        phone.setCustomValidity('');
-      }
-    });
+  var value = phone.value;
+  var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+  if (rep.test(value)) {
+    value = value.replace(rep, '');
+    phone.value = value;
   }
-
 
 })();
