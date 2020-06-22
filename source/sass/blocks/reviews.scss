@@ -183,14 +183,14 @@
   }
 }
 
-.reviews__slider-btn-right {
-  right: 22%;
-
-  @media (max-width: $tablet-width) {
-    right: 0;
-  }
-
+.reviews__slider-btn-left {
   @media (max-width: $mobile-width) {
-    right: 2%;
+    margin-left: auto;
+  }
+}
+
+.reviews__slider-btn-right {
+  @media (max-width: $mobile-width) {
+    margin-right: auto;
   }
 }
