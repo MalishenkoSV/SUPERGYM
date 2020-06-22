@@ -7,25 +7,26 @@
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     width: 678px;
-    padding: 0 5.8% 100px;
+    padding: 0 0 100px;
   }
 
   @media (max-width: $mobile-width) {
     max-width: 290px;
-    padding: 0 15px 70px;
+    padding: 0 0 70px;
   }
 }
 
 .trainers__title {
   @include adv-Bebas-bold;
-  margin-top: 33px;
-  margin-bottom: 61px;
+  width: 1160px;
+  margin: 33px auto 61px;
   font-size: 48px;
   letter-spacing: 0.04em;
 
   @media (max-width: $tablet-width) {
     @include tablet-Bebas-hall;
     text-align: center;
+    width: auto;
     margin: 4px auto 40px;
   }
 
@@ -36,35 +37,39 @@
   }
 }
 
-.trainers__wrap {
-  max-width: 85%;
-  box-sizing: border-box;
-  margin: 0 7.6%;
+.trainer__slider {
+  margin: 0 auto;
+}
+.trainers__slider-wrapper {
+  width: 1160px;
   overflow: hidden;
+}
 
-  @media (max-width: $tablet-width) {
-    max-width: 565px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: $mobile-width) {
-    max-width: 226px;
-  }
+.trainers__wrapper {
+  width: 100%;
+  max-width: 1272px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .trainers__list {
   @include list-reset;
+  margin: 0 auto;
   position: relative;
   display: flex;
   width: 1160px;
+  box-sizing: border-box;
+  overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: 566px;
     min-width: 566px;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
     min-width: 226px;
+    width: 226px;
   }
 }
 
@@ -198,18 +203,6 @@
   @media (max-width: $mobile-width) {
     padding-left: 0;
     margin-bottom: 12px;
-  }
-}
-
-.trainers__list--active {
-  display: flex;
-}
-
-.trainers__slider {
-  top: 60%;
-
-  @media (max-width: $tablet-width) {
-    top: 45%;
   }
 }
 

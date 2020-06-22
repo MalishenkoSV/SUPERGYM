@@ -38,6 +38,24 @@ gulp.task('gulp-uglify', function () {
       .pipe(gulp.dest('build/js'));
 });
 
+
+gulp.task('js', function () {
+  return gulp.src(['source/js/main/*.js'])
+      .pipe(concat('main.js'))
+      .pipe(uglify())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('build/js'));
+});
+
+
+gulp.task('vendor', function () {
+  return gulp.src('source/js/vendor/vendor.js')
+      .pipe(plumber())
+      .pipe(uglify())
+      .pipe(rename({suffix: '.min'}))
+      .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('server', function () {
   server.init({
     server: 'build/',
@@ -91,24 +109,6 @@ gulp.task('html', function () {
       .pipe(gulp.dest('build'));
 });
 
-gulp.task('main', function () {
-  return gulp.src('source/js/main/*.js')
-      .pipe(plumber())
-      .pipe(concat('main.js'))
-      .pipe(uglify())
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('build/js'));
-});
-
-gulp.task('vendor', function () {
-  return gulp.src('source/js/vendor/*.js')
-      .pipe(plumber())
-      .pipe(concat('vendor.js'))
-      .pipe(uglify())
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('build/js'));
-});
-
 gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
@@ -121,16 +121,10 @@ gulp.task('copy', function () {
       .pipe(gulp.dest('build'));
 });
 
-// gulp.task('concat-js-main', function () {
-//   return gulp.src('source/js/main-*.js')
-//       .pipe(concat('main.js'))
-//       .pipe(gulp.dest('build/js'));
-// });
-
 
 gulp.task('clean', function () {
   return del(['build/ **, !build/fonts, !build/img']);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'main', 'vendor'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'js', 'vendor', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));

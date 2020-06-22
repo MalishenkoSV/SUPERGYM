@@ -1,7 +1,8 @@
 
 .slider__btn {
-  position: absolute;
+  // position: absolute;
   display: block;
+  // top: 60%;
   width: 30px;
   height: 32px;
   background-color: transparent;
@@ -10,25 +11,31 @@
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+  z-index: 5;
+  // background-color: green;
+  align-self: center;
 
   @media (max-width: $mobile-width) {
-    top: 46%;
-    background-size: 23px 22px;
+    width: 12px;
+    height: 24px;
+    margin: 9px;
   }
 }
 
-.slider__btn--start {
+.slider__btn--left {
   background-image: url("../img/start.svg");
 }
 
-.slider__btn--finish {
+.slider__btn--right {
   background-image: url("../img/finish.svg");
+  background-position-x: right;
 }
 
 .slider__btn:hover,
 .slider__btn:focus {
-  box-shadow: 0 0 0 2px $action-blue;
-  color: $white;
+  // box-shadow: 0 0 0 2px $action-blue;
+  // color: $white;
+  background-color: $grey-opacity;
 }
 
 .slider__btn:active {

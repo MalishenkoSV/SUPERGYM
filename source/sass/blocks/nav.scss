@@ -28,9 +28,12 @@
   @media (max-width: $mobile-width) {
     margin: -25px 0 5px;
     min-width: 290px;
-    display: block;
+    // align-content: space-between;
+    // flex-direction: column;
     width: 100%;
+    display: block;
     column-count: 2;
+    // max-height: 153px;
   }
 }
 

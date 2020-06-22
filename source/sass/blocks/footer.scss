@@ -1,6 +1,7 @@
 .footer {
   background-color: $black;
   color: $white;
+  // padding: 0 20px;
 
   @media (max-width: $mobile-width) {
     height: auto;
@@ -8,6 +9,7 @@
 }
 
 .footer__wrapper {
+  // padding: 35px 7.3%;
   padding: 0;
   width: 1200px;
   margin: 0 auto;
@@ -38,6 +40,7 @@
   cursor: pointer;
   outline: none;
   padding: 20px;
+  // width: 79px;
 
   @media (max-width: $tablet-width) {
     padding: 15px;
@@ -60,6 +63,9 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0 6px;
+  // width: 111px;
+  // margin-left: 19.6%;
+  // align-self: flex-end;
 
   @media (max-width: $tablet-width) {
     margin: 0;
@@ -68,6 +74,7 @@
 
   @media (max-width: $mobile-width) {
     align-items: center;
+    // margin-left: 2px;
     padding: 0;
     flex-wrap: wrap;
     width: auto;
@@ -76,6 +83,19 @@
 
 .footer-social__item {
   margin: 0 1px;
+
+  @media (max-width: $tablet-width) {
+    // margin-right: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    // margin-right: 20px;
+    // margin-left: 0;
+  }
+}
+
+.footer-social__item:last-child {
+  // margin-right: 0;
 }
 
 .footer-social .footer-social__link {

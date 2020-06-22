@@ -3,7 +3,7 @@
   height: 337px;
   background-color: $action-blue;
   text-transform: uppercase;
-  padding: 0 170px 30px 103px;
+  padding: 0;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -14,6 +14,20 @@
   @media (max-width: $mobile-width) {
     padding: 9px 15px 30px 15px;
     height: 386px;
+  }
+}
+
+.registration__container {
+  width: 600px;
+  margin-left: auto;
+  padding: 0 167px 5px 20px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
   }
 }
 

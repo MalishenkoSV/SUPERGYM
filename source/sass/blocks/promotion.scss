@@ -8,11 +8,11 @@
   @media (max-width: $tablet-width) {
     flex-direction: column;
     width: auto;
-    padding-top: 33px;
+    padding: 33px 45px 0;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 30px;
+    padding: 30px 15px 0;
   }
 }
 
