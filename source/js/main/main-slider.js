@@ -2,12 +2,12 @@
 'use strict';
 (function () {
   function initSlider(section) {
-    var sliderTtainers = document.querySelector(section); // основный элемент блока
-    var sliderWrapper = sliderTtainers.querySelector('.slider__wrapper'); // обертка для элементов слайдера
-    var sliderInner = sliderTtainers.querySelector('.slider__inner'); // динамический блок слайдера
-    var sliderItems = sliderTtainers.querySelectorAll('.slider__item'); // элементы (.slider-item)
+    var sliderTrainers = document.querySelector('section'); // основный элемент блока
+    var sliderWrapper = sliderTrainers.querySelector('.slider__wrapper'); // обертка для элементов слайдера
+    var sliderInner = sliderTrainers.querySelector('.slider__inner'); // динамический блок слайдера
+    var sliderItems = sliderTrainers.querySelectorAll('.slider__item'); // элементы (.slider-item)
     // console.log(sliderItems[0].offsetWidth);
-    var sliderControls = sliderTtainers.querySelectorAll('.slider__btn'); // элементы управления
+    var sliderControls = sliderTrainers.querySelectorAll('.slider__btn'); // элементы управления
     var wrapperWidth = sliderWrapper.offsetWidth; // ширина обёртки
     var itemWidth = sliderItems[0].offsetWidth; // ширина одного элемента
     var itemsGutter = parseFloat(getComputedStyle(sliderItems[0]).marginRight); // ширина отступа между элементами

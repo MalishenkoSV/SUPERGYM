@@ -42,19 +42,48 @@
   }
 }
 
-.trainer__slider {
-  margin: 0 auto;
+.trainers__slider {
+  margin: 0;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    width: 682px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
 }
+
 .trainers__slider-wrapper {
-  width: 1160px;
+  margin: 0 auto;
   overflow: hidden;
+  width: 1160px;
+
+  @media (max-width: $tablet-width) {
+    width: 566px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+  }
 }
 
 .trainers__wrapper {
   width: 100%;
   max-width: 1272px;
-  display: flex;
+  // display: flex;
   margin: 0 auto;
+    // overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
 }
 
 .trainers__list {
@@ -64,10 +93,9 @@
   display: flex;
   width: 1160px;
   box-sizing: border-box;
-  overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    width: 566px;
+    width: auto;
     min-width: 566px;
     margin: 0 auto;
   }
@@ -144,6 +172,7 @@
   @media (max-width: $mobile-width) {
     width: 226px;
     height: 274px;
+    object-fit: cover;
   }
 }
 

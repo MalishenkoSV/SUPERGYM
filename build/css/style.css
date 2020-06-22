@@ -1552,20 +1552,40 @@ input[type="radio"].visually-hidden {
       padding-left: 0;
       margin: 1px auto 42px; } }
 
-.trainer__slider {
-  margin: 0 auto; }
+.trainers__slider {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 1199px) {
+    .trainers__slider {
+      width: 682px; } }
+  @media (max-width: 767px) {
+    .trainers__slider {
+      width: 290px; } }
 
 .trainers__slider-wrapper {
-  width: 1160px;
-  overflow: hidden; }
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1160px; }
+  @media (max-width: 1199px) {
+    .trainers__slider-wrapper {
+      width: 566px; } }
+  @media (max-width: 767px) {
+    .trainers__slider-wrapper {
+      width: 226px; } }
 
 .trainers__wrapper {
   width: 100%;
   max-width: 1272px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto; }
+  @media (max-width: 1199px) {
+    .trainers__wrapper {
+      width: auto;
+      max-width: 100%; } }
+  @media (max-width: 767px) {
+    .trainers__wrapper {
+      width: 290px; } }
 
 .trainers__list {
   margin: 0;
@@ -1578,11 +1598,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 1160px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: hidden; }
+          box-sizing: border-box; }
   @media (max-width: 1199px) {
     .trainers__list {
-      width: 566px;
+      width: auto;
       min-width: 566px;
       margin: 0 auto; } }
   @media (max-width: 767px) {
@@ -1653,7 +1672,9 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .trainers__item img {
       width: 226px;
-      height: 274px; } }
+      height: 274px;
+      -o-object-fit: cover;
+         object-fit: cover; } }
 
 .trainers__info {
   position: absolute;
@@ -2512,14 +2533,13 @@ input[type="radio"].visually-hidden {
   .reviews__slider-control:active, .reviews__slider-control:hover {
     outline: none; }
 
-.reviews__slider-btn-right {
-  right: 22%; }
-  @media (max-width: 1199px) {
-    .reviews__slider-btn-right {
-      right: 0; } }
-  @media (max-width: 767px) {
-    .reviews__slider-btn-right {
-      right: 2%; } }
+@media (max-width: 767px) {
+  .reviews__slider-btn-left {
+    margin-left: auto; } }
+
+@media (max-width: 767px) {
+  .reviews__slider-btn-right {
+    margin-right: auto; } }
 
 .contacts {
   display: -webkit-box;
