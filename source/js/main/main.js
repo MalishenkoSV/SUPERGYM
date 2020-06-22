@@ -1,5 +1,5 @@
-'use strict';
 
+'use strict';
 (function () {
   var togglesList = document.querySelector('.controls__list');
   var toggles = document.querySelectorAll('.controls__btn');
@@ -42,7 +42,7 @@
     }
   });
 
-  // Определение ширины элементов в зависимости от экрана
+// Определение ширины элементов в зависимости от экрана
   var trainers = document.querySelector('.trainers');
   var trainersList = document.querySelector('.trainers__list');
   var trainerItemsAll = document.querySelectorAll('.trainers__item');
@@ -189,13 +189,5 @@
     reviewsPrevButton.addEventListener('click', slideReviewsToPrev);
   }
 
-  // Маска номера телефона
-  var phone = document.querySelector('#phone');
-  var value = phone.value;
-  var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
-  if (rep.test(value)) {
-    value = value.replace(rep, '');
-    phone.value = value;
-  }
 
 })();

@@ -3,6 +3,7 @@
   background-color: $whitegrey;
   padding-bottom: 189px;
   margin: 0;
+  margin-bottom: -20px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 99px;
@@ -55,12 +56,8 @@
 
 .abonements__list {
   @include list-reset;
-  // width: 100%;
   display: none;
-
-  @media (max-width: $tablet-width) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 
   @media (max-width: $mobile-width) {
     padding: 0;
@@ -71,7 +68,7 @@
     position: absolute;
     width: 470px;
     height: 494px;
-    bottom: -80px;
+    bottom: -60px;
     right: -182px;
     background-image: url("../img/blin_bg_pseudo__desktop_x1.png");
     background-repeat: no-repeat;
@@ -79,7 +76,7 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/blin_bg_pseudo__desktop_x2.webp");
+      background-image: url("../img/blin_bg_pseudo__desktop_x2.png");
     }
 
     @media (max-width: $tablet-width) {
@@ -111,6 +108,7 @@
   text-align: center;
   padding-top: 22px;
   border: 8px solid transparent;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     width: 80%;

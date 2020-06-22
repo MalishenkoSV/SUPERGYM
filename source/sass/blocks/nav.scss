@@ -1,108 +1,55 @@
 .nav {
   display: flex;
-  width: 68.6%;
   justify-content: space-between;
+  padding: 25px 0;
+  width: 100%;
 
   @media (max-width: $tablet-width) {
-    width: 79.5%;
+    padding: 30px 0;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 100%;
   }
 }
 
 .nav__list {
   @include list-reset;
   display: flex;
-  margin: 12px 0 0 54px;
-  min-width: 600px;
+  margin: 0 0 0 60px;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
-    margin-left: 0;
+    margin-left: 50px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: -38px 0 22px;
+    margin: -25px 0 5px;
     min-width: 290px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
     width: 100%;
-    max-height: 133px;
-    align-content: space-between;
+    column-count: 2;
   }
 }
 
 .nav__item {
   @include font-social-foot;
-  margin-left: 40px;
-
-  @media (max-width: 890px) {
-    margin-left: 20px;
-  }
 
   @media (max-width: $tablet-width) {
-    margin-left: 25px;
+    line-height: 25px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    width: 45%;
-  }
-}
-
-
-.nav__logo {
-  margin-right: 24%;
-  margin-top: 10px;
-  margin-left: 5px;
-
-  @media (max-width: $tablet-width) {
-    margin-right: 9%;
-    margin-left: 2px;
+    width: 50%;
   }
 
-  @media (max-width: $mobile-width) {
-    margin: 0;
-  }
-}
-
-// .nav__item--promo {
-//   @media (max-width: $mobile-width) {
-//   }
-// }
-
-.nav__item--services {
-  @media (max-width: $mobile-width) {
-    // order: 1;
-    margin-top: 42px;
-  }
-}
-
-// .nav__item--trainers {
-//   @media (max-width: $mobile-width) {
-//   }
-// }
-
-// .nav__item--abon {
-//   @media (max-width: $mobile-width) {
-//   }
-// }
-
-// .nav__item--tab {
-//   @media (max-width: $mobile-width) {
-//   }
-// }
-
-.nav__link {
-  @media (max-width: $mobile-width) {
-    display: block;
-    padding: 9px 20px 16px 0;
+  &:nth-child(1) {
+    @media (max-width: $mobile-width) {
+      margin-top: 42px;
+    }
   }
 }
 

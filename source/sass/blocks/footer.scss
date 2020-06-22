@@ -1,7 +1,6 @@
 .footer {
   background-color: $black;
   color: $white;
-  padding: 0;
 
   @media (max-width: $mobile-width) {
     height: auto;
@@ -9,15 +8,17 @@
 }
 
 .footer__wrapper {
-  padding: 35px 7.3%;
-  width: 100%;
+  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
   height: auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    padding: 37px 5.7% 15px;
+    padding: 0 25px 0;
+    width: auto;
     justify-content: stretch;
   }
 
@@ -26,19 +27,24 @@
     flex-wrap: wrap;
     align-content: flex-start;
     min-width: 100%;
-    padding: 46px 15px 45px;
+    padding: 13px 0 0;
   }
 }
 
 .footer a {
   color: $white;
+  display: block;
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  width: 79px;
+  padding: 20px;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px;
+  }
 
   @media (max-width: $mobile-width) {
-    padding: 9px 20px 16px 0;
+    padding: 7px 15px;
     width: 100%;
   }
 }
@@ -51,39 +57,37 @@
   @include list-reset;
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
-  align-content: center;
-  width: 111px;
-  margin-left: 19.6%;
-  align-self: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 6px;
 
   @media (max-width: $tablet-width) {
-    margin: auto 0 auto auto;
+    margin: 0;
     width: auto;
   }
 
   @media (max-width: $mobile-width) {
     align-items: center;
-    margin-left: 2px;
+    padding: 0;
+    flex-wrap: wrap;
     width: auto;
   }
 }
 
 .footer-social__item {
-  margin-right: 25px;
+  margin: 0 1px;
+}
+
+.footer-social .footer-social__link {
+  padding: 12px;
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
+    padding: 10px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 20px;
-    margin-left: 0;
+    padding: 19px;
   }
-}
-
-.footer-social__item:last-child {
-  margin-right: 0;
 }
 
 .footer-social__link:hover,

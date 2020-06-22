@@ -120,7 +120,7 @@
 .promotions__item--unlimited {
   background-color: $promo-red;
   color: $white;
-  height: 462px;
+  height: auto;
 
 
   @media (max-width: $tablet-width) {

@@ -154,11 +154,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    right: 12px;
-    width: 15px;
-    background-position: 50% 60%;
-    background-size: inherit;
-    padding-left: 31px;
+    // right: 12px;
+    // width: 15px;
+    // background-position: 50% 60%;
+    // background-size: inherit;
+    // padding-left: 31px;
   }
 }
 
@@ -175,7 +175,7 @@
 }
 
 .reviews__slider-btn-right {
-  right: 22%;
+  right: 2%;
 
   @media (max-width: $tablet-width) {
     right: -2%;
