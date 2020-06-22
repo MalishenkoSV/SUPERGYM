@@ -16,6 +16,11 @@
   }
 }
 
+.trainers__picture {
+  display: flex;
+  object-fit: cover;
+}
+
 .trainers__title {
   @include adv-Bebas-bold;
   width: 1160px;

@@ -95,7 +95,7 @@
     var controlClick = function (e) {
       if (e.target.classList.contains('slider__btn') || e.target.parentNode.classList.contains('slider__btn')) {
         e.preventDefault();
-        var direction = (e.target.classList.contains('slider__btn--finish') || e.target.parentNode.classList.contains('slider__control--finish')) ? 'right' : 'left';
+        var direction = (e.target.classList.contains('slider__btn--right') || e.target.parentNode.classList.contains('slider__control--right')) ? 'right' : 'left';
         transformSlider(direction);
       }
     };

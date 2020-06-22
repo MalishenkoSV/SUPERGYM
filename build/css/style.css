@@ -1519,6 +1519,13 @@ input[type="radio"].visually-hidden {
       max-width: 290px;
       padding: 0 0 70px; } }
 
+.trainers__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 .trainers__title {
   font-family: "Bebas Neue", "Arial Narrow", sans-serif;
   font-weight: 700;
@@ -2368,7 +2375,9 @@ input[type="radio"].visually-hidden {
   width: auto;
   height: auto;
   color: white;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out; }
   @media (max-width: 1199px) {
     .reviews__list {
       height: 100%;

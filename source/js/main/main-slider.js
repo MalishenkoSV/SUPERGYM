@@ -92,10 +92,10 @@
     };
 
     // обработчик события click для кнопок "назад" и "вперед"
-    var controlClick = function (e) {
-      if (e.target.classList.contains('slider__btn') || e.target.parentNode.classList.contains('slider__btn')) {
-        e.preventDefault();
-        var direction = (e.target.classList.contains('slider__btn--finish') || e.target.parentNode.classList.contains('slider__control--finish')) ? 'right' : 'left';
+    var controlClick = function (evt) {
+      if (evt.target.classList.contains('slider__btn') || evt.target.parentNode.classList.contains('slider__btn')) {
+        evt.preventDefault();
+        var direction = (evt.target.classList.contains('slider__btn--right') || evt.target.parentNode.classList.contains('slider__control--right')) ? 'right' : 'left';
         transformSlider(direction);
       }
     };
