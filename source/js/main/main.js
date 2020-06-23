@@ -243,7 +243,6 @@
     telInput.addEventListener('invalid', function () {
       telInput.setCustomValidity('Значение поля должно быть в формате: +7(999)9999999');
     });
-
   };
   setInputMask();
 })();

@@ -50,7 +50,7 @@
   overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    width: 577px;
+    width: 566px;
     margin: 0 26px;
   }
 
@@ -94,12 +94,16 @@
 .reviews__item {
   position: relative;
   box-sizing: border-box;
-  margin-right: 40px;
-  width: 540px;
+  margin-right: 68px;
+  width: 560px;
   height: auto;
   display: flex;
   background-color: $action-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+
+  @media (max-width: $tablet-width) {
+    width: 566px;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 48px 9px 5px;
