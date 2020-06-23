@@ -1,8 +1,9 @@
 .main-screen {
   display: flex;
-  margin-bottom: 20px;
   color: $white;
+  margin: 0 auto 20px;
   width: 100%;
+  max-width: 1200px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;

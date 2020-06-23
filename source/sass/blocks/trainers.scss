@@ -87,7 +87,7 @@
   display: flex;
   // width: 1160px;
   box-sizing: border-box;
-  transition: transform .4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   will-change: transform;
 
   @media (max-width: $tablet-width) {

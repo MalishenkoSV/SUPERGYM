@@ -58,6 +58,7 @@
   @include list-reset;
   display: none;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (max-width: $mobile-width) {
     padding: 0;
@@ -103,7 +104,6 @@
   flex-direction: column;
   width: 31%;
   min-height: 448px;
-  margin-right: 40px;
   background-color: $white;
   text-align: center;
   padding-top: 22px;
@@ -112,8 +112,7 @@
 
   @media (max-width: $tablet-width) {
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   @media (max-width: $mobile-width) {

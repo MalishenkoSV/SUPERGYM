@@ -262,6 +262,7 @@
   display: block;
   background-color: $blue;
   padding: 0;
+
   @media (max-width: $tablet-width) {
     width: 58.9%;
   }

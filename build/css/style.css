@@ -528,9 +528,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
   color: white;
-  width: 100%; }
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 1200px; }
   @media (max-width: 1199px) {
     .main-screen {
       margin-bottom: 0;
@@ -1092,7 +1093,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: none;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 767px) {
     .abonements__list {
       padding: 0; } }
@@ -1135,7 +1139,6 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   width: 31%;
   min-height: 448px;
-  margin-right: 40px;
   background-color: white;
   text-align: center;
   padding-top: 22px;
@@ -1144,8 +1147,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1199px) {
     .abonements__item {
       width: 80%;
-      margin: 0 auto;
-      margin-bottom: 40px; } }
+      margin: 0 auto 40px; } }
   @media (max-width: 767px) {
     .abonements__item {
       width: 100%;
@@ -1601,10 +1603,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   will-change: transform; }
   @media (max-width: 1199px) {
     .trainers__list {
@@ -2994,9 +2996,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
