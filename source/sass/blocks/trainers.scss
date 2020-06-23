@@ -1,30 +1,40 @@
 .trainers {
-  position: relative;
-  max-width: 1366px;
   margin: 0 auto 120px;
-  overflow: hidden;
+  display: flex;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    width: 678px;
     padding: 0 0 100px;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 290px;
     padding: 0 0 70px;
   }
 }
 
-.trainers__picture {
+.trainers__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1272px;
   display: flex;
-  object-fit: cover;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
 }
 
 .trainers__title {
   @include adv-Bebas-bold;
   width: 1160px;
-  margin: 33px auto 61px;
+  align-self: center;
+  // margin: 0 0 50px;
+  margin: 32px 0 63px;
   font-size: 48px;
   letter-spacing: 0.04em;
 
@@ -43,8 +53,9 @@
 }
 
 .trainers__slider {
-  margin: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     width: 682px;
@@ -56,7 +67,6 @@
 }
 
 .trainers__slider-wrapper {
-  margin: 0 auto;
   overflow: hidden;
   width: 1160px;
 
@@ -66,33 +76,19 @@
 
   @media (max-width: $mobile-width) {
     width: 226px;
-  }
-}
-
-.trainers__wrapper {
-  width: 100%;
-  max-width: 1272px;
-  // display: flex;
-  margin: 0 auto;
-    // overflow: hidden;
-
-  @media (max-width: $tablet-width) {
-    width: auto;
-    max-width: 100%;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 290px;
+    margin: 0 40px;
   }
 }
 
 .trainers__list {
   @include list-reset;
-  margin: 0 auto;
-  position: relative;
+  // margin: 0 auto;
+  // position: relative;
   display: flex;
-  width: 1160px;
+  // width: 1160px;
   box-sizing: border-box;
+  transition: transform .4s ease-in-out;
+  will-change: transform;
 
   @media (max-width: $tablet-width) {
     width: auto;
@@ -108,15 +104,15 @@
 
 .trainers__item {
   position: relative;
-  width: 260px;
-  height: 294px;
-  display: block;
+  // width: 260px;
+  // height: 294px;
+  // display: block;
   color: $white;
   flex-shrink: 0;
   flex-grow: 0;
   z-index: 2;
   overflow: hidden;
-  margin-right: 3.4%;
+  margin-right: 40px;
 
   @media (max-width: $tablet-width) {
     width: 266px;
@@ -156,6 +152,11 @@
 .trainers__item picture {
   width: 100%;
   height: 100%;
+}
+
+.trainers__pict {
+  display: flex;
+  object-fit: cover;
 }
 
 .trainers__item img {

@@ -229,18 +229,18 @@
                                                                               img/supergames_prewiev_desktop_x2.png 2x" alt="Активные игры на растяжку с спецеффектами">
                 </picture>
             </section>
-            <section class="main__trainers trainers" id="trainers">
-                <div class="trainers__wrapper slider">
+            <section class="main__trainers trainers">
+                <div class="trainers__wrapper">
                     <h3 class="trainers__title">Тренеры</h3>
                     <div class="trainers__slider slider">
-                        <button type="button" class="slider__btn slider__btn--left trainers__slider trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
+                        <button type="button" class="trainers__slider-btn slider__btn slider__btn--left  trainers__slider-btn-left" aria-label="Переключение вконец слайдера">
                         </button>
 
                         <div class="trainers__slider-wrapper slider__wrapper">
                             <ul class="trainers__list slider__inner">
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                                           img/trainer_01_desktop_x2.webp 2x">
@@ -260,7 +260,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                                           img/trainer_02_desktop_x2.webp 2x">
@@ -279,7 +279,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_03_desktop_x1.webp 1x,
                                                                                                           img/trainer_03_desktop_x2.webp 2x">
@@ -299,7 +299,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_04_desktop_x1.webp 1x,
                                                                                                           img/trainer_04_desktop_x2.webp 2x">
@@ -319,7 +319,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_01_desktop_x1.webp 1x,
                                                                                                           img/trainer_01_desktop_x2.webp 2x">
@@ -338,7 +338,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_02_desktop_x1.webp 1x,
                                                                                                           img/trainer_02_desktop_x2.webp 2x">
@@ -358,7 +358,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_03_desktop_x1.webp 1x,
                                                                                                           img/trainer_03_desktop_x2.webp 2x">
@@ -378,7 +378,7 @@
                                 </li>
 
                                 <li class="trainers__item slider__item" tabindex="0">
-                                    <div class="trainers__picture">
+                                    <div class="trainers__pict">
                                         <picture>
                                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer_04_desktop_x1.webp 1x,
                                                                                                           img/trainer_04_desktop_x2.webp 2x">
@@ -398,7 +398,7 @@
 
                             </ul>
                         </div>
-                        <button type="button" class="slider__btn slider__btn--right trainers__slider trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
+                        <button type="button" class="trainers__slider-btn slider__btn slider__btn--right  trainers__slider-btn-right" aria-label="Переключение вконец слайдера">
                         </button>
                     </div>
                 </div>
@@ -562,11 +562,11 @@
               <div class="contacts__registration registration">
                   <div class="registration__container">
                       <h4>Бесплатное занятие</h4>
-                      <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
+                      <form class="registration__form" action="https://echo.htmlacademy.ru" method="POST">
                           <label class="visually-hidden" for="name">Имя</label>
-                          <input type="text" name="name" id="name" placeholder="Имя" required="">
+                          <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" required="">
                           <label class="visually-hidden" for="phone">Телефон</label>
-                          <input id="phone" name="phone" type="tel" placeholder="Телефон" value="" maxlength="18" required="">
+                          <input id="phone" name="phone" type="tel" placeholder="Телефон" value="" maxlength="20" autocomplete="off" required="">
                           <button class="btn registration__btn" type="submit" aria-label="Кнопка для отправки Ваших данных">Отправить</button>
                       </form>
                   </div>
@@ -650,8 +650,7 @@
 
             </div>
         </footer>
-        <script src="js/vendor.min.js" defer=""></script>
-        <script src="js/main.min.js" defer=""></script>
-        <script src="js/main/main-slider.js"></script>
+        <script type="text/javascript" src="js/vendor.min.js"></script>
+        <script type="text/javascript" src="js/main/main.js"></script>
     </body>
 </html>
