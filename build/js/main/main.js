@@ -202,11 +202,10 @@
     ESCAPE: 27,
     ENTER: 13
   };
-
+  var formSection = document.querySelector('.contacts');
+  var form = formSection.querySelector('.registration__form');
+  var telInput = form.querySelector('input[type="tel"]');
   var setInputMask = function () {
-    var formSection = document.querySelector('.contacts');
-    var form = formSection.querySelector('.registration__form');
-    var telInput = form.querySelector('input[type="tel"]');
     var swap;
 
     telInput.addEventListener('focus', function () {
@@ -245,4 +244,14 @@
     });
   };
   setInputMask();
+
+  form.addEventListener('submit', function (evt) {
+    var value = telInput.value;
+    var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+    evt.preventDefault();
+    if (rep.test(value)) {
+      value = value.replace(rep, 'Значение поля должно быть в формате: +7(999)9999999');
+      // telInput.setCustomValidity('Значение поля должно быть в формате: +7(999)9999999');
+    }
+  });
 })();
