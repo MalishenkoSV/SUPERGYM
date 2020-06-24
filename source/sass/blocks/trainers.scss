@@ -76,7 +76,7 @@
 
   @media (max-width: $mobile-width) {
     width: 226px;
-    margin: 0 40px;
+    margin: 0 auto;
   }
 }
 
@@ -120,8 +120,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: auto;
+    width: 226px;
     height: 274px;
+    margin: 0;
   }
 
   &:hover .trainers__info,

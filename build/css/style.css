@@ -1592,7 +1592,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 767px) {
     .trainers__slider-wrapper {
       width: 226px;
-      margin: 0 40px; } }
+      margin: 0 auto; } }
 
 .trainers__list {
   margin: 0;
@@ -1635,8 +1635,9 @@ input[type="radio"].visually-hidden {
       margin-right: 32px; } }
   @media (max-width: 767px) {
     .trainers__item {
-      width: auto;
-      height: 274px; } }
+      width: 226px;
+      height: 274px;
+      margin: 0; } }
   .trainers__item:hover .trainers__info,
   .trainers__item:active .trainers__info,
   .trainers__item:focus .trainers__info {
