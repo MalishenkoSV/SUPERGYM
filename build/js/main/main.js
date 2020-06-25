@@ -240,18 +240,31 @@
     });
 
     telInput.addEventListener('invalid', function () {
-      telInput.setCustomValidity('Значение поля должно быть в формате: +7(999)9999999');
+      telInput.setCustomValidity('Значение поля должно быть в формате: +7(999)999-99-99');
     });
   };
   setInputMask();
+
+
+  // var btnPopup = form.querySelector('.registration__btn');
+  // var onSaveError = btnPopup.onErrorShowMessage;
+
+  // var onSaveSuccess = function () {
+  //   btnPopup.onSuccessShowMessage();
+  // };
+
+  // form.addEventListener('submit', function (evt) {
+  //   evt.preventDefault();
+  //   window.backend.save(new FormData(adForm), onSaveSuccess, onSaveError);
+  // });
 
   form.addEventListener('submit', function (evt) {
     var value = telInput.value;
     var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
     evt.preventDefault();
     if (rep.test(value)) {
-      value = value.replace(rep, 'Значение поля должно быть в формате: +7(999)9999999');
-      // telInput.setCustomValidity('Значение поля должно быть в формате: +7(999)9999999');
+      value = value.replace(rep, 'Значение поля должно быть в формате: +7(000)000-00-00');
     }
   });
+
 })();
